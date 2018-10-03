@@ -1,0 +1,29 @@
+{
+  "name": "signal-fox",
+  "version": "0.0.1",
+  "description": "Signaling server for WebRTC",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Daniil Makeev",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.327.0",
+    "cluster": "^0.7.7",
+    "express": "^4.16.3",
+    "firebase": "^5.5.2",
+    "firebase-admin": "^6.0.0",
+    "fs": "0.0.1-security",
+    "getconfig": "^4.5.0",
+    "https": "^1.0.0",
+    "os": "^0.1.1",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "socket.io": "^2.1.1",
+    "socket.io-redis": "^5.2.0",
+    "socketio-sticky-session": "^0.4.3",
+    "sticky-session": "^1.1.2"
+  }
+}

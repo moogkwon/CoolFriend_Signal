@@ -1,0 +1,1475 @@
+2018-8-1 15:39:49	::ffff:94.230.144.34	backendConfig is not defined
+2018-8-1 15:40:27	::ffff:94.230.144.34	Signaling.init is not a function
+2018-8-1 15:40:42	::ffff:94.230.144.34	Signaling.init is not a function
+2018-8-1 15:41:06	::ffff:94.230.144.34	Signaling.init is not a function
+2018-8-1 18:16:43		Error
+2018-8-1 18:16:43		{"id":null,"token":null,"alive":false,"authorized":null,"call":null,"apiCode":301,"apiMessage":"API requerst error: 301<br />request: {\"method\":\"POST\",\"uri\":\"https://xxx.xxx/user/login/\",\"headers\":{\"Authorization\":\"Token xxx\"},\"json\":{\"id\":5,\"password\":\"32423423\"}}","socket":{"nsp":{"name":"/","server":{"nsps":{},"parentNsps":{},"_path":"/socket.io","_serveClient":true,"parser":{"protocol":4,"types":["CONNECT","DISCONNECT","EVENT","ACK","ERROR","BINARY_EVENT","BINARY_ACK"],"CONNECT":0,"DISCONNECT":1,"EVENT":2,"ACK":3,"ERROR":4,"BINARY_EVENT":5,"BINARY_ACK":6},"encoder":{},"_origins":"*:*","eio":{"clients":{"gtN3uONMR-PC8-nQAAAA":{"id":"gtN3uONMR-PC8-nQAAAA","upgrading":false,"upgraded":true,"readyState":"open","writeBuffer":[],"packetsFn":[],"sentCallbackFn":[],"cleanupFn":[null,null],"request":{"_readableState":{"objectMode":false,"highWaterMark":16384,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":true,"ended":true
+2018-8-1 18:16:43	::ffff:94.230.144.34	Authorization failed:API requerst error: 301<br />request: {"method":"POST","uri":"https://xxx.xxx/user/login/","headers":{"Authorization":"Token xxx"},"json":{"id":5,"password":"32423423"}}
+2018-8-1 18:17:28		Error
+2018-8-1 18:17:28		{"id":5,"token":null,"alive":false,"authorized":true,"call":null,"apiCode":301,"apiMessage":"API requerst error: 301<br />request: {\"method\":\"POST\",\"uri\":\"https://xxx.xxx/user/login/\",\"headers\":{\"Authorization\":\"Token xxx\"},\"json\":{\"id\":5,\"password\":\"32423423\"}}","socket":{"nsp":{"name":"/","server":{"nsps":{},"parentNsps":{},"_path":"/socket.io","_serveClient":true,"parser":{"protocol":4,"types":["CONNECT","DISCONNECT","EVENT","ACK","ERROR","BINARY_EVENT","BINARY_ACK"],"CONNECT":0,"DISCONNECT":1,"EVENT":2,"ACK":3,"ERROR":4,"BINARY_EVENT":5,"BINARY_ACK":6},"encoder":{},"_origins":"*:*","eio":{"clients":{"C8sHZjGYYhxAmfUpAAAA":{"id":"C8sHZjGYYhxAmfUpAAAA","upgrading":false,"upgraded":true,"readyState":"open","writeBuffer":[],"packetsFn":[],"sentCallbackFn":[],"cleanupFn":[null,null],"request":{"_readableState":{"objectMode":false,"highWaterMark":16384,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":true,"ended":true,"e
+2018-8-11 11:57:26	::ffff:94.230.144.34	Signaling.init is not a function
+2018-8-11 11:58:31	::ffff:94.230.144.34	Signaling.init is not a function
+2018-8-11 11:59:06	::ffff:94.230.144.34	Signaling is not a constructor
+2018-8-13 15:36:58	::ffff:94.230.144.34	self is not defined
+2018-8-23 12:53:54	::ffff:146.185.181.184	Server.server.getDataFromOld is not a function
+2018-8-23 12:57:07	::ffff:146.185.181.184	Server.server.getDataFromOld is not a function
+2018-8-23 13:00:09	::ffff:146.185.181.184	Server.server.getDataFromOld is not a function
+2018-8-23 13:03:12	::ffff:46.134.160.20	Server.server.getDataFromOld is not a function
+2018-8-23 16:29:32	::ffff:51.253.202.165	Server.server.getDataFromOld is not a function
+2018-8-23 16:44:09	::ffff:212.124.32.2	Server.server.getDataFromOld is not a function
+2018-8-23 16:46:18	::ffff:212.124.32.2	Server.server.getDataFromOld is not a function
+2018-8-23 16:46:39	::ffff:212.124.32.2	Server.server.getDataFromOld is not a function
+2018-8-23 16:46:57	::ffff:212.124.32.2	Server.server.getDataFromOld is not a function
+2018-8-23 16:46:58	::ffff:212.124.32.2	Server.server.getDataFromOld is not a function
+2018-8-23 16:47:22	::ffff:212.124.32.2	Server.server.getDataFromOld is not a function
+2018-8-23 16:47:23	::ffff:212.124.32.2	Server.server.getDataFromOld is not a function
+2018-8-23 16:58:06	::ffff:212.124.32.2	Server.server.getDataFromOld is not a function
+2018-8-23 16:58:12	::ffff:212.124.32.2	Server.server.getDataFromOld is not a function
+2018-8-23 16:58:39	::ffff:212.124.32.2	Server.server.getDataFromOld is not a function
+2018-8-23 16:58:43	::ffff:212.124.32.2	Server.server.getDataFromOld is not a function
+2018-8-23 16:59:48	::ffff:212.124.32.2	Server.server.getDataFromOld is not a function
+2018-8-23 16:59:53	::ffff:212.124.32.2	Server.server.getDataFromOld is not a function
+2018-8-23 17:00:10	::ffff:212.124.32.2	Server.server.getDataFromOld is not a function
+2018-8-23 17:00:10	::ffff:212.124.32.2	Server.server.getDataFromOld is not a function
+2018-8-23 17:00:26	::ffff:212.124.32.2	Server.server.getDataFromOld is not a function
+2018-8-23 17:52:37		Error in push module
+2018-8-23 17:52:37		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-23 17:59:00		Error in push module
+2018-8-23 17:59:00		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-23 18:01:42		Error in push module
+2018-8-23 18:01:42		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-23 18:06:02		Error in push module
+2018-8-23 18:06:02		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-23 18:06:28		Error in push module
+2018-8-23 18:06:28		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-23 18:26:23		Error in push module
+2018-8-23 18:26:23		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-23 18:26:56		Error in push module
+2018-8-23 18:26:56		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-23 18:30:35		Error in push module
+2018-8-23 18:30:35		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 10:18:09		Error in push module
+2018-8-24 10:18:09		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 10:19:47		Error in push module
+2018-8-24 10:19:47		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 10:49:33		Error in push module
+2018-8-24 10:49:33		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 10:49:44		Error in push module
+2018-8-24 10:49:44		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 10:50:09		Error in push module
+2018-8-24 10:50:09		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 10:50:27		Error in push module
+2018-8-24 10:50:27		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 11:02:41		Error in push module
+2018-8-24 11:02:41		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 11:36:51		Error in push module
+2018-8-24 11:36:51		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 12:11:18		Error in push module
+2018-8-24 12:11:18		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 12:21:02		Error in push module
+2018-8-24 12:21:02		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 12:28:11		Error in push module
+2018-8-24 12:28:11		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 12:36:43		Error in push module
+2018-8-24 12:36:43		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 12:52:38		Error in push module
+2018-8-24 12:52:38		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 12:52:54		Error in push module
+2018-8-24 12:52:54		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 13:41:09		Error in push module
+2018-8-24 13:41:09		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 13:43:26		Error in push module
+2018-8-24 13:43:26		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 13:46:13		Error in push module
+2018-8-24 13:46:13		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 15:01:20		Error in push module
+2018-8-24 15:01:20		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 15:02:39		Error in push module
+2018-8-24 15:02:39		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 15:03:05		Error in push module
+2018-8-24 15:03:05		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 15:05:09		Error in push module
+2018-8-24 15:05:09		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 15:19:55		Error in push module
+2018-8-24 15:19:55		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 15:23:10		Error in push module
+2018-8-24 15:23:10		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 15:24:24		Error in push module
+2018-8-24 15:24:24		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 15:26:27		Error in push module
+2018-8-24 15:26:27		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 15:31:34		Error in push module
+2018-8-24 15:31:34		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 19:54:28		Error in push module
+2018-8-24 19:54:28		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 20:01:14		Error in push module
+2018-8-24 20:01:14		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 20:04:20		Error in push module
+2018-8-24 20:04:20		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 20:08:10		Error in push module
+2018-8-24 20:08:10		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 20:18:45		Error in push module
+2018-8-24 20:18:45		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 20:30:45		Error in push module
+2018-8-24 20:30:45		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 20:38:36		Error in push module
+2018-8-24 20:38:36		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 21:03:30		Error in push module
+2018-8-24 21:03:30		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 21:05:44		Error in push module
+2018-8-24 21:05:44		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 21:06:55		Error in push module
+2018-8-24 21:06:55		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 21:08:23		Error in push module
+2018-8-24 21:08:23		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 21:10:09		Error in push module
+2018-8-24 21:10:09		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 21:11:13		Error in push module
+2018-8-24 21:11:13		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 21:12:15		Error in push module
+2018-8-24 21:12:15		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 21:36:57		Error in push module
+2018-8-24 21:36:57		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 21:40:35		Error in push module
+2018-8-24 21:40:35		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 21:43:36		Error in push module
+2018-8-24 21:43:36		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 21:43:47		Error in push module
+2018-8-24 21:43:47		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 21:48:45		Error in push module
+2018-8-24 21:48:45		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 21:51:18		Error in push module
+2018-8-24 21:51:18		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-24 23:24:04		Error in push module
+2018-8-24 23:24:04		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-25 00:25:08		Error in push module
+2018-8-25 00:25:08		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-25 00:35:52		Error in push module
+2018-8-25 00:35:52		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-25 00:39:04		Error in push module
+2018-8-25 00:39:04		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-25 00:47:30		Error in push module
+2018-8-25 00:47:30		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-25 00:50:09		Error in push module
+2018-8-25 00:50:09		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-25 00:55:40		Error in push module
+2018-8-25 00:55:40		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-25 00:59:04		Error in push module
+2018-8-25 00:59:04		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-25 01:04:09		Error in push module
+2018-8-25 01:04:09		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-25 01:06:39		Error in push module
+2018-8-25 01:06:39		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-25 01:21:38		Error in push module
+2018-8-25 01:21:38		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-25 01:23:44		Error in push module
+2018-8-25 01:23:44		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-25 01:26:27		Error in push module
+2018-8-25 01:26:27		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-25 01:28:35		Error in push module
+2018-8-25 01:28:35		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-25 01:31:02		Error in push module
+2018-8-25 01:31:02		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-25 01:35:27		Error in push module
+2018-8-25 01:35:27		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-25 12:04:20		Error in push module
+2018-8-25 12:04:20		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-25 12:04:25		Error in push module
+2018-8-25 12:04:25		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-25 12:08:30		Error in push module
+2018-8-25 12:08:30		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-26 15:27:01		Error in push module
+2018-8-26 15:27:01		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-26 15:30:59		Error in push module
+2018-8-26 15:30:59		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-26 15:38:11		Error in push module
+2018-8-26 15:38:11		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-26 16:39:22		Error in push module
+2018-8-26 16:39:22		{"code":"messaging/invalid-payload","message":"Exactly one of topic, token or condition is required"}
+2018-8-26 17:24:17		Error in token verification
+2018-8-26 17:24:17		{"code":"auth/argument-error","message":"First argument to verifyIdToken() must be a Firebase ID token string."}
+2018-8-26 17:24:17	::ffff:129.208.174.172	Authorization failed:null
+2018-8-26 17:24:17		Error in token verification
+2018-8-26 17:24:17		{"code":"auth/argument-error","message":"First argument to verifyIdToken() must be a Firebase ID token string."}
+2018-8-26 17:24:17	::ffff:129.208.174.172	Authorization failed:null
+2018-8-26 17:25:02		Error in token verification
+2018-8-26 17:25:02		{"code":"auth/argument-error","message":"First argument to verifyIdToken() must be a Firebase ID token string."}
+2018-8-26 17:25:02	::ffff:129.208.174.172	Authorization failed:null
+2018-8-26 17:25:02		Error in token verification
+2018-8-26 17:25:02		{"code":"auth/argument-error","message":"First argument to verifyIdToken() must be a Firebase ID token string."}
+2018-8-26 17:25:02	::ffff:129.208.174.172	Authorization failed:null
+2018-8-26 17:25:36		Error in token verification
+2018-8-26 17:25:36		{"code":"auth/argument-error","message":"First argument to verifyIdToken() must be a Firebase ID token string."}
+2018-8-26 17:25:36	::ffff:129.208.174.172	Authorization failed:null
+2018-8-26 17:25:48		Error in token verification
+2018-8-26 17:25:48		{"code":"auth/argument-error","message":"First argument to verifyIdToken() must be a Firebase ID token string."}
+2018-8-26 17:25:48	::ffff:129.208.174.172	Authorization failed:null
+2018-8-26 17:25:53		Error in token verification
+2018-8-26 17:25:53		{"code":"auth/argument-error","message":"First argument to verifyIdToken() must be a Firebase ID token string."}
+2018-8-26 17:25:53	::ffff:129.208.174.172	Authorization failed:null
+2018-8-26 17:26:21		Error in token verification
+2018-8-26 17:26:21		{"code":"auth/argument-error","message":"First argument to verifyIdToken() must be a Firebase ID token string."}
+2018-8-26 17:26:21	::ffff:129.208.174.172	Authorization failed:null
+2018-8-26 17:26:55		Error in token verification
+2018-8-26 17:26:55		{"code":"auth/argument-error","message":"First argument to verifyIdToken() must be a Firebase ID token string."}
+2018-8-26 17:26:55	::ffff:129.208.174.172	Authorization failed:null
+2018-8-26 17:27:28		Error in token verification
+2018-8-26 17:27:28		{"code":"auth/argument-error","message":"First argument to verifyIdToken() must be a Firebase ID token string."}
+2018-8-26 17:27:28	::ffff:129.208.174.172	Authorization failed:null
+2018-8-26 17:27:50		Error in token verification
+2018-8-26 17:27:50		{"code":"auth/argument-error","message":"First argument to verifyIdToken() must be a Firebase ID token string."}
+2018-8-26 17:27:50	::ffff:129.208.174.172	Authorization failed:null
+2018-8-26 17:28:46		Error in token verification
+2018-8-26 17:28:46		{"code":"auth/argument-error","message":"First argument to verifyIdToken() must be a Firebase ID token string."}
+2018-8-26 17:28:46	::ffff:129.208.174.172	Authorization failed:null
+2018-8-26 17:28:46		Error in token verification
+2018-8-26 17:28:46		{"code":"auth/argument-error","message":"First argument to verifyIdToken() must be a Firebase ID token string."}
+2018-8-26 17:28:46	::ffff:129.208.174.172	Authorization failed:null
+2018-8-26 17:29:09		Error in token verification
+2018-8-26 17:29:09		{"code":"auth/argument-error","message":"First argument to verifyIdToken() must be a Firebase ID token string."}
+2018-8-26 17:29:09	::ffff:129.208.174.172	Authorization failed:null
+2018-8-26 17:29:32		Error in token verification
+2018-8-26 17:29:32		{"code":"auth/argument-error","message":"First argument to verifyIdToken() must be a Firebase ID token string."}
+2018-8-26 17:29:32	::ffff:129.208.174.172	Authorization failed:null
+2018-8-26 17:30:05		Error in token verification
+2018-8-26 17:30:05		{"code":"auth/argument-error","message":"First argument to verifyIdToken() must be a Firebase ID token string."}
+2018-8-26 17:30:05	::ffff:129.208.174.172	Authorization failed:null
+2018-8-26 17:30:05		Error in token verification
+2018-8-26 17:30:05		{"code":"auth/argument-error","message":"First argument to verifyIdToken() must be a Firebase ID token string."}
+2018-8-26 17:30:05	::ffff:129.208.174.172	Authorization failed:null
+2018-8-26 17:57:22		Error in push module
+2018-8-26 17:57:22		{}
+2018-8-26 18:07:13	ReferenceError: listAllUsers is not defined	Error listing users:
+2018-8-26 18:27:05	ReferenceError: listAllUsers is not defined	Error listing users:
+2018-8-26 19:05:56	ReferenceError: listAllUsers is not defined	Error listing users:
+2018-8-26 19:57:01		Invalid user token
+2018-8-26 19:57:01		{"code":"auth/argument-error","message":"Firebase ID token has expired. Get a fresh token from your client app and try again (auth/id-token-expired). See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-8-26 19:57:01	::ffff:129.208.174.172	Authorization failed:null
+2018-8-26 19:57:02		Invalid user token
+2018-8-26 19:57:02		{"code":"auth/argument-error","message":"Firebase ID token has expired. Get a fresh token from your client app and try again (auth/id-token-expired). See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-8-26 19:57:02	::ffff:129.208.174.172	Authorization failed:null
+2018-8-26 19:57:14		Invalid user token
+2018-8-26 19:57:14		{"code":"auth/argument-error","message":"Firebase ID token has expired. Get a fresh token from your client app and try again (auth/id-token-expired). See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-8-26 19:57:14	::ffff:129.208.174.172	Authorization failed:null
+2018-8-28 09:47:14	ReferenceError: listAllUsers is not defined	Error listing users:
+2018-8-28 09:48:25	ReferenceError: listAllUsers is not defined	Error listing users:
+2018-8-28 09:48:59	ReferenceError: listAllUsers is not defined	Error listing users:
+2018-9-3 15:15:47		Invalid user token
+2018-9-3 15:15:47		{"code":"auth/argument-error","message":"Firebase ID token has expired. Get a fresh token from your client app and try again (auth/id-token-expired). See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-3 15:15:47	::ffff:51.253.248.113	Authorization failed:null
+2018-9-3 15:16:36		Invalid user token
+2018-9-3 15:16:36		{"code":"auth/argument-error","message":"Firebase ID token has expired. Get a fresh token from your client app and try again (auth/id-token-expired). See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-3 15:16:36	::ffff:51.253.248.113	Authorization failed:null
+2018-9-3 17:01:31		Invalid user token
+2018-9-3 17:01:31		{"code":"auth/argument-error","message":"Firebase ID token has expired. Get a fresh token from your client app and try again (auth/id-token-expired). See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-3 17:01:31	::ffff:51.253.248.113	Authorization failed:null
+2018-9-3 17:01:33		Invalid user token
+2018-9-3 17:01:33		{"code":"auth/argument-error","message":"Firebase ID token has expired. Get a fresh token from your client app and try again (auth/id-token-expired). See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-3 17:01:33	::ffff:51.253.248.113	Authorization failed:null
+2018-9-6 12:32:59		Invalid user token
+2018-9-6 12:32:59		{"code":"auth/argument-error","message":"Firebase ID token has expired. Get a fresh token from your client app and try again (auth/id-token-expired). See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-6 12:32:59	::ffff:188.48.240.233	Authorization failed:null
+2018-9-6 12:33:00		Invalid user token
+2018-9-6 12:33:00		{"code":"auth/argument-error","message":"Firebase ID token has expired. Get a fresh token from your client app and try again (auth/id-token-expired). See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-6 12:33:00	::ffff:188.48.240.233	Authorization failed:null
+2018-9-6 12:33:01		Invalid user token
+2018-9-6 12:33:01		{"code":"auth/argument-error","message":"Firebase ID token has expired. Get a fresh token from your client app and try again (auth/id-token-expired). See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-6 12:33:01	::ffff:188.48.240.233	Authorization failed:null
+2018-9-7 11:15:19	::ffff:217.118.95.98	Cannot read property 'ef8k0cs31_XXFvhaAAAA' of undefined
+2018-9-7 12:58:02	::ffff:217.118.95.98	self is not defined
+2018-9-7 12:59:30	::ffff:217.118.95.98	self is not defined
+2018-9-7 13:00:24	::ffff:217.118.95.98	self is not defined
+2018-9-7 13:02:46		Invalid user token
+2018-9-7 13:02:46		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-7 13:04:26		Invalid user token
+2018-9-7 13:04:26		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-7 13:06:44		Invalid user token
+2018-9-7 13:06:44		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-7 13:08:06		Invalid user token
+2018-9-7 13:08:06		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-7 13:09:42		Invalid user token
+2018-9-7 13:09:42		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-7 13:09:42		Authorization failed:null
+2018-9-7 13:10:35		Invalid user token
+2018-9-7 13:10:35		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-7 13:10:35		Authorization failed:null
+2018-9-7 13:11:50		Invalid user token
+2018-9-7 13:11:50		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-7 13:11:50		Authorization failed:null
+2018-9-7 13:30:22		Connected to Redis
+2018-9-7 13:30:22		Connected to Redis
+2018-9-7 13:30:22		Connected to Redis
+2018-9-7 13:30:22		Connected to Redis
+2018-9-7 13:30:22		Connected to Redis
+2018-9-7 13:30:22		Connected to Redis
+2018-9-7 13:30:23		Connected to Redis
+2018-9-7 13:30:23		Connected to Redis
+2018-9-7 13:31:19		Connected to Redis
+2018-9-7 13:31:19		Connected to Redis
+2018-9-7 13:31:19		Connected to Redis
+2018-9-7 13:31:19		Connected to Redis
+2018-9-7 13:31:19		Connected to Redis
+2018-9-7 13:31:19		Connected to Redis
+2018-9-7 13:31:19		Connected to Redis
+2018-9-7 13:31:19		Connected to Redis
+2018-9-7 13:32:36		Connected to Redis
+2018-9-7 13:32:36		Connected to Redis
+2018-9-7 13:32:36		Connected to Redis
+2018-9-7 13:32:36		Connected to Redis
+2018-9-7 13:32:36		Connected to Redis
+2018-9-7 13:32:36		Connected to Redis
+2018-9-7 13:32:36		Connected to Redis
+2018-9-7 13:32:36		Connected to Redis
+2018-9-7 13:32:56		Connected to Redis
+2018-9-7 13:32:56		Connected to Redis
+2018-9-7 13:32:56		Connected to Redis
+2018-9-7 13:32:56		Connected to Redis
+2018-9-7 13:32:56		Connected to Redis
+2018-9-7 13:32:56		Connected to Redis
+2018-9-7 13:32:56		Connected to Redis
+2018-9-7 13:32:56		Connected to Redis
+2018-9-7 13:35:24		Connected to Redis
+2018-9-7 13:35:30		Connected to Redis
+2018-9-7 13:36:28		Connected to Redis
+2018-9-7 13:36:44		Connected to Redis
+2018-9-7 13:39:36		Connected to Redis
+2018-9-7 13:47:21		Connected to Redis
+2018-9-7 13:48:41		Connected to Redis
+2018-9-7 13:55:40		Connected to Redis
+2018-9-7 13:57:19		Connected to Redis
+2018-9-7 14:06:17		Connected to Redis
+2018-9-7 14:09:37		Connected to Redis
+2018-9-7 14:10:21		Connected to Redis
+2018-9-7 14:27:39		Connected to Redis
+2018-9-7 14:28:34		Connected to Redis
+2018-9-7 14:31:14		Connected to Redis
+2018-9-7 14:31:31		Connected to Redis
+2018-9-7 14:33:57		Connected to Redis
+2018-9-7 14:39:30		Can`t connect to Redis: Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2018-9-7 14:40:31		Connected to Redis
+2018-9-7 14:40:38		Can`t connect to Redis: Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2018-9-7 14:42:23		Connected to Redis
+2018-9-7 14:42:31		Can`t connect to Redis: Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2018-9-7 14:44:38		Connected to Redis
+2018-9-7 17:42:34		Connected to Redis
+2018-9-7 17:43:35		Connected to Redis
+2018-9-7 17:43:49		Connected to Redis
+2018-9-7 17:44:01		Connected to Redis
+2018-9-7 20:57:06		Error reading user info from redis: undefined
+2018-9-7 21:35:41		Error reading user info from redis: undefined
+2018-9-7 21:36:22		Error reading user info from redis: undefined
+2018-9-7 21:39:29		Connected to Redis
+2018-9-7 21:41:51		Connected to Redis
+2018-9-7 21:54:47		Error in token verification
+2018-9-7 21:54:47		{"code":"auth/argument-error","message":"First argument to verifyIdToken() must be a Firebase ID token string."}
+2018-9-7 21:54:47		Authorization failed:null
+2018-9-7 22:00:11		Error reading user info from redis: undefined
+2018-9-7 22:00:40		Error reading user info from redis: undefined
+2018-9-7 22:02:17		Connected to Redis
+2018-9-7 22:02:59		Error reading user info from redis: undefined
+2018-9-7 22:03:25		Connected to Redis
+2018-9-7 22:05:42		Connected to Redis
+2018-9-7 22:06:35		Error reading user info from redis: undefined
+2018-9-7 22:08:02		Connected to Redis
+2018-9-7 22:08:39		Connected to Redis
+2018-9-7 22:09:27		Connected to Redis
+2018-9-7 22:18:59		Connected to Redis
+2018-9-7 22:19:10		Error subscribing to topic:
+2018-9-7 22:19:10		{}
+2018-9-7 22:19:10		Error subscribing to topic:
+2018-9-7 22:19:10		{}
+2018-9-7 22:20:09		Connected to Redis
+2018-9-7 22:20:13		Cannot convert undefined or null to object
+2018-9-7 22:20:15		Cannot convert undefined or null to object
+2018-9-7 22:20:20		Error subscribing to topic:
+2018-9-7 22:20:20		{}
+2018-9-7 22:20:20		Error subscribing to topic:
+2018-9-7 22:20:20		{}
+2018-9-7 22:22:11		Connected to Redis
+2018-9-7 22:23:55		Error reading user info from redis: undefined
+2018-9-7 22:23:55		Error reading user info from redis: undefined
+2018-9-7 22:30:52		Connected to Redis
+2018-9-7 22:31:17		Error reading user info from redis: undefined
+2018-9-7 22:31:18		Error reading user info from redis: undefined
+2018-9-7 22:37:17		Connected to Redis
+2018-9-7 22:38:04		Error reading user info from redis: t1vsjmKGpobaQP0wdcQpLviO1vA3
+2018-9-7 22:44:40		Connected to Redis
+2018-9-7 22:44:58		Error reading user info from redis: undefined
+2018-9-7 22:44:58		Error reading user info from redis: undefined
+2018-9-7 22:56:03		Connected to Redis
+2018-9-7 22:56:35		Connected to Redis
+2018-9-7 22:58:58		Connected to Redis
+2018-9-7 22:59:43		Connected to Redis
+2018-9-7 23:01:07		Connected to Redis
+2018-9-7 23:01:40		Call is not defined
+2018-9-7 23:01:40		Call is not defined
+2018-9-7 23:01:40		Call is not defined
+2018-9-7 23:01:40		Call is not defined
+2018-9-7 23:01:40		Call is not defined
+2018-9-7 23:01:40		Call is not defined
+2018-9-7 23:01:40		Call is not defined
+2018-9-7 23:01:40		Call is not defined
+2018-9-7 23:02:02		Error reading user info from redis: undefined
+2018-9-7 23:02:03		Error reading user info from redis: undefined
+2018-9-7 23:04:45		Connected to Redis
+2018-9-7 23:05:58		Error reading user info from redis: undefined
+2018-9-7 23:05:59		Error reading user info from redis: undefined
+2018-9-7 23:12:02		Connected to Redis
+2018-9-7 23:13:26		Connected to Redis
+2018-9-7 23:15:46		Error reading call info from redis: 83251052
+2018-9-7 23:21:52		Connected to Redis
+2018-9-7 23:22:20		Error reading user info from redis: undefined
+2018-9-7 23:22:21		Error reading user info from redis: undefined
+2018-9-7 23:24:48		Error reading call info from redis: 39473123
+2018-9-7 23:28:53		Connected to Redis
+2018-9-7 23:29:17		Error reading user info from redis: undefined
+2018-9-7 23:29:17		Error reading user info from redis: undefined
+2018-9-7 23:31:37		Error reading call info from redis: 56961566
+2018-9-7 23:33:23		Connected to Redis
+2018-9-7 23:34:22		Connected to Redis
+2018-9-7 23:35:42		Error reading call info from redis: 70366876
+2018-9-7 23:37:10		Connected to Redis
+2018-9-7 23:39:00		Error reading user info from redis: undefined
+2018-9-7 23:39:00		Error reading user info from redis: undefined
+2018-9-7 23:42:57		Error reading user info from redis: undefined
+2018-9-7 23:42:57		Error reading user info from redis: undefined
+2018-9-7 23:43:45		Error reading user info from redis: undefined
+2018-9-7 23:43:46		Error reading user info from redis: undefined
+2018-9-7 23:49:30		Connected to Redis
+2018-9-7 23:50:09		currentUser.socket.disconnect is not a function
+2018-9-7 23:50:10		currentUser.socket.disconnect is not a function
+2018-9-7 23:52:33		currentUser.socket.disconnect is not a function
+2018-9-7 23:52:35		currentUser.socket.disconnect is not a function
+2018-9-10 16:20:33		Connected to Redis
+2018-9-10 16:20:54		Error reading user info from redis: undefined
+2018-9-10 16:23:58		Connected to Redis
+2018-9-10 16:25:26		Error reading user info from redis: undefined
+2018-9-10 16:28:05		Invalid user token
+2018-9-10 16:28:05		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-10 16:28:05		Authorization failed:null
+2018-9-10 16:28:06		Invalid user token
+2018-9-10 16:28:06		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-10 16:28:06		Authorization failed:null
+2018-9-10 16:28:06		Error reading user info from redis: undefined
+2018-9-10 16:28:07		Invalid user token
+2018-9-10 16:28:07		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-10 16:28:07		Authorization failed:null
+2018-9-10 16:28:07		Error reading user info from redis: undefined
+2018-9-10 16:29:57		Error reading user info from redis: undefined
+2018-9-10 16:31:46		Error reading user info from redis: undefined
+2018-9-10 16:32:17		Error reading user info from redis: undefined
+2018-9-10 16:33:41		Connected to Redis
+2018-9-10 16:33:47		Invalid user token
+2018-9-10 16:33:47		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-10 16:33:47		Authorization failed:null
+2018-9-10 16:33:47		Error reading user info from redis: undefined
+2018-9-10 16:37:51		Connected to Redis
+2018-9-10 16:37:56		Invalid user token
+2018-9-10 16:37:56		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-10 16:37:56		Authorization failed:null
+2018-9-10 16:37:56		Error reading user info from redis: undefined
+2018-9-10 16:38:52		Connected to Redis
+2018-9-10 16:38:55		Invalid user token
+2018-9-10 16:38:55		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-10 16:38:55		Authorization failed:null
+2018-9-10 16:38:55		Error reading user info from redis: undefined
+2018-9-10 16:41:19		Connected to Redis
+2018-9-10 16:41:27		Invalid user token
+2018-9-10 16:41:27		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-10 16:41:27		Authorization failed:null
+2018-9-10 16:43:19		Connected to Redis
+2018-9-10 16:43:24		Invalid user token
+2018-9-10 16:43:24		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-10 16:43:24		Authorization failed:null
+2018-9-10 16:45:08		Connected to Redis
+2018-9-10 16:45:11		Invalid user token
+2018-9-10 16:45:11		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-10 16:45:11		Authorization failed:null
+2018-9-10 16:45:12		Invalid user token
+2018-9-10 16:45:12		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-10 16:45:12		Authorization failed:null
+2018-9-10 16:45:34		Invalid user token
+2018-9-10 16:45:34		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-10 16:45:34		Authorization failed:null
+2018-9-10 16:46:30		Connected to Redis
+2018-9-10 16:46:56		Connected to Redis
+2018-9-10 16:47:39		Connected to Redis
+2018-9-10 16:47:46		Invalid user token
+2018-9-10 16:47:46		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-10 16:47:46		Authorization failed:null
+2018-9-10 16:48:22		Invalid user token
+2018-9-10 16:48:22		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-10 16:48:22		Authorization failed:null
+2018-9-10 16:49:11		Connected to Redis
+2018-9-10 16:49:14		Invalid user token
+2018-9-10 16:49:14		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-10 16:49:14		Authorization failed:null
+2018-9-10 16:49:37		Connected to Redis
+2018-9-10 16:50:16		Connected to Redis
+2018-9-10 16:50:57		Connected to Redis
+2018-9-10 16:55:15		Invalid user token
+2018-9-10 16:55:15		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-10 16:55:15		Authorization failed:null
+2018-9-10 16:55:16		Invalid user token
+2018-9-10 16:55:16		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-10 16:55:16		Authorization failed:null
+2018-9-10 18:33:25		Invalid user token
+2018-9-10 18:33:25		{"code":"auth/argument-error","message":"Firebase ID token has expired. Get a fresh token from your client app and try again (auth/id-token-expired). See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-10 18:33:25		Authorization failed:null
+2018-9-10 19:41:15		Connected to Redis
+2018-9-10 19:41:50		Connected to Redis
+2018-9-11 19:47:10		Connected to Redis
+2018-9-11 19:47:35		Connected to Redis
+2018-9-11 19:47:49		Connected to Redis
+2018-9-11 19:48:17		Connected to Redis
+2018-9-11 20:34:29		Connected to Redis
+2018-9-11 20:50:27		User with socket jFN0ceryPa8AyucoAAAA not connected
+2018-9-11 20:54:04		Error reading call info from redis: 91106116
+2018-9-11 21:14:04		Connected to Redis
+2018-9-12 15:17:52		Connected to Redis
+2018-9-12 15:19:29		Connected to Redis
+2018-9-12 15:22:44		Connected to Redis
+2018-9-12 15:26:48		Connected to Redis
+2018-9-12 15:27:19		Connected to Redis
+2018-9-12 15:32:57		Connected to Redis
+2018-9-12 15:38:02		Connected to Redis
+2018-9-12 15:38:43		Connected to Redis
+2018-9-12 15:42:45		Connected to Redis
+2018-9-12 15:43:03		Connected to Redis
+2018-9-12 15:43:23		Connected to Redis
+2018-9-12 15:43:48		Connected to Redis
+2018-9-12 16:05:29		Connected to Redis
+2018-9-12 16:05:58		Connected to Redis
+2018-9-12 16:09:01		Connected to Redis
+2018-9-12 16:09:35		Connected to Redis
+2018-9-12 16:10:14		Connected to Redis
+2018-9-12 16:10:34		Connected to Redis
+2018-9-12 16:42:48		Connected to Redis
+2018-9-12 16:43:04		Connected to Redis
+2018-9-12 16:45:24		Connected to Redis
+2018-9-12 16:45:51		Connected to Redis
+2018-9-12 16:47:56		Connected to Redis
+2018-9-12 17:04:50		Connected to Redis
+2018-9-12 17:13:11		Connected to Redis
+2018-9-12 17:13:40		Connected to Redis
+2018-9-12 17:14:29		Cannot read property 'host' of undefined
+2018-9-12 17:16:44		Connected to Redis
+2018-9-12 17:17:06		currentUser.socket.disconnect is not a function
+2018-9-12 17:17:07		currentUser.socket.disconnect is not a function
+2018-9-12 17:18:14		Error reading call info from redis: 11388118
+2018-9-12 17:19:00		Error reading call info from redis: 36013183
+2018-9-12 17:19:34		User with socket opnrq9yLsOdqOBqUAAAD not connected
+2018-9-12 17:19:34		Error reading call info from redis: 75704148
+2018-9-12 17:22:30		Error reading call info from redis: 65089127
+2018-9-12 17:24:10		currentUser.socket.disconnect is not a function
+2018-9-12 17:25:22		Error reading call info from redis: 37936219
+2018-9-12 17:25:54		currentUser.socket.disconnect is not a function
+2018-9-12 17:25:55		currentUser.socket.disconnect is not a function
+2018-9-12 17:27:05		Connected to Redis
+2018-9-12 17:28:46		currentUser.socket.disconnect is not a function
+2018-9-12 17:28:49		currentUser.socket.disconnect is not a function
+2018-9-12 17:29:16		currentUser.socket.disconnect is not a function
+2018-9-12 17:29:18		currentUser.socket.disconnect is not a function
+2018-9-12 17:29:29		Error reading call info from redis: 34295688
+2018-9-12 17:29:30		currentUser.socket.disconnect is not a function
+2018-9-12 17:29:31		currentUser.socket.disconnect is not a function
+2018-9-12 17:29:43		Error reading call info from redis: 38196732
+2018-9-12 17:29:58		User with socket aFGm_6dU2P9FlSoFAAAN not connected
+2018-9-12 17:30:28		currentUser.socket.disconnect is not a function
+2018-9-12 17:32:23		User with socket G4cZN4O2svtT3DWAAAAT not connected
+2018-9-12 17:32:32		currentUser.socket.disconnect is not a function
+2018-9-12 17:32:44		User with socket G4cZN4O2svtT3DWAAAAT not connected
+2018-9-12 17:32:44		Error reading call info from redis: 67236228
+2018-9-12 17:37:42		Connected to Redis
+2018-9-12 17:40:21		currentUser.socket.disconnect is not a function
+2018-9-12 17:41:37		User with socket fh2XK765LEv9JM8-AAAL not connected
+2018-9-12 17:41:37		Error reading call info from redis: 39802737
+2018-9-12 17:42:31		currentUser.socket.disconnect is not a function
+2018-9-12 17:50:01		Error reading call info from redis: 31758892
+2018-9-12 17:54:53		Error reading call info from redis: 62862566
+2018-9-12 18:11:51		Error reading call info from redis: 86082772
+2018-9-12 18:19:43		Error reading call info from redis: 95902127
+2018-9-12 18:24:11		User with socket GPEEAb996n8z5IeUAAAe not connected
+2018-9-12 18:24:11		Error reading call info from redis: 49680241
+2018-9-12 18:38:12		Connected to Redis
+2018-9-12 18:38:45		Connected to Redis
+2018-9-12 18:42:55		currentUser.socket.disconnect is not a function
+2018-9-12 18:42:56		currentUser.socket.disconnect is not a function
+2018-9-12 18:43:11		Error reading call info from redis: 18082961
+2018-9-12 18:44:42		User with socket yTaeSPqJi39auYtRAAAC not connected
+2018-9-12 18:44:42		User with socket pDVfC54_pjgdLKOaAAAD not connected
+2018-9-12 18:44:42		Error reading call info from redis: 66360067
+2018-9-12 20:21:38		Connected to Redis
+2018-9-13 08:10:31		Connected to Redis
+2018-9-13 08:11:12		Connected to Redis
+2018-9-13 09:23:50		Connected to Redis
+2018-9-13 09:24:00		Connected to Redis
+2018-9-13 09:51:57		currentUser.socket.disconnect is not a function
+2018-9-13 09:51:58		currentUser.socket.disconnect is not a function
+2018-9-13 09:52:28		Error reading call info from redis: 25456431
+2018-9-13 09:52:39		Error reading call info from redis: 49713037
+2018-9-13 09:53:05		User with socket 5K8sWRx0pfwmKpYUAAAF not connected
+2018-9-13 09:53:05		User with socket Yruqeq07bFshxb82AAAE not connected
+2018-9-13 10:01:01		Error reading call info from redis: 64584412
+2018-9-13 10:02:15		Error reading call info from redis: 62646710
+2018-9-13 10:03:25		User with socket KMuLmn3wBM27UyAWAAAJ not connected
+2018-9-13 10:03:25		User with socket S20P4rQ3Mj__Eg8iAAAI not connected
+2018-9-13 10:03:25		Error reading call info from redis: 88505793
+2018-9-13 10:05:52		User with socket XzKspILev9NwPPxGAAAL not connected
+2018-9-13 10:05:52		User with socket fRHV5sjfagD6TjNaAAAM not connected
+2018-9-13 10:05:52		Error reading call info from redis: 26010018
+2018-9-13 10:26:36		currentUser.socket.disconnect is not a function
+2018-9-13 10:29:42		Connected to Redis
+2018-9-13 10:29:57		currentUser.socket.disconnect is not a function
+2018-9-13 10:31:36		Error reading call info from redis: 89222071
+2018-9-13 10:33:12		Error reading call info from redis: 96297812
+2018-9-13 10:36:46		Connected to Redis
+2018-9-13 11:11:51		User with socket oPM8jACHUlO_3_lvAAAP not connected
+2018-9-13 11:11:51		Error reading call info from redis: 81981421
+2018-9-13 11:41:54		Connected to Redis
+2018-9-13 12:05:52		Error reading call info from redis: 92868083
+2018-9-13 12:06:35		User with socket vC8H0FN3mxk9Z4MWAAAB not connected
+2018-9-13 12:15:21		Invalid user token
+2018-9-13 12:15:21		{"code":"auth/argument-error","message":"Firebase ID token has expired. Get a fresh token from your client app and try again (auth/id-token-expired). See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-13 12:15:21		Authorization failed:null
+2018-9-13 12:15:33		Invalid user token
+2018-9-13 12:15:33		{"code":"auth/argument-error","message":"Firebase ID token has expired. Get a fresh token from your client app and try again (auth/id-token-expired). See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-13 12:15:33		Authorization failed:null
+2018-9-13 12:17:36		User with socket lLE4s8WArv9urJa4AAAG not connected
+2018-9-13 12:17:37		Error reading call info from redis: 81597736
+2018-9-13 12:37:33		Error reading call info from redis: 34620179
+2018-9-13 13:08:22		Error reading call info from redis: 17165027
+2018-9-13 15:19:04		Connected to Redis
+2018-9-13 16:02:03		Error reading call info from redis: 78230653
+2018-9-13 16:17:24		Connected to Redis
+2018-9-13 16:19:50		Error reading call info from redis: 37942593
+2018-9-13 16:26:56		Connected to Redis
+2018-9-13 16:37:39		User with socket bqImsgT53jI3_B7vAAAD not connected
+2018-9-13 16:37:39		User with socket zxwMSMnop_fEfwCMAAAC not connected
+2018-9-13 16:51:52		User with socket FXgehNFNgynTpAZWAAAF not connected
+2018-9-13 16:51:52		User with socket T1eMfL8vojQg5HsAAAAE not connected
+2018-9-13 17:05:08		User with socket 2oZQ7xa9wf8wNyxAAAAI not connected
+2018-9-13 17:05:08		User with socket uB2OhepiOWXmIkrjAAAJ not connected
+2018-9-13 17:15:35		Error reading call info from redis: 28629130
+2018-9-13 17:20:15		User with socket Vk_3Fq-M4D73xrJ2AAAM not connected
+2018-9-13 17:22:32		User with socket GlvNc4KDj3azCpPqAAAP not connected
+2018-9-13 17:22:32		User with socket 96Hc6XwMGllRndA-AAAO not connected
+2018-9-13 17:30:36		Error reading call info from redis: 89353134
+2018-9-13 17:36:19		User with socket 8J1vowLbk-NZeNwcAAAV not connected
+2018-9-13 19:07:38		Invalid user token
+2018-9-13 19:07:38		{"code":"auth/argument-error","message":"Firebase ID token has expired. Get a fresh token from your client app and try again (auth/id-token-expired). See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-13 19:07:38		Authorization failed:null
+2018-9-13 19:07:38		Invalid user token
+2018-9-13 19:07:38		{"code":"auth/argument-error","message":"Firebase ID token has expired. Get a fresh token from your client app and try again (auth/id-token-expired). See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-13 19:07:38		Authorization failed:null
+2018-9-13 19:23:49		Invalid user token
+2018-9-13 19:23:49		{"code":"auth/argument-error","message":"Firebase ID token has expired. Get a fresh token from your client app and try again (auth/id-token-expired). See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-13 19:23:49		Authorization failed:null
+2018-9-13 19:23:49		Invalid user token
+2018-9-13 19:23:49		{"code":"auth/argument-error","message":"Firebase ID token has expired. Get a fresh token from your client app and try again (auth/id-token-expired). See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-13 19:23:49		Authorization failed:null
+2018-9-13 19:26:48		Error reading call info from redis: 81607474
+2018-9-13 19:46:27		User with socket Izb8DffuouIY9t5LAAAf not connected
+2018-9-13 19:46:27		User with socket mWyq-j-IIO0aHxQyAAAg not connected
+2018-9-13 19:50:43		User with socket sVqRT1sqc-zss_lGAAAi not connected
+2018-9-13 19:50:43		User with socket jhknRMVeBFaqCCidAAAh not connected
+2018-9-13 19:53:58		User with socket 3XNe1_vNeCcqW8yrAAAl not connected
+2018-9-13 19:54:02		User with socket 3XNe1_vNeCcqW8yrAAAl not connected
+2018-9-13 19:54:02		Error reading call info from redis: 22220322
+2018-9-13 19:57:16		Connected to Redis
+2018-9-13 19:59:21		Error reading call info from redis: 85408621
+2018-9-13 21:12:07		Invalid user token
+2018-9-13 21:12:07		{"code":"auth/argument-error","message":"Firebase ID token has expired. Get a fresh token from your client app and try again (auth/id-token-expired). See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-13 21:12:07		Authorization failed:null
+2018-9-14 10:47:48		Invalid user token
+2018-9-14 10:47:48		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-14 10:47:48		Authorization failed:null
+2018-9-14 10:48:49		Connected to Redis
+2018-9-14 10:49:07		Connected to Redis
+2018-9-14 11:57:20		Invalid user token
+2018-9-14 11:57:20		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-14 11:57:20		Authorization failed:null
+2018-9-14 11:57:21		Invalid user token
+2018-9-14 11:57:21		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-14 11:57:21		Authorization failed:null
+2018-9-14 15:55:29		Error reading call info from redis: 75137883
+2018-9-16 15:02:43		Error reading call info from redis: 87953642
+2018-9-16 15:20:33		User with socket 3EJYQBkrP4zPGMRdAAAS not connected
+2018-9-16 15:20:33		User with socket zf1XwEHreM_hJOOJAAAT not connected
+2018-9-16 16:08:49		Error reading call info from redis: 49949880
+2018-9-16 16:09:08		User with socket k9_Zg4GldLexDT2EAAAj not connected
+2018-9-16 16:09:08		Error reading call info from redis: 64815974
+2018-9-16 16:09:20		User with socket k9_Zg4GldLexDT2EAAAj not connected
+2018-9-16 16:09:30		User with socket k9_Zg4GldLexDT2EAAAj not connected
+2018-9-16 16:09:30		Error reading call info from redis: 86527046
+2018-9-16 16:32:43		User with socket 9dipU_JPl_r9DMCPAAAl not connected
+2018-9-16 16:32:43		User with socket JHJkBoVaLdJiRg4jAAAk not connected
+2018-9-16 16:39:36		Error reading call info from redis: 94653747
+2018-9-16 16:51:12		Error reading call info from redis: 27187737
+2018-9-16 17:02:17		User with socket 5N0pHDIhP4WCvw6EAAAu not connected
+2018-9-16 17:02:17		User with socket du5AOrF-dI0ZTNB3AAAt not connected
+2018-9-16 18:00:25		Invalid user token
+2018-9-16 18:00:25		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-16 18:00:25		Authorization failed:null
+2018-9-16 18:00:38		Invalid user token
+2018-9-16 18:00:38		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-16 18:00:38		Authorization failed:null
+2018-9-16 18:00:39		Invalid user token
+2018-9-16 18:00:39		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-16 18:00:39		Authorization failed:null
+2018-9-16 18:01:51		Invalid user token
+2018-9-16 18:01:51		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-16 18:01:51		Authorization failed:null
+2018-9-16 18:01:52		Invalid user token
+2018-9-16 18:01:52		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-16 18:01:52		Authorization failed:null
+2018-9-16 18:20:06		Invalid user token
+2018-9-16 18:20:06		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-16 18:20:06		Authorization failed:null
+2018-9-16 18:47:51		User with socket RhIT3VvwymVgvrPBAAAU not connected
+2018-9-16 18:47:51		User with socket AJyzPmfxe8gC5xJbAAAT not connected
+2018-9-16 18:47:51		Error reading call info from redis: 68710487
+2018-9-16 18:49:09		Connected to Redis
+2018-9-16 18:52:19		User with socket sv1q4uyILfQ2QM0fAAAB not connected
+2018-9-16 18:52:19		User with socket uETsW_ootACnD2SIAAAC not connected
+2018-9-16 19:02:07		Connected to Redis
+2018-9-16 20:26:01		Connected to Redis
+2018-9-16 20:26:02		Connected to Redis
+2018-9-16 20:26:02		Connected to Redis
+2018-9-16 20:26:02		Connected to Redis
+2018-9-16 20:26:02		Connected to Redis
+2018-9-16 20:26:02		Connected to Redis
+2018-9-16 20:26:02		Connected to Redis
+2018-9-16 20:26:02		Connected to Redis
+2018-9-16 20:26:02		Connected to Redis
+2018-9-16 20:26:20		Invalid user token
+2018-9-16 20:26:20		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-16 20:26:20		Authorization failed:null
+2018-9-16 20:26:21		Invalid user token
+2018-9-16 20:26:21		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-16 20:26:21		Authorization failed:null
+2018-9-16 20:26:21		Invalid user token
+2018-9-16 20:26:21		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-16 20:26:21		Authorization failed:null
+2018-9-16 20:26:21		Invalid user token
+2018-9-16 20:26:21		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-16 20:26:21		Authorization failed:null
+2018-9-16 20:26:22		Invalid user token
+2018-9-16 20:26:22		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-16 20:26:22		Authorization failed:null
+2018-9-16 20:26:22		Invalid user token
+2018-9-16 20:26:22		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-16 20:26:22		Authorization failed:null
+2018-9-16 20:26:22		Invalid user token
+2018-9-16 20:26:22		{"code":"auth/argument-error","message":"Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token."}
+2018-9-16 20:26:22		Authorization failed:null
+2018-9-16 20:27:36		Connected to Redis
+2018-9-16 20:27:37		Connected to Redis
+2018-9-16 20:27:37		Connected to Redis
+2018-9-16 20:27:37		Connected to Redis
+2018-9-16 20:27:37		Connected to Redis
+2018-9-16 20:27:37		Connected to Redis
+2018-9-16 20:27:37		Connected to Redis
+2018-9-16 20:27:37		Connected to Redis
+2018-9-16 20:27:37		Connected to Redis
+2018-9-16 20:50:11		Error reading call info from redis: false
+2018-9-16 20:50:11		Error reading call info from redis: 59984463
+2018-9-16 20:51:27		Error reading call info from redis: null
+2018-9-16 20:58:39		Error reading call info from redis: null
+2018-9-16 20:59:10		Error reading call info from redis: null
+2018-9-16 21:20:29		Error reading call info from redis: false
+2018-9-16 21:20:29		User with socket w929rUWyGqIX2T4JAAAQ not connected
+2018-9-16 21:20:29		User with socket X7jOkXKB6hS381Y8AAAP not connected
+2018-9-16 21:20:29		Error reading call info from redis: 73853810
+2018-9-16 21:25:28		User with socket 0sYzTlPiLwGBRTndAAAU not connected
+2018-9-16 21:25:55		Error reading call info from redis: null
+2018-9-16 21:25:56		Error reading call info from redis: false
+2018-9-16 21:25:56		Error reading call info from redis: 62049566
+2018-9-17 11:09:59		Error reading call info from redis: false
+2018-9-17 11:09:59		Error reading call info from redis: 24003905
+2018-9-17 12:11:56		Error reading call info from redis: 55387396
+2018-9-17 12:12:28		Error reading call info from redis: false
+2018-9-17 12:12:28		Error reading call info from redis: 55387396
+2018-9-17 12:13:06		Error reading call info from redis: false
+2018-9-17 12:13:06		User with socket vVLYKTAeTXnwcwt2AAAF not connected
+2018-9-17 12:13:06		User with socket J2zr82eHmLXdU4ndAAAE not connected
+2018-9-17 12:13:06		Error reading call info from redis: 32525417
+2018-9-17 12:17:29		Error reading call info from redis: false
+2018-9-17 12:17:29		Error reading call info from redis: 94620938
+2018-9-17 12:17:40		Error reading call info from redis: false
+2018-9-17 12:17:40		Error reading call info from redis: 74250477
+2018-9-17 16:08:15		Connected to Redis
+2018-9-17 16:08:16		Connected to Redis
+2018-9-17 16:08:16		Connected to Redis
+2018-9-17 16:08:16		Connected to Redis
+2018-9-17 16:08:16		Connected to Redis
+2018-9-17 16:08:16		Connected to Redis
+2018-9-17 16:08:16		Connected to Redis
+2018-9-17 16:08:16		Connected to Redis
+2018-9-17 16:08:16		Connected to Redis
+2018-9-17 16:15:44		Connected to Redis
+2018-9-17 16:15:45		Connected to Redis
+2018-9-17 16:15:45		Connected to Redis
+2018-9-17 16:15:45		Connected to Redis
+2018-9-17 16:15:45		Connected to Redis
+2018-9-17 16:15:45		Connected to Redis
+2018-9-17 16:15:45		Connected to Redis
+2018-9-17 16:15:45		Connected to Redis
+2018-9-17 16:15:45		Connected to Redis
+2018-9-17 16:16:23		Connected to Redis
+2018-9-17 16:16:25		Connected to Redis
+2018-9-17 16:16:25		Connected to Redis
+2018-9-17 16:16:25		Connected to Redis
+2018-9-17 16:16:25		Connected to Redis
+2018-9-17 16:16:25		Connected to Redis
+2018-9-17 16:16:25		Connected to Redis
+2018-9-17 16:16:25		Connected to Redis
+2018-9-17 16:16:25		Connected to Redis
+2018-9-18 17:24:31		Connected to Redis
+2018-9-18 17:24:32		Connected to Redis
+2018-9-18 17:24:32		Connected to Redis
+2018-9-18 17:24:32		Connected to Redis
+2018-9-18 17:24:32		Connected to Redis
+2018-9-18 17:24:32		Connected to Redis
+2018-9-18 17:24:32		Connected to Redis
+2018-9-18 17:24:32		Connected to Redis
+2018-9-18 17:24:32		Connected to Redis
+2018-9-18 17:25:52		Connected to Redis
+2018-9-18 17:25:54		Connected to Redis
+2018-9-18 17:25:54		Connected to Redis
+2018-9-18 17:25:54		Connected to Redis
+2018-9-18 17:25:54		Connected to Redis
+2018-9-18 17:25:54		Connected to Redis
+2018-9-18 17:25:54		Connected to Redis
+2018-9-18 17:25:54		Connected to Redis
+2018-9-18 17:25:54		Connected to Redis
+2018-9-18 17:26:17		Connected to Redis
+2018-9-18 17:26:18		Connected to Redis
+2018-9-18 17:26:18		Connected to Redis
+2018-9-18 17:26:18		Connected to Redis
+2018-9-18 17:26:18		Connected to Redis
+2018-9-18 17:26:18		Connected to Redis
+2018-9-18 17:26:18		Connected to Redis
+2018-9-18 17:26:18		Connected to Redis
+2018-9-18 17:26:18		Connected to Redis
+2018-9-20 12:04:29		Connected to Redis
+2018-9-20 12:04:31		Connected to Redis
+2018-9-20 12:04:31		Connected to Redis
+2018-9-20 12:04:31		Connected to Redis
+2018-9-20 12:04:31		Connected to Redis
+2018-9-20 12:04:31		Connected to Redis
+2018-9-20 12:04:31		Connected to Redis
+2018-9-20 12:04:31		Connected to Redis
+2018-9-20 12:04:31		Connected to Redis
+2018-9-20 12:36:41		Connected to Redis
+2018-9-20 12:36:43		Connected to Redis
+2018-9-20 12:36:43		Connected to Redis
+2018-9-20 12:36:43		Connected to Redis
+2018-9-20 12:36:43		Connected to Redis
+2018-9-20 12:36:43		Connected to Redis
+2018-9-20 12:36:43		Connected to Redis
+2018-9-20 12:36:43		Connected to Redis
+2018-9-20 12:36:43		Connected to Redis
+2018-9-20 12:38:52		Connected to Redis
+2018-9-20 12:38:52		Connected to Redis
+2018-9-20 12:38:52		Connected to Redis
+2018-9-20 12:38:52		Connected to Redis
+2018-9-20 12:38:53		Connected to Redis
+2018-9-20 12:38:53		Connected to Redis
+2018-9-20 12:38:53		Connected to Redis
+2018-9-20 12:38:53		Connected to Redis
+2018-9-20 12:41:01		Connected to Redis
+2018-9-20 12:41:01		Connected to Redis
+2018-9-20 12:41:01		Connected to Redis
+2018-9-20 12:41:01		Connected to Redis
+2018-9-20 12:41:02		Connected to Redis
+2018-9-20 12:41:02		Connected to Redis
+2018-9-20 12:41:02		Connected to Redis
+2018-9-20 12:41:02		Connected to Redis
+2018-9-20 12:43:09		Connected to Redis
+2018-9-20 12:43:09		Connected to Redis
+2018-9-20 12:43:10		Connected to Redis
+2018-9-20 12:43:10		Connected to Redis
+2018-9-20 12:43:10		Connected to Redis
+2018-9-20 12:43:10		Connected to Redis
+2018-9-20 12:43:10		Connected to Redis
+2018-9-20 12:43:11		Connected to Redis
+2018-9-20 12:45:17		Connected to Redis
+2018-9-20 12:45:18		Connected to Redis
+2018-9-20 12:45:18		Connected to Redis
+2018-9-20 12:45:19		Connected to Redis
+2018-9-20 12:45:19		Connected to Redis
+2018-9-20 12:45:19		Connected to Redis
+2018-9-20 12:45:19		Connected to Redis
+2018-9-20 12:45:19		Connected to Redis
+2018-9-20 13:53:07		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 13:56:50		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 13:58:58		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 14:01:05		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 14:03:13		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 14:05:21		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 14:07:30		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 14:09:40		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 14:11:52		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 14:14:08		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 14:16:29		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 14:19:00		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 15:32:07		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 15:35:57		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 15:38:05		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 15:40:12		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 15:42:20		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 15:44:28		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 15:47:56		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 15:50:03		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 15:52:12		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 15:54:20		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 15:56:28		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 15:58:37		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 16:00:47		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 16:02:59		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 16:05:14		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 16:07:36		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 16:10:07		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 16:12:54		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 16:16:10		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 16:20:14		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 16:25:40		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 16:33:24		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 16:45:04		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 16:48:10		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 16:50:18		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 16:52:26		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 16:54:34		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 16:56:42		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 16:58:51		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 17:01:01		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 17:03:10		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 17:03:13		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 17:05:29		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 17:07:50		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 17:10:21		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 17:13:09		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 17:16:25		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 17:20:29		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 17:25:54		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 17:33:38		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 17:45:18		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 18:03:40		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 18:26:21		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 18:26:22		Can`t connect to Redis: Error: Redis connection to signalingcache.0op9zi.ng.0001.use2.cache.amazonaws.com:6379 failed - connect ETIMEDOUT 172.31.11.1:6379
+2018-9-20 18:26:22		Can`t connect to Redis: Error: Redis connection in broken state: connection timeout exceeded.
+2018-9-21 12:18:45		Connected to Redis
+2018-9-21 12:18:46		Connected to Redis
+2018-9-21 12:18:46		Connected to Redis
+2018-9-21 12:18:46		Connected to Redis
+2018-9-21 12:18:46		Connected to Redis
+2018-9-21 12:18:46		Connected to Redis
+2018-9-21 12:18:46		Connected to Redis
+2018-9-21 12:18:46		Connected to Redis
+2018-9-21 12:18:46		Connected to Redis
+2018-9-21 12:19:47		Connected to Redis
+2018-9-21 12:19:48		Connected to Redis
+2018-9-21 12:19:48		Connected to Redis
+2018-9-21 12:19:48		Connected to Redis
+2018-9-21 12:19:48		Connected to Redis
+2018-9-21 12:19:48		Connected to Redis
+2018-9-21 12:19:48		Connected to Redis
+2018-9-21 12:19:48		Connected to Redis
+2018-9-21 12:19:48		Connected to Redis
+2018-9-21 12:24:42		Connected to Redis
+2018-9-21 12:24:43		Connected to Redis
+2018-9-21 12:24:43		Connected to Redis
+2018-9-21 12:24:43		Connected to Redis
+2018-9-21 12:24:43		Connected to Redis
+2018-9-21 12:24:43		Connected to Redis
+2018-9-21 12:24:43		Connected to Redis
+2018-9-21 12:24:43		Connected to Redis
+2018-9-21 12:24:43		Connected to Redis
+2018-9-21 12:26:54		Connected to Redis
+2018-9-21 12:26:55		Connected to Redis
+2018-9-21 12:26:55		Connected to Redis
+2018-9-21 12:26:55		Connected to Redis
+2018-9-21 12:26:55		Connected to Redis
+2018-9-21 12:26:55		Connected to Redis
+2018-9-21 12:26:55		Connected to Redis
+2018-9-21 12:26:55		Connected to Redis
+2018-9-21 12:26:55		Connected to Redis
+2018-9-21 12:29:47		Connected to Redis
+2018-9-21 12:29:48		Connected to Redis
+2018-9-21 12:29:48		Connected to Redis
+2018-9-21 12:29:48		Connected to Redis
+2018-9-21 12:29:48		Connected to Redis
+2018-9-21 12:29:48		Connected to Redis
+2018-9-21 12:29:48		Connected to Redis
+2018-9-21 12:29:48		Connected to Redis
+2018-9-21 12:29:48		Connected to Redis
+2018-9-25 11:19:08		Connected to Redis
+2018-9-25 11:19:09		Connected to Redis
+2018-9-25 11:19:09		Connected to Redis
+2018-9-25 11:19:09		Connected to Redis
+2018-9-25 11:19:09		Connected to Redis
+2018-9-25 11:19:09		Connected to Redis
+2018-9-25 11:19:09		Connected to Redis
+2018-9-25 11:19:09		Connected to Redis
+2018-9-25 11:19:09		Connected to Redis
+2018-9-25 11:26:34		Connected to Redis
+2018-9-25 11:26:35		Connected to Redis
+2018-9-25 11:26:35		Connected to Redis
+2018-9-25 11:26:35		Connected to Redis
+2018-9-25 11:26:35		Connected to Redis
+2018-9-25 11:26:35		Connected to Redis
+2018-9-25 11:26:35		Connected to Redis
+2018-9-25 11:26:35		Connected to Redis
+2018-9-25 11:26:35		Connected to Redis
+2018-9-25 11:29:20		Connected to Redis
+2018-9-25 11:29:21		Connected to Redis
+2018-9-25 11:29:21		Connected to Redis
+2018-9-25 11:29:21		Connected to Redis
+2018-9-25 11:29:21		Connected to Redis
+2018-9-25 11:29:21		Connected to Redis
+2018-9-25 11:29:21		Connected to Redis
+2018-9-25 11:29:21		Connected to Redis
+2018-9-25 11:29:21		Connected to Redis
+2018-9-25 11:29:46		Connected to Redis
+2018-9-25 11:29:47		Connected to Redis
+2018-9-25 11:29:47		Connected to Redis
+2018-9-25 11:29:47		Connected to Redis
+2018-9-25 11:29:47		Connected to Redis
+2018-9-25 11:29:47		Connected to Redis
+2018-9-25 11:29:47		Connected to Redis
+2018-9-25 11:29:47		Connected to Redis
+2018-9-25 11:29:47		Connected to Redis
+2018-9-25 11:30:18		Connected to Redis
+2018-9-25 11:30:19		Connected to Redis
+2018-9-25 11:30:19		Connected to Redis
+2018-9-25 11:30:19		Connected to Redis
+2018-9-25 11:30:19		Connected to Redis
+2018-9-25 11:30:19		Connected to Redis
+2018-9-25 11:30:19		Connected to Redis
+2018-9-25 11:30:19		Connected to Redis
+2018-9-25 11:30:19		Connected to Redis
+2018-9-25 11:30:38		Connected to Redis
+2018-9-25 11:30:39		Connected to Redis
+2018-9-25 11:30:39		Connected to Redis
+2018-9-25 11:30:39		Connected to Redis
+2018-9-25 11:30:39		Connected to Redis
+2018-9-25 11:30:39		Connected to Redis
+2018-9-25 11:30:39		Connected to Redis
+2018-9-25 11:30:39		Connected to Redis
+2018-9-25 11:30:39		Connected to Redis
+2018-9-25 11:32:05		Connected to Redis
+2018-9-25 11:32:06		Connected to Redis
+2018-9-25 11:32:06		Connected to Redis
+2018-9-25 11:32:06		Connected to Redis
+2018-9-25 11:32:06		Connected to Redis
+2018-9-25 11:32:06		Connected to Redis
+2018-9-25 11:32:06		Connected to Redis
+2018-9-25 11:32:06		Connected to Redis
+2018-9-25 11:32:06		Connected to Redis
+2018-9-25 11:39:21		Connected to Redis
+2018-9-25 11:39:22		Connected to Redis
+2018-9-25 11:39:22		Connected to Redis
+2018-9-25 11:39:22		Connected to Redis
+2018-9-25 11:39:22		Connected to Redis
+2018-9-25 11:39:22		Connected to Redis
+2018-9-25 11:39:22		Connected to Redis
+2018-9-25 11:39:22		Connected to Redis
+2018-9-25 11:39:22		Connected to Redis
+2018-9-25 11:39:29		(intermediate value).emitAll is not a function
+2018-9-25 11:39:30		(intermediate value).emitAll is not a function
+2018-9-25 11:39:30		(intermediate value).emitAll is not a function
+2018-9-25 11:39:30		(intermediate value).emitAll is not a function
+2018-9-25 11:39:38		(intermediate value).emitAll is not a function
+2018-9-25 11:39:41		(intermediate value).emitAll is not a function
+2018-9-25 11:49:35		Connected to Redis
+2018-9-25 11:49:36		Connected to Redis
+2018-9-25 11:49:36		Connected to Redis
+2018-9-25 11:49:36		Connected to Redis
+2018-9-25 11:49:36		Connected to Redis
+2018-9-25 11:49:36		Connected to Redis
+2018-9-25 11:49:36		Connected to Redis
+2018-9-25 11:49:36		Connected to Redis
+2018-9-25 11:49:36		Connected to Redis
+2018-9-25 11:49:43		R.emitAll is not a constructor
+2018-9-25 11:51:34		Connected to Redis
+2018-9-25 11:51:35		Connected to Redis
+2018-9-25 11:51:35		Connected to Redis
+2018-9-25 11:51:35		Connected to Redis
+2018-9-25 11:51:35		Connected to Redis
+2018-9-25 11:51:35		Connected to Redis
+2018-9-25 11:51:35		Connected to Redis
+2018-9-25 11:51:35		Connected to Redis
+2018-9-25 11:51:35		Connected to Redis
+2018-9-25 11:51:36		Connected to Redis
+2018-9-25 11:51:38		Connected to Redis
+2018-9-25 11:51:47		Connected to Redis
+2018-9-25 11:51:48		Connected to Redis
+2018-9-25 11:51:48		Connected to Redis
+2018-9-25 11:51:48		Connected to Redis
+2018-9-25 11:51:48		Connected to Redis
+2018-9-25 11:51:48		Connected to Redis
+2018-9-25 11:51:48		Connected to Redis
+2018-9-25 11:51:48		Connected to Redis
+2018-9-25 11:51:48		Connected to Redis
+2018-9-25 11:51:49		Connected to Redis
+2018-9-25 11:51:51		Connected to Redis
+2018-9-25 11:51:54		Connected to Redis
+2018-9-25 11:51:58		Connected to Redis
+2018-9-25 11:52:00		Connected to Redis
+2018-9-25 11:52:03		Connected to Redis
+2018-9-25 11:52:07		Connected to Redis
+2018-9-25 11:52:10		Connected to Redis
+2018-9-25 11:52:11		Connected to Redis
+2018-9-25 11:52:11		Connected to Redis
+2018-9-25 11:52:11		Connected to Redis
+2018-9-25 11:52:11		Connected to Redis
+2018-9-25 11:52:11		Connected to Redis
+2018-9-25 11:52:11		Connected to Redis
+2018-9-25 11:52:11		Connected to Redis
+2018-9-25 11:52:11		Connected to Redis
+9/25/2018, 10:54:15 AM		Can`t connect to Redis: Error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+9/25/2018, 10:54:16 AM		Can`t connect to Redis: Error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+9/25/2018, 10:54:16 AM		Can`t connect to Redis: Error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+9/25/2018, 10:54:17 AM		Can`t connect to Redis: Error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+9/25/2018, 10:54:18 AM		Can`t connect to Redis: Error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+9/25/2018, 10:54:19 AM		Can`t connect to Redis: Error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+9/25/2018, 10:54:22 AM		Can`t connect to Redis: Error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+9/25/2018, 10:57:11 AM		Connected to Redis
+9/25/2018, 10:57:12 AM		Connected to Redis
+9/25/2018, 11:13:34 AM		Connected to Redis
+9/25/2018, 11:13:34 AM		Connected to Redis
+9/26/2018, 7:51:38 AM		Connected to Redis
+9/26/2018, 7:51:39 AM		Connected to Redis
+9/26/2018, 8:33:21 AM		Connected to Redis
+9/26/2018, 8:33:22 AM		Connected to Redis
+9/26/2018, 8:48:54 AM		Error reading user info from redis: 48582
+9/26/2018, 9:10:12 AM		Connected to Redis
+9/26/2018, 9:10:13 AM		Connected to Redis
+9/26/2018, 9:12:34 AM		Error reading user info from redis: 48582
+9/26/2018, 9:27:59 AM		User with socket KYZQDkm6WD4RGesOAAAD not connected
+9/26/2018, 9:27:59 AM		User with socket KYZQDkm6WD4RGesOAAAD not connected
+9/26/2018, 10:06:25 AM		Connected to Redis
+9/26/2018, 10:06:26 AM		Connected to Redis
+9/26/2018, 10:25:48 AM		Error reading user info from redis: 38766
+9/26/2018, 10:30:42 AM		Connected to Redis
+9/26/2018, 10:30:43 AM		Connected to Redis
+9/26/2018, 10:37:33 AM		Connected to Redis
+9/26/2018, 10:37:33 AM		Connected to Redis
+9/26/2018, 10:50:08 AM		User with socket 33tMcUthzlDErH0nAAAJ not connected
+9/26/2018, 10:51:15 AM		User with socket dPoDIYpWjVcP9VWBAAAM not connected
+9/26/2018, 10:51:16 AM		User with socket dPoDIYpWjVcP9VWBAAAM not connected
+9/26/2018, 10:52:14 AM		User with socket JNtIrNW6x5AVNNgAAAAL not connected
+9/26/2018, 10:52:14 AM		User with socket dPoDIYpWjVcP9VWBAAAM not connected
+9/26/2018, 10:53:08 AM		User with socket l8v-1ytLHDCS8frAAAAO not connected
+9/26/2018, 10:58:07 AM		Connected to Redis
+9/26/2018, 10:58:08 AM		Connected to Redis
+9/26/2018, 11:05:08 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/26/2018, 11:05:08 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/26/2018, 11:05:08 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/26/2018, 11:05:08 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/26/2018, 11:05:08 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/26/2018, 11:05:08 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/26/2018, 11:05:08 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/26/2018, 11:05:09 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/26/2018, 11:05:10 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/26/2018, 11:05:10 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/26/2018, 11:10:08 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/26/2018, 11:10:08 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/26/2018, 11:10:08 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/26/2018, 11:10:08 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/26/2018, 11:10:08 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/26/2018, 11:10:08 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/26/2018, 11:10:08 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/26/2018, 11:10:09 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/26/2018, 11:10:09 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/26/2018, 11:10:10 AM		User with socket -OEPXT2c4v5SrhkLAAAC not connected
+9/27/2018, 8:13:54 AM		Connected to Redis
+9/27/2018, 8:13:55 AM		Connected to Redis
+9/27/2018, 8:14:09 AM		Connected to Redis
+9/27/2018, 8:14:10 AM		Connected to Redis
+10/1/2018, 3:25:25 AM		Connected to Redis
+10/1/2018, 3:25:26 AM		Connected to Redis
+10/1/2018, 10:47:03 AM		Connected to Redis
+10/1/2018, 10:47:03 AM		Connected to Redis
+10/1/2018, 10:47:47 AM		Connected to Redis
+10/1/2018, 10:47:48 AM		Connected to Redis
+10/1/2018, 10:54:05 AM		Cannot read property 'name' of undefined
+10/2/2018, 4:27:58 AM		Connected to Redis
+10/2/2018, 4:27:59 AM		Connected to Redis
+10/2/2018, 4:28:06 AM		Connected to Redis
+10/2/2018, 4:28:07 AM		Connected to Redis
+10/2/2018, 4:39:03 AM		Cannot read property 'name' of undefined
+10/2/2018, 4:43:04 AM		Connected to Redis
+10/2/2018, 4:43:05 AM		Connected to Redis
+10/2/2018, 4:43:28 AM		Auth error
+10/2/2018, 4:43:28 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"call":null,"apiCode":500,"apiMessage":"Backend connection refused","socket":"57q3mPqRxGmFx4nXAAAA","socketInstance":null,"redisKey":false}
+10/2/2018, 4:43:28 AM		Authorization failed:Backend connection refused
+10/2/2018, 4:43:28 AM		Auth error
+10/2/2018, 4:43:28 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"call":null,"apiCode":500,"apiMessage":"Backend connection refused","socket":"57q3mPqRxGmFx4nXAAAA","socketInstance":null,"redisKey":false}
+10/2/2018, 4:43:28 AM		Authorization failed:Backend connection refused
+10/2/2018, 4:43:28 AM		Auth error
+10/2/2018, 4:43:28 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"call":null,"apiCode":500,"apiMessage":"Backend connection refused","socket":"57q3mPqRxGmFx4nXAAAA","socketInstance":null,"redisKey":false}
+10/2/2018, 4:43:28 AM		Authorization failed:Backend connection refused
+10/2/2018, 4:43:28 AM		Auth error
+10/2/2018, 4:43:28 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"call":null,"apiCode":500,"apiMessage":"Backend connection refused","socket":"57q3mPqRxGmFx4nXAAAA","socketInstance":null,"redisKey":false}
+10/2/2018, 4:43:28 AM		Authorization failed:Backend connection refused
+10/2/2018, 4:43:28 AM		Auth error
+10/2/2018, 4:43:28 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"call":null,"apiCode":500,"apiMessage":"Backend connection refused","socket":"57q3mPqRxGmFx4nXAAAA","socketInstance":null,"redisKey":false}
+10/2/2018, 4:43:28 AM		Authorization failed:Backend connection refused
+10/2/2018, 4:43:28 AM		Auth error
+10/2/2018, 4:43:28 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"call":null,"apiCode":500,"apiMessage":"Backend connection refused","socket":"57q3mPqRxGmFx4nXAAAA","socketInstance":null,"redisKey":false}
+10/2/2018, 4:43:28 AM		Authorization failed:Backend connection refused
+10/2/2018, 4:44:10 AM		Auth error
+10/2/2018, 4:44:10 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"call":null,"apiCode":500,"apiMessage":"Backend connection refused","socket":"9Jch6rlcfhHeKQnLAAAB","socketInstance":null,"redisKey":false}
+10/2/2018, 4:44:10 AM		Authorization failed:Backend connection refused
+10/2/2018, 4:47:31 AM		Auth error
+10/2/2018, 4:47:31 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"call":null,"apiCode":500,"apiMessage":"Backend connection refused","socket":"imw2qKItQS9RatwNAAAD","socketInstance":null,"redisKey":false}
+10/2/2018, 4:47:31 AM		Authorization failed:Backend connection refused
+10/2/2018, 4:47:46 AM		Connected to Redis
+10/2/2018, 4:47:47 AM		Connected to Redis
+10/2/2018, 4:48:25 AM		Auth error
+10/2/2018, 4:48:25 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"call":null,"apiCode":500,"apiMessage":"Backend connection refused","socket":"aVGRmpfuuOV_o6YXAAAA","socketInstance":null,"redisKey":false}
+10/2/2018, 4:48:25 AM		Authorization failed:Backend connection refused
+10/2/2018, 4:49:28 AM		Auth error
+10/2/2018, 4:49:28 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"call":null,"apiCode":500,"apiMessage":"Backend connection refused","socket":"bcmXvTTho4CtTBlDAAAB","socketInstance":null,"redisKey":false}
+10/2/2018, 4:49:28 AM		Authorization failed:Backend connection refused
+10/2/2018, 4:52:23 AM		Connected to Redis
+10/2/2018, 4:52:24 AM		Connected to Redis
+10/2/2018, 4:53:33 AM		Auth error
+10/2/2018, 4:53:33 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"call":null,"apiCode":500,"apiMessage":"Backend connection refused","socket":"DJC9R_VxTSe-GpxwAAAA","socketInstance":null,"redisKey":false}
+10/2/2018, 4:53:33 AM		Authorization failed:Backend connection refused
+10/2/2018, 5:07:07 AM		Connected to Redis
+10/2/2018, 5:07:08 AM		Connected to Redis
+10/2/2018, 6:20:48 AM		Connected to Redis
+10/2/2018, 6:20:50 AM		Connected to Redis
+10/2/2018, 6:20:52 AM		Connected to Redis
+10/2/2018, 6:20:54 AM		Connected to Redis
+10/2/2018, 6:20:57 AM		Connected to Redis
+10/2/2018, 6:20:59 AM		Connected to Redis
+10/2/2018, 6:21:02 AM		Connected to Redis
+10/2/2018, 6:21:04 AM		Connected to Redis
+10/2/2018, 6:21:06 AM		Connected to Redis
+10/2/2018, 6:21:09 AM		Connected to Redis
+10/2/2018, 6:21:37 AM		Connected to Redis
+10/2/2018, 6:23:36 AM		Connected to Redis
+10/2/2018, 6:23:38 AM		Connected to Redis
+10/2/2018, 6:23:41 AM		Connected to Redis
+10/2/2018, 6:23:43 AM		Connected to Redis
+10/2/2018, 6:23:46 AM		Connected to Redis
+10/2/2018, 6:23:48 AM		Connected to Redis
+10/2/2018, 11:04:41 AM		Connected to Redis
+10/2/2018, 11:04:42 AM		Connected to Redis
+10/2/2018, 11:04:52 AM		Connected to Redis
+10/2/2018, 11:04:54 AM		Connected to Redis
+10/2/2018, 11:04:57 AM		Connected to Redis
+10/2/2018, 11:04:59 AM		Connected to Redis
+10/2/2018, 11:05:02 AM		Connected to Redis
+10/2/2018, 11:05:04 AM		Connected to Redis
+10/2/2018, 11:05:07 AM		Connected to Redis
+10/2/2018, 11:05:09 AM		Connected to Redis
+10/2/2018, 11:05:12 AM		Connected to Redis
+10/2/2018, 11:05:14 AM		Connected to Redis
+10/2/2018, 11:05:17 AM		Connected to Redis
+10/2/2018, 11:05:19 AM		Connected to Redis
+10/2/2018, 11:05:22 AM		Connected to Redis
+10/2/2018, 11:05:24 AM		Connected to Redis
+10/2/2018, 11:05:27 AM		Connected to Redis
+10/2/2018, 11:05:29 AM		Connected to Redis
+10/2/2018, 11:05:32 AM		Connected to Redis
+10/2/2018, 11:05:34 AM		Connected to Redis
+10/2/2018, 11:05:37 AM		Connected to Redis
+10/2/2018, 11:05:39 AM		Connected to Redis
+10/2/2018, 11:05:42 AM		Connected to Redis
+10/2/2018, 11:05:44 AM		Connected to Redis
+10/2/2018, 11:05:47 AM		Connected to Redis
+10/2/2018, 11:05:49 AM		Connected to Redis
+10/2/2018, 11:05:52 AM		Connected to Redis
+10/2/2018, 11:05:54 AM		Connected to Redis
+10/2/2018, 11:05:57 AM		Connected to Redis
+10/2/2018, 11:10:35 AM		Connected to Redis
+10/2/2018, 11:10:35 AM		Connected to Redis
+10/2/2018, 11:10:42 AM		Connected to Redis
+10/2/2018, 11:23:21 AM		Connected to Redis
+10/2/2018, 11:23:22 AM		Connected to Redis
+10/2/2018, 11:23:24 AM		Connected to Redis
+10/2/2018, 11:24:47 AM		Connected to Redis
+10/2/2018, 11:24:47 AM		Connected to Redis
+10/2/2018, 11:24:57 AM		Connected to Redis
+10/2/2018, 11:27:54 AM		Connected to Redis
+10/2/2018, 11:27:55 AM		Connected to Redis
+10/2/2018, 11:28:10 AM		Connected to Redis
+10/2/2018, 11:28:42 AM		Connected to Redis
+10/2/2018, 11:28:42 AM		Connected to Redis
+10/2/2018, 11:34:37 AM		Connected to Redis
+10/2/2018, 11:34:40 AM		Connected to Redis
+10/2/2018, 11:34:42 AM		Connected to Redis
+10/2/2018, 11:34:45 AM		Connected to Redis
+10/2/2018, 11:34:47 AM		Connected to Redis
+10/2/2018, 11:34:49 AM		Connected to Redis
+10/2/2018, 11:34:52 AM		Connected to Redis
+10/2/2018, 11:34:55 AM		Connected to Redis
+10/2/2018, 11:34:57 AM		Connected to Redis
+10/2/2018, 11:35:00 AM		Connected to Redis
+10/2/2018, 11:35:02 AM		Connected to Redis
+10/2/2018, 11:35:05 AM		Connected to Redis
+10/2/2018, 11:35:07 AM		Connected to Redis
+10/2/2018, 11:35:09 AM		Connected to Redis
+10/2/2018, 11:35:18 AM		Connected to Redis
+10/2/2018, 11:35:23 AM		Connected to Redis
+10/2/2018, 11:35:26 AM		Connected to Redis
+10/2/2018, 11:35:28 AM		Connected to Redis
+10/2/2018, 11:35:30 AM		Connected to Redis
+10/2/2018, 11:35:33 AM		Connected to Redis
+10/2/2018, 11:35:35 AM		Connected to Redis
+10/2/2018, 11:35:38 AM		Connected to Redis
+10/2/2018, 11:35:40 AM		Connected to Redis
+10/2/2018, 11:35:43 AM		Connected to Redis
+10/2/2018, 11:35:45 AM		Connected to Redis
+10/2/2018, 11:35:48 AM		Connected to Redis
+10/2/2018, 11:35:50 AM		Connected to Redis
+10/2/2018, 11:37:07 AM		Connected to Redis
+10/2/2018, 11:37:07 AM		Connected to Redis
+10/2/2018, 11:39:16 AM		Connected to Redis
+10/2/2018, 11:39:16 AM		Connected to Redis
+10/2/2018, 11:40:03 AM		Connected to Redis
+10/2/2018, 11:40:08 AM		Connected to Redis
+10/2/2018, 11:43:34 AM		Connected to Redis
+10/2/2018, 11:43:34 AM		Connected to Redis
+10/2/2018, 11:45:35 AM		Connected to Redis
+10/2/2018, 11:45:36 AM		Connected to Redis
+10/2/2018, 11:45:49 AM		Connected to Redis
+10/2/2018, 11:45:53 AM		Connected to Redis
+10/2/2018, 11:47:53 AM		Connected to Redis
+10/2/2018, 11:47:53 AM		Connected to Redis
+10/2/2018, 11:48:42 AM		Signaling.init is not a function
+10/2/2018, 11:49:42 AM		Signaling.init is not a function
+10/2/2018, 11:52:48 AM		Connected to Redis
+10/2/2018, 11:52:49 AM		Connected to Redis
+10/2/2018, 11:52:57 AM		Connected to Redis
+10/2/2018, 11:53:14 AM		Connected to Redis
+10/2/2018, 11:54:20 AM		Connected to Redis
+10/2/2018, 11:54:55 AM		Connected to Redis
+10/2/2018, 11:55:28 AM		Connected to Redis
+10/2/2018, 11:55:29 AM		Connected to Redis
+10/2/2018, 11:58:39 AM		Connected to Redis
+10/2/2018, 12:01:14 PM		Connected to Redis
+10/2/2018, 12:02:52 PM		Connected to Redis
+10/2/2018, 12:02:53 PM		Connected to Redis
+10/2/2018, 12:06:12 PM		Connected to Redis
+10/2/2018, 12:08:56 PM		Connected to Redis
+10/2/2018, 12:08:57 PM		Connected to Redis
+10/2/2018, 12:17:21 PM		Connected to Redis
+10/2/2018, 12:18:50 PM		Connected to Redis
+10/2/2018, 12:19:20 PM		Connected to Redis
+10/2/2018, 12:19:21 PM		Connected to Redis
+10/2/2018, 3:28:45 PM		Connected to Redis
+10/2/2018, 3:28:46 PM		Connected to Redis
+10/2/2018, 3:46:36 PM		Connected to Redis
+10/2/2018, 3:46:36 PM		Connected to Redis
+10/2/2018, 3:51:16 PM		Connected to Redis
+10/2/2018, 3:51:16 PM		Connected to Redis
+10/2/2018, 3:57:30 PM		Connected to Redis
+10/2/2018, 3:57:31 PM		Connected to Redis
+10/2/2018, 3:58:03 PM		Error join
+10/2/2018, 3:58:03 PM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":null,"isHunting":false,"huntingInterval":{"_called":true,"_idleTimeout":-1,"_idlePrev":null,"_idleNext":null,"_idleStart":33009,"_onTimeout":null,"_repeat":10000,"_destroyed":false},"huntedWith":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+10/2/2018, 3:58:03 PM		Error join
+10/2/2018, 3:58:03 PM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":null,"isHunting":false,"huntingInterval":{"_called":true,"_idleTimeout":-1,"_idlePrev":null,"_idleNext":null,"_idleStart":33009,"_onTimeout":null,"_repeat":10000,"_destroyed":false},"huntedWith":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+10/2/2018, 4:09:22 PM		Connected to Redis
+10/2/2018, 4:09:23 PM		Connected to Redis
+10/2/2018, 4:09:42 PM		Cannot read property 'name' of undefined
+10/2/2018, 4:10:41 PM		Connected to Redis
+10/2/2018, 4:10:42 PM		Connected to Redis
+10/2/2018, 4:14:43 PM		User with socket cJQqAY04DPt_KnjnAAAD not connected
+10/2/2018, 4:14:43 PM		User with socket cJQqAY04DPt_KnjnAAAD not connected
+10/2/2018, 4:27:43 PM		Connected to Redis
+10/2/2018, 4:27:44 PM		Connected to Redis
+10/2/2018, 4:29:13 PM		Connected to Redis
+10/2/2018, 4:31:34 PM		User with socket NDg8Jtkwbj9b7bWIAAAC not connected
+10/2/2018, 4:31:34 PM		User with socket NDg8Jtkwbj9b7bWIAAAC not connected
+10/2/2018, 4:31:34 PM		User with socket NDg8Jtkwbj9b7bWIAAAC not connected
+10/2/2018, 4:31:34 PM		User with socket NDg8Jtkwbj9b7bWIAAAC not connected
+10/2/2018, 4:31:55 PM		Connected to Redis
+10/2/2018, 4:32:44 PM		Connected to Redis
+10/2/2018, 4:34:21 PM		Connected to Redis
+10/2/2018, 4:34:21 PM		Connected to Redis
+10/3/2018, 3:12:52 AM		Connected to Redis
+10/3/2018, 3:12:52 AM		Connected to Redis
+10/3/2018, 4:52:27 AM		Connected to Redis
+10/3/2018, 4:52:28 AM		Connected to Redis
+10/3/2018, 4:57:13 AM		Connected to Redis
+10/3/2018, 4:57:14 AM		Connected to Redis
+10/3/2018, 5:03:02 AM		Connected to Redis
+10/3/2018, 5:03:03 AM		Connected to Redis
+10/3/2018, 6:42:42 AM		Connected to Redis
+10/3/2018, 6:42:49 AM		Connected to Redis
+10/3/2018, 6:45:39 AM		User with socket eaKB_H2-OwqNATzhAAAA not connected
+10/3/2018, 6:45:39 AM		User with socket eaKB_H2-OwqNATzhAAAA not connected
+10/3/2018, 6:45:39 AM		User with socket eaKB_H2-OwqNATzhAAAA not connected
+10/3/2018, 6:45:39 AM		User with socket eaKB_H2-OwqNATzhAAAA not connected
+10/3/2018, 6:46:39 AM		User with socket okrAX5cYOUoJVNbzAAAD not connected
+10/3/2018, 6:46:39 AM		User with socket eaKB_H2-OwqNATzhAAAA not connected
+10/3/2018, 6:46:39 AM		User with socket okrAX5cYOUoJVNbzAAAD not connected
+10/3/2018, 6:46:39 AM		User with socket eaKB_H2-OwqNATzhAAAA not connected
+10/3/2018, 7:13:45 AM		Connected to Redis
+10/3/2018, 7:13:53 AM		Connected to Redis
+10/3/2018, 7:21:37 AM		Connected to Redis
+10/3/2018, 7:21:45 AM		Connected to Redis
+10/3/2018, 8:30:07 AM		Connected to Redis
+10/3/2018, 8:30:07 AM		Connected to Redis
+10/3/2018, 8:34:15 AM		User with socket u9UvY0BA6pgaIV25AAAA not connected
+10/3/2018, 8:34:15 AM		User with socket u9UvY0BA6pgaIV25AAAA not connected
+10/3/2018, 8:34:15 AM		User with socket u9UvY0BA6pgaIV25AAAA not connected
+10/3/2018, 8:34:15 AM		User with socket u9UvY0BA6pgaIV25AAAA not connected
+10/3/2018, 8:35:15 AM		User with socket u9UvY0BA6pgaIV25AAAA not connected
+10/3/2018, 8:35:16 AM		User with socket u9UvY0BA6pgaIV25AAAA not connected
+10/3/2018, 8:38:12 AM		Connected to Redis
+10/3/2018, 8:38:12 AM		Connected to Redis
+10/3/2018, 8:43:17 AM		User with socket MZyZYVOIPTWmQRGwAAAF not connected
+10/3/2018, 8:43:17 AM		User with socket dCzbpInhs8lTVVLxAAAG not connected
+10/3/2018, 8:43:17 AM		User with socket MZyZYVOIPTWmQRGwAAAF not connected
+10/3/2018, 8:43:17 AM		User with socket dCzbpInhs8lTVVLxAAAG not connected
+10/3/2018, 8:44:17 AM		User with socket MZyZYVOIPTWmQRGwAAAF not connected
+10/3/2018, 8:44:17 AM		User with socket dCzbpInhs8lTVVLxAAAG not connected
+10/3/2018, 8:49:46 AM		Connected to Redis
+10/3/2018, 8:49:46 AM		Connected to Redis
+10/3/2018, 8:53:37 AM		Connected to Redis
+10/3/2018, 8:53:37 AM		Connected to Redis
+10/3/2018, 8:57:23 AM		Connected to Redis
+10/3/2018, 8:57:23 AM		Connected to Redis
+10/3/2018, 9:00:43 AM		User with socket L5waDh3peC2RYzN2AAAD not connected
+10/3/2018, 9:02:08 AM		User with socket jWGrRxeH3_ptU3t0AAAD not connected
+10/3/2018, 9:34:38 AM		User with socket 153vx--pgTzB75f8AAAP not connected
+10/3/2018, 9:36:50 AM		User with socket 0dDZ1DJsHNAdekQAAAAR not connected
+10/3/2018, 9:40:45 AM		Error reading user info from redis: 48582
+10/3/2018, 9:42:31 AM		Error reading user info from redis: 48582
+10/3/2018, 9:43:53 AM		User with socket v_an21OAtepIKs3tAAAU not connected
+10/3/2018, 9:45:38 AM		User with socket yRcUw1ygLaEv-cBVAAAX not connected
+10/3/2018, 9:45:48 AM		User with socket yRcUw1ygLaEv-cBVAAAX not connected
+10/3/2018, 9:45:49 AM		User with socket yRcUw1ygLaEv-cBVAAAX not connected
+10/3/2018, 9:46:48 AM		User with socket yRcUw1ygLaEv-cBVAAAX not connected
+10/3/2018, 9:46:49 AM		User with socket yRcUw1ygLaEv-cBVAAAX not connected
+10/3/2018, 9:51:09 AM		Error reading user info from redis: 48582
+10/3/2018, 10:00:50 AM		User with socket XgvHdnHr282tVAnpAAAi not connected
+10/3/2018, 10:12:21 AM		Connected to Redis
+10/3/2018, 10:12:21 AM		Connected to Redis
+10/3/2018, 10:14:20 AM		Connected to Redis
+10/3/2018, 10:14:21 AM		Connected to Redis
+10/3/2018, 10:14:44 AM		User is not a constructor
+10/3/2018, 10:14:45 AM		User is not a constructor
+10/3/2018, 10:15:31 AM		Connected to Redis
+10/3/2018, 10:15:32 AM		Connected to Redis
+10/3/2018, 10:15:44 AM		User with socket ggJ-JrshG8ndEVvKAAAB not connected
+10/3/2018, 10:15:44 AM		User with socket ggJ-JrshG8ndEVvKAAAB not connected
+10/3/2018, 10:16:44 AM		User with socket wWu79aeMG-WGA42AAAAB not connected
+10/3/2018, 10:16:44 AM		User with socket ggJ-JrshG8ndEVvKAAAB not connected
+10/3/2018, 10:17:17 AM		User with socket 3-t9PqfbhrrEHZ8oAAAC not connected
+10/3/2018, 10:35:13 AM		User with socket S_xgmXNux7wqxvE7AAAH not connected
+10/3/2018, 10:37:40 AM		User with socket XkicPiDHA9gSvTDLAAAI not connected
+10/3/2018, 10:40:13 AM		User with socket oXD0pGCQR0kQmBVcAAAK not connected
+10/3/2018, 10:41:44 AM		User with socket JCQfxXM6L5rc-SeGAAAL not connected
+10/3/2018, 10:42:49 AM		User with socket gFnwqnuO9wMCbvK9AAAM not connected
+10/3/2018, 10:47:55 AM		User with socket looVYGbxyFzR0nD1AAAP not connected
+10/3/2018, 10:50:07 AM		User with socket JVeJJKymLfV3iMzkAAAQ not connected
+10/3/2018, 10:54:34 AM		User with socket 1kQUlMQmzij_4TB6AAAT not connected
+10/3/2018, 10:57:33 AM		User with socket uRw8lAlTQK6QX9gBAAAW not connected

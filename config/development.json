@@ -1,0 +1,36 @@
+{
+    "useSSL": false,
+    "server": {
+        "port": 8890,
+        "portHttp": 8880,
+        "host": "XXX",
+        "key": "./config/privkey.pem",
+        "cert":"./config/cert.pem",
+        "ca": "./config/fullchain.pem"
+    },
+    "iceServers": [
+        {
+            "urls": ["turn:18.206.154.225:3478"],
+            "username": "welcome",
+            "credential": "wNrvq6Cu74vR5ud2"
+        },
+        {
+            "urls": ["stun:18.206.154.225:3478"],
+            "username": "welcome",
+            "credential": "wNrvq6Cu74vR5ud2"
+        }
+    ],
+    "turnPort": 443,
+    "connectTimeout": 60,
+    "aws": {
+        "region": "us-east-2"
+    },
+    "redis": {
+        "host": "localhost",
+        "port": 6379
+    },
+    "backend": {
+        "host": "http://18.206.154.225",
+        "token": "securityToken!"
+    }
+}
