@@ -43,7 +43,7 @@ class Result {
     * @return bool
     */
     emit(socket, command, code, message, sessionId) {
-        console.log('Emit to' + socket);
+        console.log('Emit to ' + socket + ': ' + command);
         if (!socket) {
             return false;
         }
@@ -72,11 +72,7 @@ class Result {
             Log.message(command + ': ' + code + ' ' + logMessage, ip);
         }
         // Emit it
-        if(Server.server.io.sockets.connected[socket]) {
-            Server.server.io.sockets.connected[socket].emit(command, {'code': code, 'message': message, 'sessionId': sessionId });
-        } else {
-            Log.error('User with socket ' + socket + ' not connected');
-        }
+        Server.server.io.to(socket).emit(command, {'code': code, 'message': message, 'sessionId': sessionId});
         //socket.emit(command, {'code': code, 'message': message, 'sessionId': sessionId });
     }
 }

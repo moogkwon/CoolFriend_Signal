@@ -1473,3 +1473,1744 @@
 10/3/2018, 10:50:07 AM		User with socket JVeJJKymLfV3iMzkAAAQ not connected
 10/3/2018, 10:54:34 AM		User with socket 1kQUlMQmzij_4TB6AAAT not connected
 10/3/2018, 10:57:33 AM		User with socket uRw8lAlTQK6QX9gBAAAW not connected
+10/3/2018, 11:04:26 AM		User with socket ecaRMkYIzC0IGYuYAAAZ not connected
+10/3/2018, 11:12:02 AM		Connected to Redis
+10/3/2018, 11:12:03 AM		Connected to Redis
+10/3/2018, 11:15:00 AM		User with socket XIaQO4RiGyryFlGmAAAC not connected
+10/3/2018, 11:23:57 AM		Connected to Redis
+10/3/2018, 11:23:58 AM		Connected to Redis
+10/3/2018, 11:24:08 AM		Connected to Redis
+10/3/2018, 11:26:54 AM		Connected to Redis
+10/3/2018, 11:26:55 AM		Connected to Redis
+10/3/2018, 11:28:37 AM		User with socket Q-YACl6CMzyG6bN6AAAA not connected
+10/3/2018, 11:29:37 AM		User with socket Q-YACl6CMzyG6bN6AAAA not connected
+10/3/2018, 11:35:35 AM		Connected to Redis
+10/3/2018, 11:35:36 AM		Connected to Redis
+10/3/2018, 11:44:16 AM		Connected to Redis
+10/3/2018, 11:44:17 AM		Connected to Redis
+10/3/2018, 11:48:18 AM		User with socket r2CT7uyYJpLEhp8bAAAB not connected
+10/3/2018, 11:49:18 AM		User with socket f56wMQvcD9CoX8ZcAAAB not connected
+10/3/2018, 11:49:18 AM		User with socket r2CT7uyYJpLEhp8bAAAB not connected
+10/3/2018, 11:49:50 AM		User with socket p6x8a7wiDhUxceR9AAAC not connected
+10/3/2018, 11:54:57 AM		User with socket N-1JBBZRPxea1oXtAAAF not connected
+10/3/2018, 11:57:21 AM		User with socket sYAbyFdmnFogVbf3AAAH not connected
+10/3/2018, 12:06:06 PM		User with socket yoxPHQNGUEEPolexAAAO not connected
+10/3/2018, 12:08:50 PM		User with socket 9lRoS3UMaycjZx7dAAAQ not connected
+10/3/2018, 12:11:04 PM		User with socket KN1OztTU4NlNYRWYAAAR not connected
+10/3/2018, 12:11:51 PM		Connected to Redis
+10/3/2018, 12:11:52 PM		Connected to Redis
+10/3/2018, 12:23:11 PM		User with socket zGQv_nLxBnB5Ah_IAAAG not connected
+10/3/2018, 12:33:01 PM		User with socket 8qGspjVl2h993dXTAAAP not connected
+10/3/2018, 12:42:58 PM		Connected to Redis
+10/3/2018, 12:42:58 PM		Connected to Redis
+10/3/2018, 12:43:08 PM		Error reading user info from redis: 14018
+10/3/2018, 12:43:08 PM		Error reading user info from redis: 15928
+10/3/2018, 12:52:20 PM		User with socket w8ZQVgi4Qi1Pu3AHAAAD not connected
+10/3/2018, 1:04:20 PM		User with socket u9-VDZ9HglSqwmEHAAAN not connected
+10/3/2018, 1:04:20 PM		User with socket u9-VDZ9HglSqwmEHAAAN not connected
+10/3/2018, 1:04:20 PM		User with socket u9-VDZ9HglSqwmEHAAAN not connected
+10/3/2018, 1:04:20 PM		User with socket u9-VDZ9HglSqwmEHAAAN not connected
+10/3/2018, 1:04:20 PM		User with socket u9-VDZ9HglSqwmEHAAAN not connected
+10/3/2018, 1:04:21 PM		User with socket u9-VDZ9HglSqwmEHAAAN not connected
+10/3/2018, 1:04:26 PM		User with socket krwNq8EZ4CgkJp_uAAAM not connected
+10/3/2018, 1:05:08 PM		User with socket krwNq8EZ4CgkJp_uAAAM not connected
+10/3/2018, 1:05:10 PM		User with socket krwNq8EZ4CgkJp_uAAAM not connected
+10/3/2018, 1:10:23 PM		Connected to Redis
+10/3/2018, 1:10:24 PM		Connected to Redis
+10/3/2018, 1:36:24 PM		Connected to Redis
+10/3/2018, 1:36:24 PM		Connected to Redis
+10/3/2018, 1:39:57 PM		Connected to Redis
+10/3/2018, 1:39:57 PM		Connected to Redis
+10/3/2018, 3:40:35 PM		Connected to Redis
+10/3/2018, 3:40:36 PM		Connected to Redis
+10/4/2018, 3:31:13 AM		Connected to Redis
+10/4/2018, 3:32:29 AM		Connected to Redis
+10/4/2018, 3:36:17 AM		Connected to Redis
+10/4/2018, 3:36:20 AM		Connected to Redis
+10/4/2018, 3:36:53 AM		Connected to Redis
+10/4/2018, 5:38:15 AM		Error reading user info from redis: 2
+10/4/2018, 5:38:39 AM		Error reading call info from redis: null
+10/4/2018, 5:38:43 AM		Error reading user info from redis: 2
+10/4/2018, 5:38:44 AM		Error reading call info from redis: null
+10/4/2018, 5:39:27 AM		Error reading user info from redis: 2
+10/4/2018, 5:39:59 AM		Error reading call info from redis: null
+10/4/2018, 5:40:01 AM		Error reading user info from redis: 2
+10/4/2018, 5:40:25 AM		Error reading call info from redis: null
+10/4/2018, 5:40:31 AM		Error reading user info from redis: 2
+10/4/2018, 5:40:43 AM		Error reading call info from redis: null
+10/4/2018, 5:40:51 AM		Error reading user info from redis: 2
+10/4/2018, 5:41:13 AM		Error reading call info from redis: null
+10/4/2018, 5:41:13 AM		Error reading call info from redis: null
+10/4/2018, 5:41:31 AM		Error reading user info from redis: 3
+10/4/2018, 5:44:22 AM		Connected to Redis
+10/4/2018, 5:44:58 AM		Connected to Redis
+10/4/2018, 5:45:04 AM		Connected to Redis
+10/4/2018, 5:47:54 AM		Connected to Redis
+10/4/2018, 5:47:56 AM		Connected to Redis
+10/4/2018, 5:48:11 AM		Error reading user info from redis: 2
+10/4/2018, 5:48:15 AM		Error reading call info from redis: null
+10/4/2018, 5:48:18 AM		Error reading user info from redis: 2
+10/4/2018, 5:48:21 AM		Error reading call info from redis: null
+10/4/2018, 5:48:23 AM		Error reading user info from redis: 2
+10/4/2018, 5:48:39 AM		Error reading call info from redis: null
+10/4/2018, 5:48:56 AM		Connected to Redis
+10/4/2018, 5:48:58 AM		Connected to Redis
+10/4/2018, 5:49:01 AM		Connected to Redis
+10/4/2018, 5:50:10 AM		Connected to Redis
+10/4/2018, 5:51:12 AM		Error reading user info from redis: 3
+10/4/2018, 5:51:13 AM		Error reading call info from redis: null
+10/4/2018, 5:53:21 AM		Connected to Redis
+10/4/2018, 5:53:26 AM		Connected to Redis
+10/4/2018, 6:03:44 AM		User with socket F38u3GmPmL4Dw7uWAAAL not connected
+10/4/2018, 6:04:13 AM		Error reading call info from redis: 57708218
+10/4/2018, 6:06:49 AM		Error reading user info from redis: 63678
+10/4/2018, 6:12:12 AM		User with socket 1mlOqULZovsp_fKVAAAV not connected
+10/4/2018, 6:13:54 AM		Connected to Redis
+10/4/2018, 6:15:11 AM		Error reading user info from redis: 3
+10/4/2018, 6:15:15 AM		Error reading call info from redis: null
+10/4/2018, 6:15:48 AM		Error reading user info from redis: 3
+10/4/2018, 6:16:04 AM		Error reading call info from redis: null
+10/4/2018, 6:16:14 AM		Error reading user info from redis: 3
+10/4/2018, 6:16:47 AM		Error reading call info from redis: null
+10/4/2018, 6:29:18 AM		Connected to Redis
+10/4/2018, 6:29:27 AM		Connected to Redis
+10/4/2018, 6:29:37 AM		Connected to Redis
+10/4/2018, 6:35:51 AM		Error reading user info from redis: 2
+10/4/2018, 6:35:55 AM		Error reading call info from redis: null
+10/4/2018, 6:35:57 AM		Error reading user info from redis: 2
+10/4/2018, 6:35:59 AM		Error reading call info from redis: null
+10/4/2018, 6:37:14 AM		Connected to Redis
+10/4/2018, 6:38:10 AM		Error reading user info from redis: 2
+10/4/2018, 6:38:12 AM		Error reading call info from redis: null
+10/4/2018, 6:38:14 AM		Error reading user info from redis: 2
+10/4/2018, 6:38:17 AM		Error reading call info from redis: null
+10/4/2018, 6:38:25 AM		Error reading user info from redis: 2
+10/4/2018, 6:38:25 AM		Error reading call info from redis: null
+10/4/2018, 6:38:27 AM		Error reading user info from redis: 2
+10/4/2018, 6:38:28 AM		Error reading call info from redis: null
+10/4/2018, 6:38:30 AM		Error reading user info from redis: 2
+10/4/2018, 6:38:32 AM		Error reading call info from redis: null
+10/4/2018, 6:38:33 AM		Error reading user info from redis: 2
+10/4/2018, 6:38:37 AM		Error reading call info from redis: null
+10/4/2018, 6:38:38 AM		Error reading user info from redis: 2
+10/4/2018, 6:38:40 AM		Error reading call info from redis: null
+10/4/2018, 6:38:43 AM		Error reading user info from redis: 2
+10/4/2018, 6:38:47 AM		Error reading call info from redis: null
+10/4/2018, 6:39:42 AM		Error reading user info from redis: 2
+10/4/2018, 6:39:46 AM		Error reading call info from redis: null
+10/4/2018, 6:40:49 AM		Connected to Redis
+10/4/2018, 6:46:00 AM		Error reading user info from redis: 3
+10/4/2018, 6:46:01 AM		Error reading call info from redis: null
+10/4/2018, 6:46:05 AM		Error reading user info from redis: 3
+10/4/2018, 6:46:08 AM		Error reading call info from redis: null
+10/4/2018, 6:46:15 AM		Error reading user info from redis: 3
+10/4/2018, 6:46:16 AM		Error reading call info from redis: null
+10/4/2018, 6:46:17 AM		Error reading user info from redis: 3
+10/4/2018, 6:46:18 AM		Error reading call info from redis: null
+10/4/2018, 6:46:20 AM		Error reading user info from redis: 3
+10/4/2018, 6:46:21 AM		Error reading call info from redis: null
+10/4/2018, 6:46:26 AM		Connected to Redis
+10/4/2018, 6:57:53 AM		Connected to Redis
+10/4/2018, 6:59:01 AM		Error reading user info from redis: 48582
+10/4/2018, 6:59:01 AM		Error reading user info from redis: 48582
+10/4/2018, 7:11:11 AM		Connected to Redis
+10/4/2018, 8:03:34 AM		Connected to Redis
+10/4/2018, 8:03:46 AM		Connected to Redis
+10/4/2018, 8:05:55 AM		Error reading user info from redis: 3
+10/4/2018, 8:07:36 AM		Error reading call info from redis: null
+10/4/2018, 8:08:32 AM		Error reading user info from redis: 3
+10/4/2018, 8:08:34 AM		Error reading call info from redis: null
+10/4/2018, 8:08:36 AM		Error reading user info from redis: 3
+10/4/2018, 8:08:47 AM		Error reading call info from redis: null
+10/4/2018, 8:12:06 AM		Connected to Redis
+10/4/2018, 8:32:15 AM		Error reading user info from redis: 86511
+10/4/2018, 8:39:59 AM		Error reading user info from redis: 80477
+10/4/2018, 8:48:54 AM		Connected to Redis
+10/4/2018, 8:50:06 AM		Error reading user info from redis: 2
+10/4/2018, 8:50:18 AM		Error reading user info from redis: 3
+10/4/2018, 8:50:19 AM		Error reading call info from redis: null
+10/4/2018, 9:24:37 AM		Connected to Redis
+10/4/2018, 9:25:29 AM		Connected to Redis
+10/4/2018, 9:27:08 AM		Connected to Redis
+10/4/2018, 9:50:26 AM		Connected to Redis
+10/4/2018, 9:50:31 AM		Connected to Redis
+10/4/2018, 9:50:41 AM		Connected to Redis
+10/4/2018, 9:51:14 AM		Error reading user info from redis: 2
+10/4/2018, 9:51:17 AM		Error reading call info from redis: null
+10/4/2018, 9:53:56 AM		Connected to Redis
+10/4/2018, 10:26:13 AM		Connected to Redis
+10/4/2018, 10:26:21 AM		Connected to Redis
+10/4/2018, 10:29:26 AM		Connected to Redis
+10/4/2018, 10:41:28 AM		Error reading user info from redis: 1
+10/4/2018, 10:41:31 AM		Error reading call info from redis: null
+10/4/2018, 10:44:06 AM		Connected to Redis
+10/4/2018, 10:49:38 AM		Connected to Redis
+10/4/2018, 10:50:22 AM		Error reading user info from redis: 2
+10/4/2018, 10:50:27 AM		Error reading call info from redis: null
+10/4/2018, 10:50:31 AM		Error reading user info from redis: 2
+10/4/2018, 10:50:31 AM		Error reading call info from redis: null
+10/4/2018, 10:50:43 AM		Connected to Redis
+10/4/2018, 10:52:29 AM		Error reading user info from redis: 2
+10/4/2018, 10:52:31 AM		Error reading call info from redis: null
+10/4/2018, 10:52:52 AM		Error reading user info from redis: 1
+10/4/2018, 10:52:57 AM		Error reading call info from redis: null
+10/4/2018, 10:53:01 AM		Connected to Redis
+10/4/2018, 10:53:31 AM		Error reading user info from redis: 1
+10/4/2018, 10:53:34 AM		Error reading call info from redis: null
+10/4/2018, 11:06:20 AM		Connected to Redis
+10/4/2018, 11:55:55 AM		Connected to Redis
+10/4/2018, 4:23:59 PM		Connected to Redis
+10/5/2018, 3:30:36 AM		Connected to Redis
+10/5/2018, 3:31:58 AM		Error reading user info from redis: 1
+10/5/2018, 3:32:15 AM		Error reading call info from redis: null
+10/5/2018, 3:34:16 AM		Connected to Redis
+10/5/2018, 3:34:17 AM		Connected to Redis
+10/5/2018, 3:34:40 AM		Connected to Redis
+10/5/2018, 3:34:41 AM		Connected to Redis
+10/5/2018, 3:35:09 AM		Connected to Redis
+10/5/2018, 3:35:42 AM		Connected to Redis
+10/5/2018, 3:38:15 AM		Connected to Redis
+10/5/2018, 3:38:17 AM		Connected to Redis
+10/5/2018, 3:40:19 AM		Connected to Redis
+10/5/2018, 3:40:19 AM		Connected to Redis
+10/5/2018, 3:41:55 AM		Connected to Redis
+10/5/2018, 3:41:58 AM		Connected to Redis
+10/5/2018, 3:44:31 AM		Connected to Redis
+10/5/2018, 3:45:35 AM		Connected to Redis
+10/5/2018, 3:47:46 AM		Connected to Redis
+10/5/2018, 3:48:14 AM		Connected to Redis
+10/5/2018, 3:49:37 AM		Connected to Redis
+10/5/2018, 3:50:38 AM		Connected to Redis
+10/5/2018, 3:52:29 AM		Connected to Redis
+10/5/2018, 3:52:30 AM		Connected to Redis
+10/5/2018, 3:53:16 AM		Error join
+10/5/2018, 3:53:16 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":null,"isHunting":false,"huntingInterval":false,"huntedWith":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+10/5/2018, 3:53:16 AM		User with socket KE_1Qw5NsdByRMCeAAAC not connected
+10/5/2018, 3:53:24 AM		Error join
+10/5/2018, 3:53:24 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":null,"isHunting":false,"huntingInterval":false,"huntedWith":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+10/5/2018, 3:53:24 AM		User with socket c0wVqIa8bNOZM2jQAAAD not connected
+10/5/2018, 3:54:16 AM		User with socket KE_1Qw5NsdByRMCeAAAC not connected
+10/5/2018, 3:54:24 AM		User with socket c0wVqIa8bNOZM2jQAAAD not connected
+10/5/2018, 3:57:47 AM		Error join
+10/5/2018, 3:57:47 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":null,"isHunting":false,"huntingInterval":false,"huntedWith":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+10/5/2018, 3:57:47 AM		User with socket MI7U5mfx36VyLCV3AAAB not connected
+10/5/2018, 3:57:48 AM		Error join
+10/5/2018, 3:57:48 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":null,"isHunting":false,"huntingInterval":false,"huntedWith":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+10/5/2018, 3:57:48 AM		User with socket 1N0KRh4S1VHYv44_AAAI not connected
+10/5/2018, 3:58:47 AM		User with socket MI7U5mfx36VyLCV3AAAB not connected
+10/5/2018, 3:58:48 AM		User with socket 1N0KRh4S1VHYv44_AAAI not connected
+10/5/2018, 4:03:19 AM		Error join
+10/5/2018, 4:03:19 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":null,"isHunting":false,"huntingInterval":false,"huntedWith":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+10/5/2018, 4:03:19 AM		User with socket 8hs45n2dMYnDwY-OAAAE not connected
+10/5/2018, 4:04:19 AM		User with socket 8hs45n2dMYnDwY-OAAAE not connected
+10/5/2018, 4:28:42 AM		Connected to Redis
+10/5/2018, 4:28:43 AM		Connected to Redis
+10/5/2018, 4:30:33 AM		Connected to Redis
+10/5/2018, 4:30:34 AM		Connected to Redis
+10/5/2018, 4:50:02 AM		Connected to Redis
+10/5/2018, 4:50:03 AM		Connected to Redis
+10/5/2018, 5:26:05 AM		Auth error
+10/5/2018, 5:26:05 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5\"}}","socket":"HnzxYXxpkR1s_56bAAAB","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/5/2018, 5:26:05 AM		Authorization failed:API requerst error: 500<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5"}}
+10/5/2018, 5:26:43 AM		Auth error
+10/5/2018, 5:26:43 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5\"}}","socket":"LdujhBgOGeMJMJpEAAAC","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/5/2018, 5:26:43 AM		Authorization failed:API requerst error: 500<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5"}}
+10/5/2018, 5:27:05 AM		Auth error
+10/5/2018, 5:27:05 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5\"}}","socket":"baMgtxZeOQfcjp7iAAAD","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/5/2018, 5:27:05 AM		Authorization failed:API requerst error: 500<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5"}}
+10/5/2018, 5:29:15 AM		Connected to Redis
+10/5/2018, 5:29:16 AM		Connected to Redis
+10/5/2018, 5:29:23 AM		Auth error
+10/5/2018, 5:29:23 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500 / null<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5\"}}","socket":"f_ePsFsYkS5h5PumAAAB","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/5/2018, 5:29:23 AM		Authorization failed:API requerst error: 500 / null<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5"}}
+10/5/2018, 5:29:44 AM		Error join
+10/5/2018, 5:29:44 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":null,"isHunting":false,"huntingInterval":false,"huntedWith":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+10/5/2018, 5:29:44 AM		User with socket fNqO6uOikGEkegolAAAF not connected
+10/5/2018, 5:29:45 AM		Auth error
+10/5/2018, 5:29:45 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500 / null<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5\"}}","socket":"jhPgTAyT41H7UA2mAAAC","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/5/2018, 5:29:45 AM		Authorization failed:API requerst error: 500 / null<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5"}}
+10/5/2018, 5:29:50 AM		Auth error
+10/5/2018, 5:29:50 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500 / null<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"57dbcc5191daeeae9a0e8b43c26c47dd1cfd868d7ef50364de5aeb415fd25aa47cfbaa2b72d417433f41e337ccc0807062a68bbf46f30863b34f78bbe21b74e7\"}}","socket":"C2HYp5ONlPtUC3tvAAAD","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/5/2018, 5:29:50 AM		Authorization failed:API requerst error: 500 / null<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"57dbcc5191daeeae9a0e8b43c26c47dd1cfd868d7ef50364de5aeb415fd25aa47cfbaa2b72d417433f41e337ccc0807062a68bbf46f30863b34f78bbe21b74e7"}}
+10/5/2018, 5:32:09 AM		Connected to Redis
+10/5/2018, 5:32:10 AM		Connected to Redis
+10/5/2018, 5:32:12 AM		Auth error
+10/5/2018, 5:32:12 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500 / null<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"57dbcc5191daeeae9a0e8b43c26c47dd1cfd868d7ef50364de5aeb415fd25aa47cfbaa2b72d417433f41e337ccc0807062a68bbf46f30863b34f78bbe21b74e7\"}}","socket":"hU_6ZHz8rk-k9vg1AAAA","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/5/2018, 5:32:12 AM		Authorization failed:API requerst error: 500 / null<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"57dbcc5191daeeae9a0e8b43c26c47dd1cfd868d7ef50364de5aeb415fd25aa47cfbaa2b72d417433f41e337ccc0807062a68bbf46f30863b34f78bbe21b74e7"}}
+10/5/2018, 5:32:18 AM		Auth error
+10/5/2018, 5:32:18 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500 / null<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5\"}}","socket":"i5VnDB_-jplhG27JAAAB","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/5/2018, 5:32:18 AM		Authorization failed:API requerst error: 500 / null<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5"}}
+10/5/2018, 5:33:09 AM		Connected to Redis
+10/5/2018, 5:33:09 AM		Connected to Redis
+10/5/2018, 5:33:13 AM		Auth error
+10/5/2018, 5:33:14 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500 / null<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5\"}}","socket":"E_KtejcKUT47iTQsAAAA","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/5/2018, 5:33:14 AM		Authorization failed:API requerst error: 500 / null<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5"}}
+10/5/2018, 5:33:50 AM		Connected to Redis
+10/5/2018, 5:33:51 AM		Connected to Redis
+10/5/2018, 5:34:37 AM		Error join
+10/5/2018, 5:34:37 AM		{"id":84063,"token":"57dbcc5191daeeae9a0e8b43c26c47dd1cfd868d7ef50364de5aeb415fd25aa47cfbaa2b72d417433f41e337ccc0807062a68bbf46f30863b34f78bbe21b74e7","name":null,"photo":null,"video":null,"alive":false,"authorized":true,"isHunting":false,"huntingInterval":false,"huntedWith":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,nul
+10/5/2018, 5:34:37 AM		User with socket F8g8gRJwVO1Uo3ffAAAD not connected
+10/5/2018, 5:34:38 AM		Error join
+10/5/2018, 5:34:38 AM		{"id":25964,"token":"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5","name":null,"photo":null,"video":null,"alive":false,"authorized":true,"isHunting":false,"huntingInterval":false,"huntedWith":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,nul
+10/5/2018, 5:34:38 AM		User with socket e1v8qRX-rIrZ6DPIAAAC not connected
+10/5/2018, 5:35:13 AM		Error join
+10/5/2018, 5:35:13 AM		{"id":84063,"token":"57dbcc5191daeeae9a0e8b43c26c47dd1cfd868d7ef50364de5aeb415fd25aa47cfbaa2b72d417433f41e337ccc0807062a68bbf46f30863b34f78bbe21b74e7","name":null,"photo":null,"video":null,"alive":false,"authorized":true,"isHunting":false,"huntingInterval":false,"huntedWith":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,nul
+10/5/2018, 5:35:13 AM		User with socket uLWsTF68gX0SMBuiAAAF not connected
+10/5/2018, 5:35:14 AM		Error join
+10/5/2018, 5:35:14 AM		{"id":25964,"token":"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5","name":null,"photo":null,"video":null,"alive":false,"authorized":true,"isHunting":false,"huntingInterval":false,"huntedWith":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,nul
+10/5/2018, 5:35:14 AM		User with socket NNYfhlT7ECEkdDNLAAAH not connected
+10/5/2018, 5:36:19 AM		Connected to Redis
+10/5/2018, 5:36:20 AM		Connected to Redis
+10/5/2018, 5:36:32 AM		User with socket RoNIqe0WuqCFNKRwAAAp not connected
+10/5/2018, 5:37:32 AM		User with socket RoNIqe0WuqCFNKRwAAAp not connected
+10/5/2018, 5:42:07 AM		Connected to Redis
+10/5/2018, 5:42:07 AM		Connected to Redis
+10/5/2018, 5:43:22 AM		User with socket JhXeSt0IJrNHbNynAAAA not connected
+10/5/2018, 5:43:22 AM		User with socket xLfmp9zMfxHivWxTAAAB not connected
+10/5/2018, 5:44:58 AM		User with socket YfubqfG_II3sR2DBAAAC not connected
+10/5/2018, 5:44:58 AM		User with socket nGFUSrUDVctEU6cHAAAD not connected
+10/5/2018, 5:46:05 AM		User with socket I9WfEMooutXn7cyWAAAF not connected
+10/5/2018, 5:47:24 AM		Connected to Redis
+10/5/2018, 5:47:25 AM		Connected to Redis
+10/5/2018, 5:48:03 AM		User with socket xKMdRw2cNEiuMWQPAAAE not connected
+10/5/2018, 5:49:03 AM		User with socket xKMdRw2cNEiuMWQPAAAE not connected
+10/5/2018, 5:49:26 AM		Connected to Redis
+10/5/2018, 5:49:27 AM		Connected to Redis
+10/5/2018, 5:50:27 AM		Connected to Redis
+10/5/2018, 5:52:10 AM		Connected to Redis
+10/5/2018, 5:52:27 AM		Connected to Redis
+10/5/2018, 5:52:27 AM		Connected to Redis
+10/5/2018, 5:54:27 AM		Connected to Redis
+10/5/2018, 5:55:29 AM		Connected to Redis
+10/5/2018, 5:55:58 AM		Connected to Redis
+10/5/2018, 5:55:58 AM		Connected to Redis
+10/5/2018, 6:24:34 AM		User with socket Ugl1iS8JsREhWbJRAAAZ not connected
+10/5/2018, 6:26:19 AM		User with socket LYATxZ2NHUpQ7jP1AAAb not connected
+10/5/2018, 7:05:13 AM		Error reading call info from redis: 509307
+10/5/2018, 7:06:03 AM		Error reading call info from redis: false
+10/5/2018, 7:06:03 AM		Error reading call info from redis: 509307
+10/5/2018, 7:07:04 AM		Error reading call info from redis: 291910
+10/5/2018, 7:07:10 AM		Error reading call info from redis: false
+10/5/2018, 7:07:10 AM		Error reading call info from redis: 291910
+10/5/2018, 7:08:50 AM		Error reading call info from redis: 948066
+10/5/2018, 7:09:45 AM		Error reading call info from redis: false
+10/5/2018, 7:09:45 AM		Error reading call info from redis: 948066
+10/5/2018, 7:12:36 AM		Error reading call info from redis: 611022
+10/5/2018, 7:13:27 AM		Error reading call info from redis: false
+10/5/2018, 7:13:27 AM		Error reading call info from redis: 611022
+10/5/2018, 7:14:25 AM		Error reading call info from redis: 205128
+10/5/2018, 7:15:17 AM		Error reading call info from redis: false
+10/5/2018, 7:15:17 AM		User with socket 5xikyDphgOFQ6AcCAAA5 not connected
+10/5/2018, 7:15:17 AM		User with socket lODq8Ga9Og3IoAasAAA6 not connected
+10/5/2018, 7:15:17 AM		Error reading call info from redis: 205128
+10/5/2018, 7:16:13 AM		Error reading call info from redis: false
+10/5/2018, 7:16:13 AM		User with socket BeWJEtKtHh_7qn7xAAA7 not connected
+10/5/2018, 7:16:13 AM		Error reading call info from redis: 703233
+10/5/2018, 7:28:33 AM		Error reading call info from redis: 914483
+10/5/2018, 7:29:28 AM		Error reading call info from redis: false
+10/5/2018, 7:29:28 AM		User with socket jL5tSi_qKItQ_MHZAABD not connected
+10/5/2018, 7:29:28 AM		Error reading call info from redis: 914483
+10/5/2018, 8:08:22 AM		Error reading call info from redis: 946519
+10/5/2018, 8:09:13 AM		Error reading call info from redis: 972121
+10/5/2018, 8:09:31 AM		Error reading call info from redis: false
+10/5/2018, 8:09:31 AM		User with socket kE7jdfLy5RJ-EhbJAABh not connected
+10/5/2018, 8:09:31 AM		User with socket wBWA8uSbb_z0XEmNAABg not connected
+10/5/2018, 8:09:31 AM		Error reading call info from redis: 972121
+10/5/2018, 8:11:04 AM		Error reading call info from redis: 586841
+10/5/2018, 8:11:20 AM		Error reading call info from redis: false
+10/5/2018, 8:11:20 AM		User with socket WyYcIrw9-QLuBHxSAABk not connected
+10/5/2018, 8:11:20 AM		User with socket 1hZ4eTo4eX6zs7w4AABl not connected
+10/5/2018, 8:11:20 AM		Error reading call info from redis: 586841
+10/5/2018, 8:12:11 AM		User with socket kmawdNVpsDysUEr2AABm not connected
+10/5/2018, 8:12:11 AM		User with socket 1hZ4eTo4eX6zs7w4AABl not connected
+10/5/2018, 8:13:01 AM		Error reading call info from redis: false
+10/5/2018, 8:13:01 AM		Error reading call info from redis: 190696
+10/5/2018, 8:13:05 AM		Error reading call info from redis: 190696
+10/5/2018, 8:14:14 AM		Error reading call info from redis: false
+10/5/2018, 8:14:14 AM		Error reading call info from redis: 286525
+10/5/2018, 8:18:23 AM		User with socket l6F_Txpa8-bMW9onAABw not connected
+10/5/2018, 8:18:24 AM		Error reading call info from redis: null
+10/5/2018, 8:18:31 AM		Error reading call info from redis: null
+10/5/2018, 8:25:16 AM		Error reading call info from redis: 931883
+10/5/2018, 8:25:22 AM		User with socket OkU0LFcMtPm9HwJjAAB1 not connected
+10/5/2018, 8:25:23 AM		User with socket OkU0LFcMtPm9HwJjAAB1 not connected
+10/5/2018, 8:25:30 AM		Error reading call info from redis: false
+10/5/2018, 8:25:30 AM		User with socket OkU0LFcMtPm9HwJjAAB1 not connected
+10/5/2018, 8:25:30 AM		Error reading call info from redis: 931883
+10/5/2018, 8:27:45 AM		Error reading call info from redis: 853243
+10/5/2018, 8:28:27 AM		Error reading call info from redis: false
+10/5/2018, 8:28:27 AM		User with socket F-hiY9jSSSBlenjBAAB4 not connected
+10/5/2018, 8:28:27 AM		Error reading call info from redis: 853243
+10/5/2018, 8:29:23 AM		Error reading call info from redis: 612045
+10/5/2018, 8:29:55 AM		Error reading call info from redis: false
+10/5/2018, 8:29:55 AM		User with socket AQeLNZskybbYdPakAAB5 not connected
+10/5/2018, 8:29:55 AM		Error reading call info from redis: 612045
+10/5/2018, 8:40:31 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:40:32 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:40:32 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:40:32 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:40:32 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:40:32 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:40:32 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:40:32 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:40:32 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:40:33 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:45:31 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:45:32 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:45:32 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:45:32 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:45:32 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:45:32 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:45:32 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:45:32 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:45:43 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:45:44 AM		User with socket 5fRT_wtKytS-xcxdAAB_ not connected
+10/5/2018, 8:50:56 AM		Error reading call info from redis: false
+10/5/2018, 8:50:56 AM		Error reading call info from redis: 543103
+10/5/2018, 8:58:43 AM		Error reading call info from redis: null
+10/5/2018, 8:59:16 AM		Error reading call info from redis: 524770
+10/5/2018, 9:00:24 AM		Error reading call info from redis: 840883
+10/5/2018, 9:00:41 AM		Error reading call info from redis: false
+10/5/2018, 9:00:41 AM		Error reading call info from redis: 840883
+10/5/2018, 9:01:41 AM		User with socket 44LN9bQNHb5SzmVzAACK not connected
+10/5/2018, 9:09:23 AM		User with socket 4xQbySwXbiPxZcgFAACN not connected
+10/5/2018, 9:12:34 AM		Error reading call info from redis: 230142
+10/5/2018, 9:12:44 AM		Error reading call info from redis: false
+10/5/2018, 9:12:44 AM		Error reading call info from redis: 230142
+10/5/2018, 9:12:44 AM		User with socket EGhnTIdsz9oXhcwWAACR not connected
+10/5/2018, 9:13:44 AM		User with socket ko9hqzte-Qx-EiefAACS not connected
+10/5/2018, 9:13:49 AM		User with socket I_SRUJSAgeR781x8AACT not connected
+10/5/2018, 9:15:59 AM		Error reading call info from redis: false
+10/5/2018, 9:15:59 AM		Error reading call info from redis: 121747
+10/5/2018, 9:26:27 AM		Error reading call info from redis: null
+10/5/2018, 9:26:28 AM		Error reading call info from redis: 758116
+10/5/2018, 9:38:10 AM		Error reading call info from redis: 231917
+10/5/2018, 9:38:21 AM		Error reading user info from redis: 1
+10/5/2018, 9:38:24 AM		Error reading call info from redis: null
+10/5/2018, 9:38:27 AM		Error reading user info from redis: 3
+10/5/2018, 9:38:28 AM		Error reading call info from redis: 231917
+10/5/2018, 9:38:28 AM		Error reading call info from redis: 231917
+10/5/2018, 9:38:28 AM		Error reading call info from redis: 231917
+10/5/2018, 9:38:28 AM		Error reading call info from redis: 231917
+10/5/2018, 9:38:28 AM		Error reading call info from redis: 231917
+10/5/2018, 9:38:42 AM		Error reading call info from redis: false
+10/5/2018, 9:38:42 AM		User with socket MxFv6rPj0sUn4ZW-AAC1 not connected
+10/5/2018, 9:38:42 AM		User with socket dxbRbXXYtvH960I4AAC2 not connected
+10/5/2018, 9:38:42 AM		Error reading call info from redis: 231917
+10/5/2018, 9:43:18 AM		Error reading user info from redis: 2
+10/5/2018, 9:43:18 AM		Error reading call info from redis: 340680
+10/5/2018, 9:43:18 AM		Error reading call info from redis: 340680
+10/5/2018, 9:43:18 AM		Error reading call info from redis: 340680
+10/5/2018, 9:43:18 AM		Error reading call info from redis: 340680
+10/5/2018, 9:43:22 AM		Error reading call info from redis: 340680
+10/5/2018, 9:43:34 AM		Error reading call info from redis: false
+10/5/2018, 9:43:34 AM		Error reading call info from redis: 340680
+10/5/2018, 9:43:35 AM		Error reading call info from redis: 340680
+10/5/2018, 10:23:18 AM		Error reading call info from redis: null
+10/5/2018, 10:24:12 AM		Error reading call info from redis: false
+10/5/2018, 10:24:12 AM		User with socket GQr4NcIlYCABFxSrAADR not connected
+10/5/2018, 10:24:12 AM		User with socket yzr5Ajs1uhhaCO05AADS not connected
+10/5/2018, 10:24:12 AM		Error reading call info from redis: 342445
+10/5/2018, 10:24:55 AM		Error reading call info from redis: null
+10/5/2018, 10:25:48 AM		Error reading call info from redis: false
+10/5/2018, 10:25:48 AM		User with socket 8m79XrBDcpg4KB-fAADV not connected
+10/5/2018, 10:25:48 AM		User with socket QaLCNKP4T41lwirkAADW not connected
+10/5/2018, 10:25:48 AM		Error reading call info from redis: 126146
+10/5/2018, 10:29:09 AM		Error reading call info from redis: null
+10/5/2018, 10:29:12 AM		Error reading call info from redis: null
+10/5/2018, 10:29:13 AM		Error reading call info from redis: null
+10/5/2018, 10:29:47 AM		Error reading call info from redis: false
+10/5/2018, 10:29:47 AM		User with socket ifiMj-BVCgJS-MUiAADc not connected
+10/5/2018, 10:29:47 AM		Error reading call info from redis: 585412
+10/5/2018, 10:33:25 AM		Error reading call info from redis: 339238
+10/5/2018, 10:34:03 AM		Error reading call info from redis: false
+10/5/2018, 10:34:03 AM		User with socket DtqI4P5q7IJZzSYfAADf not connected
+10/5/2018, 10:34:03 AM		Error reading call info from redis: 339238
+10/8/2018, 5:22:52 AM		Connected to Redis
+10/8/2018, 5:22:52 AM		Connected to Redis
+10/8/2018, 5:30:51 AM		Connected to Redis
+10/8/2018, 5:30:52 AM		Connected to Redis
+10/8/2018, 5:30:55 AM		Connected to Redis
+10/8/2018, 5:30:57 AM		Connected to Redis
+10/8/2018, 5:30:59 AM		Connected to Redis
+10/8/2018, 5:31:01 AM		Connected to Redis
+10/8/2018, 5:31:04 AM		Connected to Redis
+10/8/2018, 5:31:06 AM		Connected to Redis
+10/8/2018, 5:31:08 AM		Connected to Redis
+10/8/2018, 5:31:10 AM		Connected to Redis
+10/8/2018, 5:31:12 AM		Connected to Redis
+10/8/2018, 5:31:15 AM		Connected to Redis
+10/8/2018, 5:31:17 AM		Connected to Redis
+10/8/2018, 5:31:19 AM		Connected to Redis
+10/8/2018, 5:31:22 AM		Connected to Redis
+10/8/2018, 5:31:44 AM		Connected to Redis
+10/8/2018, 5:32:04 AM		Connected to Redis
+10/8/2018, 5:32:19 AM		Connected to Redis
+10/8/2018, 5:32:32 AM		Connected to Redis
+10/8/2018, 5:32:44 AM		Connected to Redis
+10/8/2018, 5:32:58 AM		Connected to Redis
+10/8/2018, 5:33:13 AM		Connected to Redis
+10/8/2018, 5:33:14 AM		Connected to Redis
+10/8/2018, 5:33:27 AM		Connected to Redis
+10/8/2018, 5:33:40 AM		Connected to Redis
+10/8/2018, 5:33:52 AM		Connected to Redis
+10/8/2018, 5:34:35 AM		Connected to Redis
+10/8/2018, 5:34:36 AM		Connected to Redis
+10/8/2018, 5:36:32 AM		Error reading call info from redis: null
+10/8/2018, 5:36:33 AM		Connected to Redis
+10/8/2018, 5:38:02 AM		Error reading call info from redis: null
+10/8/2018, 5:38:44 AM		Connected to Redis
+10/8/2018, 5:38:45 AM		Connected to Redis
+10/8/2018, 5:38:48 AM		Auth error
+10/8/2018, 5:38:48 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500 / null<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"57dbcc5191daeeae9a0e8b43c26c47dd1cfd868d7ef50364de5aeb415fd25aa47cfbaa2b72d417433f41e337ccc0807062a68bbf46f30863b34f78bbe21b74e7\"}}","socket":"5rQbyZRtNTNVELfpAAAA","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/8/2018, 5:38:48 AM		Authorization failed:API requerst error: 500 / null<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"57dbcc5191daeeae9a0e8b43c26c47dd1cfd868d7ef50364de5aeb415fd25aa47cfbaa2b72d417433f41e337ccc0807062a68bbf46f30863b34f78bbe21b74e7"}}
+10/8/2018, 5:38:48 AM		Auth error
+10/8/2018, 5:38:48 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500 / null<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5\"}}","socket":"vHWO92AkJydqs2XuAAAB","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/8/2018, 5:38:48 AM		Authorization failed:API requerst error: 500 / null<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5"}}
+10/8/2018, 5:38:55 AM		Auth error
+10/8/2018, 5:38:55 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500 / null<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5\"}}","socket":"KXWPhMmu5G1kwDGUAAAC","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/8/2018, 5:38:55 AM		Authorization failed:API requerst error: 500 / null<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5"}}
+10/8/2018, 5:38:57 AM		Auth error
+10/8/2018, 5:38:57 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500 / null<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"57dbcc5191daeeae9a0e8b43c26c47dd1cfd868d7ef50364de5aeb415fd25aa47cfbaa2b72d417433f41e337ccc0807062a68bbf46f30863b34f78bbe21b74e7\"}}","socket":"wAIg3HUMo91qzNezAAAD","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/8/2018, 5:38:57 AM		Authorization failed:API requerst error: 500 / null<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"57dbcc5191daeeae9a0e8b43c26c47dd1cfd868d7ef50364de5aeb415fd25aa47cfbaa2b72d417433f41e337ccc0807062a68bbf46f30863b34f78bbe21b74e7"}}
+10/8/2018, 5:39:13 AM		Auth error
+10/8/2018, 5:39:13 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500 / null<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5\"}}","socket":"5NBluHZYLarMiqkaAAAE","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/8/2018, 5:39:13 AM		Authorization failed:API requerst error: 500 / null<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5"}}
+10/8/2018, 5:40:16 AM		Connected to Redis
+10/8/2018, 5:40:16 AM		Connected to Redis
+10/8/2018, 5:40:56 AM		Auth error
+10/8/2018, 5:40:56 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500 / null<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"57dbcc5191daeeae9a0e8b43c26c47dd1cfd868d7ef50364de5aeb415fd25aa47cfbaa2b72d417433f41e337ccc0807062a68bbf46f30863b34f78bbe21b74e7\"}}","socket":"oJs5j_M7UWunCbGVAAAA","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/8/2018, 5:40:56 AM		Authorization failed:API requerst error: 500 / null<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"57dbcc5191daeeae9a0e8b43c26c47dd1cfd868d7ef50364de5aeb415fd25aa47cfbaa2b72d417433f41e337ccc0807062a68bbf46f30863b34f78bbe21b74e7"}}
+10/8/2018, 5:41:02 AM		Auth error
+10/8/2018, 5:41:02 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500 / null<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"57dbcc5191daeeae9a0e8b43c26c47dd1cfd868d7ef50364de5aeb415fd25aa47cfbaa2b72d417433f41e337ccc0807062a68bbf46f30863b34f78bbe21b74e7\"}}","socket":"lFf48bXPuW4nmO8OAAAB","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/8/2018, 5:41:02 AM		Authorization failed:API requerst error: 500 / null<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"57dbcc5191daeeae9a0e8b43c26c47dd1cfd868d7ef50364de5aeb415fd25aa47cfbaa2b72d417433f41e337ccc0807062a68bbf46f30863b34f78bbe21b74e7"}}
+10/8/2018, 5:41:04 AM		Auth error
+10/8/2018, 5:41:04 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500 / null<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5\"}}","socket":"X4eDyWL9D63acMKIAAAC","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/8/2018, 5:41:04 AM		Authorization failed:API requerst error: 500 / null<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5"}}
+10/8/2018, 5:41:43 AM		Auth error
+10/8/2018, 5:41:43 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500 / null<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"57dbcc5191daeeae9a0e8b43c26c47dd1cfd868d7ef50364de5aeb415fd25aa47cfbaa2b72d417433f41e337ccc0807062a68bbf46f30863b34f78bbe21b74e7\"}}","socket":"UYA0m7XmJD8WxmXrAAAD","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/8/2018, 5:41:43 AM		Authorization failed:API requerst error: 500 / null<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"57dbcc5191daeeae9a0e8b43c26c47dd1cfd868d7ef50364de5aeb415fd25aa47cfbaa2b72d417433f41e337ccc0807062a68bbf46f30863b34f78bbe21b74e7"}}
+10/8/2018, 5:41:52 AM		Auth error
+10/8/2018, 5:41:52 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500 / null<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5\"}}","socket":"_mZ3zdOl0yk76KfDAAAE","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/8/2018, 5:41:52 AM		Authorization failed:API requerst error: 500 / null<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"f136180de5b5ac3e29dffebdbd2dbb1f8eb18842cb8330131ddc0f033406333dd7da11ec0780f74386bea3066ca57952c869338396bf1472a591e29c915986e5"}}
+10/8/2018, 5:42:37 AM		Auth error
+10/8/2018, 5:42:37 AM		{"id":null,"token":null,"name":null,"photo":null,"video":null,"alive":false,"authorized":false,"isHunting":false,"huntingInterval":false,"huntedWith":[],"call":null,"apiCode":500,"apiMessage":"API requerst error: 500 / null<br />request: {\"method\":\"POST\",\"uri\":\"http://18.206.154.225/v1/user/check\",\"headers\":{\"Authorization\":\"Token securityToken!\"},\"form\":{\"hash\":\"57dbcc5191daeeae9a0e8b43c26c47dd1cfd868d7ef50364de5aeb415fd25aa47cfbaa2b72d417433f41e337ccc0807062a68bbf46f30863b34f78bbe21b74e7\"}}","socket":"nJycfAa-Pl7HYosWAAAF","socketInstance":null,"redisKey":false,"huntingListKey":"huntingUserList"}
+10/8/2018, 5:42:37 AM		Authorization failed:API requerst error: 500 / null<br />request: {"method":"POST","uri":"http://18.206.154.225/v1/user/check","headers":{"Authorization":"Token securityToken!"},"form":{"hash":"57dbcc5191daeeae9a0e8b43c26c47dd1cfd868d7ef50364de5aeb415fd25aa47cfbaa2b72d417433f41e337ccc0807062a68bbf46f30863b34f78bbe21b74e7"}}
+10/8/2018, 5:43:55 AM		Connected to Redis
+10/8/2018, 5:43:56 AM		Connected to Redis
+10/8/2018, 5:46:30 AM		Error reading call info from redis: null
+10/8/2018, 5:46:31 AM		Error reading call info from redis: null
+10/8/2018, 5:50:27 AM		Error reading call info from redis: null
+10/8/2018, 5:50:48 AM		Error reading call info from redis: null
+10/8/2018, 5:51:27 AM		Error reading call info from redis: null
+10/8/2018, 5:51:56 AM		Connected to Redis
+10/8/2018, 5:51:57 AM		Connected to Redis
+10/8/2018, 5:53:06 AM		Error reading call info from redis: null
+10/8/2018, 5:53:06 AM		Error reading call info from redis: null
+10/8/2018, 5:54:24 AM		Error reading call info from redis: null
+10/8/2018, 5:54:24 AM		Error reading call info from redis: null
+10/8/2018, 5:56:29 AM		Error reading call info from redis: null
+10/8/2018, 5:56:29 AM		Error reading call info from redis: null
+10/8/2018, 5:58:11 AM		Error reading user info from redis: 2
+10/8/2018, 5:58:34 AM		Error reading call info from redis: null
+10/8/2018, 6:00:03 AM		Error reading call info from redis: null
+10/8/2018, 6:00:04 AM		Error reading call info from redis: null
+10/8/2018, 6:00:59 AM		Connected to Redis
+10/8/2018, 6:01:00 AM		Connected to Redis
+10/8/2018, 6:01:45 AM		recipient is not defined
+10/8/2018, 6:01:46 AM		recipient is not defined
+10/8/2018, 6:02:15 AM		recipient is not defined
+10/8/2018, 6:02:16 AM		recipient is not defined
+10/8/2018, 6:03:46 AM		recipient is not defined
+10/8/2018, 6:03:47 AM		recipient is not defined
+10/8/2018, 6:04:13 AM		Connected to Redis
+10/8/2018, 6:04:13 AM		Connected to Redis
+10/8/2018, 6:04:57 AM		Error reading call info from redis: null
+10/8/2018, 6:04:58 AM		Error reading call info from redis: null
+10/8/2018, 6:07:11 AM		Error reading call info from redis: null
+10/8/2018, 6:07:12 AM		Error reading call info from redis: null
+10/8/2018, 6:08:57 AM		Connected to Redis
+10/8/2018, 6:08:58 AM		Connected to Redis
+10/8/2018, 6:16:42 AM		Connected to Redis
+10/8/2018, 6:16:43 AM		Connected to Redis
+10/8/2018, 6:18:27 AM		Connected to Redis
+10/8/2018, 6:18:28 AM		Connected to Redis
+10/8/2018, 6:21:07 AM		Connected to Redis
+10/8/2018, 6:21:07 AM		Connected to Redis
+10/8/2018, 6:27:33 AM		Connected to Redis
+10/8/2018, 6:27:34 AM		Connected to Redis
+10/8/2018, 6:28:06 AM		Connected to Redis
+10/8/2018, 6:28:07 AM		Connected to Redis
+10/8/2018, 6:32:09 AM		Connected to Redis
+10/8/2018, 6:32:09 AM		Connected to Redis
+10/8/2018, 6:34:03 AM		Connected to Redis
+10/8/2018, 6:34:04 AM		Connected to Redis
+10/8/2018, 6:35:12 AM		Connected to Redis
+10/8/2018, 6:35:59 AM		Connected to Redis
+10/8/2018, 6:35:59 AM		Connected to Redis
+10/8/2018, 6:36:37 AM		Connected to Redis
+10/8/2018, 6:37:26 AM		Connected to Redis
+10/8/2018, 6:37:26 AM		Connected to Redis
+10/8/2018, 6:50:31 AM		Error reading call info from redis: 347922
+10/8/2018, 6:50:51 AM		Error reading call info from redis: false
+10/8/2018, 6:50:51 AM		User with socket YgkLZURC2HHi-WT9AAAM not connected
+10/8/2018, 6:50:51 AM		User with socket IOY-3rga326bEiNXAAAK not connected
+10/8/2018, 6:50:51 AM		Error reading call info from redis: 347922
+10/8/2018, 7:07:51 AM		Connected to Redis
+10/8/2018, 7:07:52 AM		Connected to Redis
+10/8/2018, 7:16:49 AM		Connected to Redis
+10/8/2018, 7:16:49 AM		Connected to Redis
+10/8/2018, 7:20:02 AM		Connected to Redis
+10/8/2018, 7:20:03 AM		Connected to Redis
+10/8/2018, 7:26:38 AM		Connected to Redis
+10/8/2018, 7:26:39 AM		Connected to Redis
+10/8/2018, 7:36:30 AM		Connected to Redis
+10/8/2018, 7:36:30 AM		Connected to Redis
+10/8/2018, 7:46:47 AM		Error reading call info from redis: 859460
+10/8/2018, 7:46:47 AM		Error reading call info from redis: 859460
+10/8/2018, 7:46:47 AM		Error reading call info from redis: 859460
+10/8/2018, 7:46:48 AM		Error reading call info from redis: 859460
+10/8/2018, 7:46:48 AM		Error reading call info from redis: 859460
+10/8/2018, 7:46:48 AM		Error reading call info from redis: 859460
+10/8/2018, 7:46:48 AM		Error reading call info from redis: 859460
+10/8/2018, 7:46:48 AM		Error reading call info from redis: 859460
+10/8/2018, 7:46:48 AM		Error reading call info from redis: 859460
+10/8/2018, 7:46:48 AM		Error reading call info from redis: 859460
+10/8/2018, 7:46:48 AM		Error reading call info from redis: 859460
+10/8/2018, 7:46:48 AM		Error reading call info from redis: 859460
+10/8/2018, 8:16:35 AM		Error reading call info from redis: 286368
+10/8/2018, 8:16:35 AM		Error reading call info from redis: 286368
+10/8/2018, 8:16:35 AM		Error reading call info from redis: 286368
+10/8/2018, 8:16:35 AM		Error reading call info from redis: 286368
+10/8/2018, 8:16:35 AM		Error reading call info from redis: 286368
+10/8/2018, 8:16:35 AM		Error reading call info from redis: 286368
+10/8/2018, 8:16:35 AM		Error reading call info from redis: 286368
+10/8/2018, 8:16:36 AM		Error reading call info from redis: 286368
+10/8/2018, 8:16:36 AM		Error reading call info from redis: 286368
+10/8/2018, 8:16:36 AM		Error reading call info from redis: 286368
+10/8/2018, 8:16:36 AM		Error reading call info from redis: 286368
+10/8/2018, 8:16:36 AM		Error reading call info from redis: 286368
+10/8/2018, 8:16:39 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:39 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:39 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:39 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:39 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:40 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:40 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:40 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:40 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:40 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:40 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:40 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:40 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:40 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:40 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:40 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:41 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:41 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:41 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:41 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:41 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:42 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:43 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:44 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:46 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:46 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:46 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:46 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:46 AM		Error reading call info from redis: 736802
+10/8/2018, 8:16:47 AM		Error reading call info from redis: 736802
+10/8/2018, 8:17:05 AM		Error reading call info from redis: false
+10/8/2018, 8:17:05 AM		User with socket zVGuuCxsf5Qb3LByAAAk not connected
+10/8/2018, 8:17:05 AM		Error reading call info from redis: 286368
+10/8/2018, 8:17:06 AM		User with socket zVGuuCxsf5Qb3LByAAAk not connected
+10/8/2018, 8:17:06 AM		Error reading call info from redis: 838629
+10/8/2018, 8:17:35 AM		Error reading call info from redis: false
+10/8/2018, 8:17:35 AM		User with socket lNQkFMzQF24a8hT3AAAm not connected
+10/8/2018, 8:17:35 AM		Error reading call info from redis: 736802
+10/8/2018, 8:17:51 AM		Error reading call info from redis: false
+10/8/2018, 8:17:51 AM		User with socket lNQkFMzQF24a8hT3AAAm not connected
+10/8/2018, 8:17:51 AM		Error reading call info from redis: 838629
+10/8/2018, 8:18:10 AM		Error reading call info from redis: 165001
+10/8/2018, 8:18:10 AM		Error reading call info from redis: 165001
+10/8/2018, 8:18:10 AM		Error reading call info from redis: 165001
+10/8/2018, 8:18:10 AM		Error reading call info from redis: 165001
+10/8/2018, 8:18:10 AM		Error reading call info from redis: 165001
+10/8/2018, 8:18:10 AM		Error reading call info from redis: 165001
+10/8/2018, 8:18:10 AM		Error reading call info from redis: 165001
+10/8/2018, 8:18:10 AM		Error reading call info from redis: 165001
+10/8/2018, 8:18:10 AM		Error reading call info from redis: 165001
+10/8/2018, 8:18:10 AM		Error reading call info from redis: 165001
+10/8/2018, 8:18:10 AM		Error reading call info from redis: 165001
+10/8/2018, 8:18:10 AM		Error reading call info from redis: 165001
+10/8/2018, 8:18:42 AM		User with socket 79IwXIjaSe0P2C1pAAAo not connected
+10/8/2018, 8:18:45 AM		Error reading call info from redis: 118437
+10/8/2018, 8:18:45 AM		Error reading call info from redis: 118437
+10/8/2018, 8:18:45 AM		Error reading call info from redis: 118437
+10/8/2018, 8:18:45 AM		Error reading call info from redis: 118437
+10/8/2018, 8:18:45 AM		Error reading call info from redis: 118437
+10/8/2018, 8:18:45 AM		Error reading call info from redis: 118437
+10/8/2018, 8:18:58 AM		Error reading call info from redis: false
+10/8/2018, 8:18:58 AM		User with socket 79IwXIjaSe0P2C1pAAAo not connected
+10/8/2018, 8:18:58 AM		Error reading call info from redis: 165001
+10/8/2018, 8:19:10 AM		Error reading call info from redis: false
+10/8/2018, 8:19:10 AM		User with socket 79IwXIjaSe0P2C1pAAAo not connected
+10/8/2018, 8:19:10 AM		Error reading call info from redis: 118437
+10/8/2018, 8:22:04 AM		Error reading call info from redis: 516282
+10/8/2018, 8:22:04 AM		Error reading call info from redis: 516282
+10/8/2018, 8:22:04 AM		Error reading call info from redis: 516282
+10/8/2018, 8:22:04 AM		Error reading call info from redis: 516282
+10/8/2018, 8:22:04 AM		Error reading call info from redis: 516282
+10/8/2018, 8:22:04 AM		Error reading call info from redis: 516282
+10/8/2018, 8:22:04 AM		Error reading call info from redis: 516282
+10/8/2018, 8:22:04 AM		Error reading call info from redis: 516282
+10/8/2018, 8:22:05 AM		Error reading call info from redis: 516282
+10/8/2018, 8:22:05 AM		Error reading call info from redis: 516282
+10/8/2018, 8:22:06 AM		Error reading call info from redis: 516282
+10/8/2018, 8:22:06 AM		Error reading call info from redis: 516282
+10/8/2018, 8:22:06 AM		Error reading call info from redis: 516282
+10/8/2018, 8:22:06 AM		Error reading call info from redis: 516282
+10/8/2018, 8:22:07 AM		Error reading call info from redis: 516282
+10/8/2018, 8:22:20 AM		Error reading call info from redis: false
+10/8/2018, 8:22:20 AM		Error reading call info from redis: 516282
+10/8/2018, 8:27:02 AM		Error reading call info from redis: 140253
+10/8/2018, 8:27:02 AM		Error reading call info from redis: 140253
+10/8/2018, 8:27:02 AM		Error reading call info from redis: 140253
+10/8/2018, 8:27:02 AM		Error reading call info from redis: 140253
+10/8/2018, 8:27:02 AM		Error reading call info from redis: 140253
+10/8/2018, 8:27:02 AM		Error reading call info from redis: 140253
+10/8/2018, 8:27:41 AM		Error reading call info from redis: false
+10/8/2018, 8:27:41 AM		User with socket 4sebDzC3PMObxiynAAAs not connected
+10/8/2018, 8:27:41 AM		Error reading call info from redis: 140253
+10/8/2018, 8:33:42 AM		Error reading call info from redis: 780560
+10/8/2018, 8:33:42 AM		Error reading call info from redis: 780560
+10/8/2018, 8:33:42 AM		Error reading call info from redis: 780560
+10/8/2018, 8:33:42 AM		Error reading call info from redis: 780560
+10/8/2018, 8:33:42 AM		Error reading call info from redis: 780560
+10/8/2018, 8:33:42 AM		Error reading call info from redis: 780560
+10/8/2018, 8:33:42 AM		Error reading call info from redis: 780560
+10/8/2018, 8:33:43 AM		Error reading call info from redis: 780560
+10/8/2018, 8:33:43 AM		Error reading call info from redis: 780560
+10/8/2018, 8:33:43 AM		Error reading call info from redis: 780560
+10/8/2018, 8:34:26 AM		Error reading call info from redis: false
+10/8/2018, 8:34:26 AM		User with socket e-eKrEdXwQTBkIg2AAAw not connected
+10/8/2018, 8:34:26 AM		Error reading call info from redis: 780560
+10/8/2018, 8:37:02 AM		Error reading call info from redis: 780560
+10/8/2018, 8:37:02 AM		Error reading call info from redis: 780560
+10/8/2018, 8:37:02 AM		Error reading call info from redis: 780560
+10/8/2018, 8:37:02 AM		Error reading call info from redis: 780560
+10/8/2018, 8:37:02 AM		Error reading call info from redis: 780560
+10/8/2018, 8:37:02 AM		Error reading call info from redis: 780560
+10/8/2018, 8:37:02 AM		Error reading call info from redis: 780560
+10/8/2018, 8:37:02 AM		Error reading call info from redis: 780560
+10/8/2018, 8:37:02 AM		Error reading call info from redis: 780560
+10/8/2018, 8:37:03 AM		Error reading call info from redis: 780560
+10/8/2018, 8:39:32 AM		User with socket 23bGJdVa2kptaMWwAAA2 not connected
+10/8/2018, 8:39:32 AM		Error reading call info from redis: 243293
+10/8/2018, 8:39:32 AM		Error reading call info from redis: 243293
+10/8/2018, 8:39:32 AM		Error reading call info from redis: 243293
+10/8/2018, 8:39:32 AM		Error reading call info from redis: 243293
+10/8/2018, 8:39:32 AM		Error reading call info from redis: 243293
+10/8/2018, 8:39:33 AM		Error reading call info from redis: 243293
+10/8/2018, 8:41:24 AM		Error reading call info from redis: 243293
+10/8/2018, 8:41:24 AM		Error reading call info from redis: 243293
+10/8/2018, 8:41:24 AM		Error reading call info from redis: 243293
+10/8/2018, 8:41:24 AM		Error reading call info from redis: 243293
+10/8/2018, 8:41:24 AM		Error reading call info from redis: 243293
+10/8/2018, 8:41:24 AM		Error reading call info from redis: 243293
+10/8/2018, 8:41:24 AM		Error reading call info from redis: 243293
+10/8/2018, 8:41:24 AM		Error reading call info from redis: 243293
+10/8/2018, 8:44:21 AM		Error reading call info from redis: 495810
+10/8/2018, 8:44:21 AM		Error reading call info from redis: 495810
+10/8/2018, 8:44:21 AM		Error reading call info from redis: 495810
+10/8/2018, 8:44:21 AM		Error reading call info from redis: 495810
+10/8/2018, 8:44:21 AM		Error reading call info from redis: 495810
+10/8/2018, 8:44:21 AM		Error reading call info from redis: 495810
+10/8/2018, 8:44:21 AM		Error reading call info from redis: 495810
+10/8/2018, 8:44:21 AM		Error reading call info from redis: 495810
+10/8/2018, 8:44:22 AM		Error reading call info from redis: 495810
+10/8/2018, 8:44:22 AM		Error reading call info from redis: 495810
+10/8/2018, 8:45:10 AM		Error reading call info from redis: false
+10/8/2018, 8:45:10 AM		Error reading call info from redis: 495810
+10/8/2018, 8:50:07 AM		Error reading call info from redis: 460118
+10/8/2018, 8:50:07 AM		Error reading call info from redis: 460118
+10/8/2018, 8:50:07 AM		Error reading call info from redis: 460118
+10/8/2018, 8:50:07 AM		Error reading call info from redis: 460118
+10/8/2018, 8:50:07 AM		Error reading call info from redis: 460118
+10/8/2018, 8:50:23 AM		Error reading call info from redis: false
+10/8/2018, 8:50:23 AM		Error reading call info from redis: 460118
+10/8/2018, 8:50:37 AM		Error reading call info from redis: 895936
+10/8/2018, 8:50:40 AM		Error reading call info from redis: 895936
+10/8/2018, 8:50:40 AM		Error reading call info from redis: 895936
+10/8/2018, 8:50:40 AM		Error reading call info from redis: 895936
+10/8/2018, 8:50:40 AM		Error reading call info from redis: 895936
+10/8/2018, 8:50:40 AM		Error reading call info from redis: 895936
+10/8/2018, 8:50:41 AM		Error reading call info from redis: 895936
+10/8/2018, 8:50:41 AM		Error reading call info from redis: 895936
+10/8/2018, 8:50:41 AM		Error reading call info from redis: 895936
+10/8/2018, 8:50:41 AM		Error reading call info from redis: 895936
+10/8/2018, 8:50:41 AM		Error reading call info from redis: 895936
+10/8/2018, 8:50:41 AM		Error reading call info from redis: 895936
+10/8/2018, 8:50:41 AM		Error reading call info from redis: 895936
+10/8/2018, 8:50:41 AM		Error reading call info from redis: 895936
+10/8/2018, 8:50:58 AM		Error reading call info from redis: 895936
+10/8/2018, 8:50:59 AM		Error reading call info from redis: 895936
+10/8/2018, 8:50:59 AM		Error reading call info from redis: 895936
+10/8/2018, 8:50:59 AM		Error reading call info from redis: 895936
+10/8/2018, 8:50:59 AM		Error reading call info from redis: 895936
+10/8/2018, 8:51:00 AM		Error reading call info from redis: 895936
+10/8/2018, 8:51:00 AM		Error reading call info from redis: 895936
+10/8/2018, 8:51:02 AM		Error reading call info from redis: 895936
+10/8/2018, 8:51:07 AM		Error reading call info from redis: false
+10/8/2018, 8:51:07 AM		User with socket dYJzncatvKs28zjyAABD not connected
+10/8/2018, 8:51:07 AM		User with socket F-fuYBaE2Wach1HiAABF not connected
+10/8/2018, 8:51:07 AM		Error reading call info from redis: 895936
+10/8/2018, 8:52:59 AM		Error reading call info from redis: false
+10/8/2018, 8:52:59 AM		User with socket CPS-YucXakY_VtRlAABG not connected
+10/8/2018, 8:52:59 AM		Error reading call info from redis: 623889
+10/8/2018, 8:57:40 AM		Error reading call info from redis: 623889
+10/8/2018, 8:57:40 AM		Error reading call info from redis: 623889
+10/8/2018, 8:57:40 AM		Error reading call info from redis: 623889
+10/8/2018, 8:57:40 AM		Error reading call info from redis: 623889
+10/8/2018, 8:57:41 AM		Error reading call info from redis: 623889
+10/8/2018, 8:57:41 AM		Error reading call info from redis: 623889
+10/8/2018, 8:58:08 AM		Error reading call info from redis: 623889
+10/8/2018, 8:58:08 AM		Error reading call info from redis: 623889
+10/8/2018, 8:58:08 AM		Error reading call info from redis: 623889
+10/8/2018, 8:58:08 AM		Error reading call info from redis: 623889
+10/8/2018, 8:58:09 AM		Error reading call info from redis: 623889
+10/8/2018, 8:58:09 AM		Error reading call info from redis: 623889
+10/8/2018, 9:05:51 AM		Error reading call info from redis: false
+10/8/2018, 9:05:51 AM		User with socket aZxb8XZxFU19S49rAABP not connected
+10/8/2018, 9:05:51 AM		Error reading call info from redis: 662645
+10/8/2018, 9:07:20 AM		Error reading call info from redis: 662645
+10/8/2018, 9:07:20 AM		Error reading call info from redis: 662645
+10/8/2018, 9:07:20 AM		Error reading call info from redis: 662645
+10/8/2018, 9:07:20 AM		Error reading call info from redis: 662645
+10/8/2018, 9:07:20 AM		Error reading call info from redis: 662645
+10/8/2018, 9:07:20 AM		Error reading call info from redis: 662645
+10/8/2018, 9:11:41 AM		Error reading call info from redis: 765865
+10/8/2018, 9:11:59 AM		Error reading call info from redis: false
+10/8/2018, 9:11:59 AM		Error reading call info from redis: 765865
+10/8/2018, 9:12:05 AM		Error reading call info from redis: 765865
+10/8/2018, 9:12:05 AM		Error reading call info from redis: 765865
+10/8/2018, 9:12:05 AM		Error reading call info from redis: 765865
+10/8/2018, 9:12:05 AM		Error reading call info from redis: 765865
+10/8/2018, 9:12:06 AM		Error reading call info from redis: 765865
+10/8/2018, 9:12:06 AM		Error reading call info from redis: 765865
+10/8/2018, 9:12:30 AM		Error reading call info from redis: 765865
+10/8/2018, 9:12:31 AM		Error reading call info from redis: 765865
+10/8/2018, 9:16:18 AM		Error reading call info from redis: 765865
+10/8/2018, 9:16:18 AM		Error reading call info from redis: 765865
+10/8/2018, 9:16:18 AM		Error reading call info from redis: 765865
+10/8/2018, 9:16:18 AM		Error reading call info from redis: 765865
+10/8/2018, 9:16:18 AM		Error reading call info from redis: 765865
+10/8/2018, 9:16:19 AM		Error reading call info from redis: 765865
+10/8/2018, 9:16:23 AM		Error reading call info from redis: 765865
+10/8/2018, 9:16:23 AM		Error reading call info from redis: 765865
+10/8/2018, 9:16:23 AM		Error reading call info from redis: 765865
+10/8/2018, 9:16:23 AM		Error reading call info from redis: 765865
+10/8/2018, 9:16:23 AM		Error reading call info from redis: 765865
+10/8/2018, 9:16:24 AM		Error reading call info from redis: 765865
+10/8/2018, 9:16:24 AM		Error reading call info from redis: 765865
+10/8/2018, 9:16:24 AM		Error reading call info from redis: 765865
+10/8/2018, 9:16:24 AM		Error reading call info from redis: 765865
+10/8/2018, 9:16:24 AM		Error reading call info from redis: 765865
+10/8/2018, 9:16:24 AM		Error reading call info from redis: 765865
+10/8/2018, 9:19:24 AM		User with socket _UEQbwGe21-Pj6RTAABT not connected
+10/8/2018, 10:06:41 AM		Error reading call info from redis: false
+10/8/2018, 10:06:41 AM		Error reading call info from redis: 327281
+10/8/2018, 10:06:42 AM		Error reading call info from redis: 327281
+10/8/2018, 10:07:04 AM		Error reading call info from redis: 327281
+10/8/2018, 10:07:04 AM		Error reading call info from redis: 327281
+10/8/2018, 10:07:04 AM		Error reading call info from redis: 327281
+10/8/2018, 10:07:04 AM		Error reading call info from redis: 327281
+10/8/2018, 10:07:04 AM		Error reading call info from redis: 327281
+10/8/2018, 10:07:04 AM		Error reading call info from redis: 327281
+10/8/2018, 10:11:37 AM		Error reading call info from redis: 327281
+10/8/2018, 10:11:37 AM		Error reading call info from redis: 327281
+10/8/2018, 10:11:37 AM		Error reading call info from redis: 327281
+10/8/2018, 10:11:37 AM		Error reading call info from redis: 327281
+10/8/2018, 10:11:37 AM		Error reading call info from redis: 327281
+10/8/2018, 10:11:37 AM		Error reading call info from redis: 327281
+10/8/2018, 10:11:37 AM		Error reading call info from redis: 327281
+10/8/2018, 10:11:37 AM		Error reading call info from redis: 327281
+10/8/2018, 10:11:38 AM		Error reading call info from redis: 327281
+10/8/2018, 10:11:38 AM		Error reading call info from redis: 327281
+10/8/2018, 10:12:43 AM		User with socket bKMim2ZzatTI2nsTAABb not connected
+10/8/2018, 10:17:42 AM		Error reading call info from redis: 822607
+10/8/2018, 10:18:33 AM		Error reading call info from redis: false
+10/8/2018, 10:18:33 AM		Error reading call info from redis: 822607
+10/8/2018, 10:22:46 AM		Error reading call info from redis: false
+10/8/2018, 10:22:46 AM		User with socket loqL1Kz5nttq4PGdAABi not connected
+10/8/2018, 10:22:46 AM		Error reading call info from redis: 516503
+10/8/2018, 10:25:07 AM		Error reading call info from redis: 516503
+10/8/2018, 10:25:07 AM		Error reading call info from redis: 516503
+10/8/2018, 10:25:07 AM		Error reading call info from redis: 516503
+10/8/2018, 10:25:07 AM		Error reading call info from redis: 516503
+10/8/2018, 10:25:07 AM		Error reading call info from redis: 516503
+10/8/2018, 10:25:07 AM		Error reading call info from redis: 516503
+10/8/2018, 10:25:07 AM		Error reading call info from redis: 516503
+10/8/2018, 10:25:07 AM		Error reading call info from redis: 516503
+10/8/2018, 10:25:08 AM		Error reading call info from redis: 516503
+10/8/2018, 10:25:08 AM		Error reading call info from redis: 516503
+10/8/2018, 10:27:30 AM		Error reading call info from redis: false
+10/8/2018, 10:27:30 AM		Error reading call info from redis: 497201
+10/8/2018, 10:31:30 AM		Error reading call info from redis: 115524
+10/8/2018, 10:31:34 AM		Error reading call info from redis: false
+10/8/2018, 10:31:34 AM		Error reading call info from redis: 115524
+10/8/2018, 10:32:24 AM		Error reading call info from redis: 115524
+10/8/2018, 10:32:24 AM		Error reading call info from redis: 115524
+10/8/2018, 10:32:24 AM		Error reading call info from redis: 115524
+10/8/2018, 10:32:24 AM		Error reading call info from redis: 115524
+10/8/2018, 10:32:24 AM		Error reading call info from redis: 115524
+10/8/2018, 10:32:24 AM		Error reading call info from redis: 115524
+10/8/2018, 10:32:24 AM		Error reading call info from redis: 115524
+10/8/2018, 10:32:24 AM		Error reading call info from redis: 115524
+10/8/2018, 10:32:24 AM		Error reading call info from redis: 115524
+10/8/2018, 10:32:25 AM		Error reading call info from redis: 115524
+10/8/2018, 10:35:49 AM		Error reading call info from redis: 115524
+10/8/2018, 10:35:49 AM		Error reading call info from redis: 115524
+10/8/2018, 10:35:49 AM		Error reading call info from redis: 115524
+10/8/2018, 10:35:49 AM		Error reading call info from redis: 115524
+10/8/2018, 10:35:49 AM		Error reading call info from redis: 115524
+10/8/2018, 10:36:49 AM		Error reading call info from redis: false
+10/8/2018, 10:36:49 AM		Error reading call info from redis: 333837
+10/8/2018, 10:37:15 AM		Error reading call info from redis: 333837
+10/8/2018, 10:37:15 AM		Error reading call info from redis: 333837
+10/8/2018, 10:37:15 AM		Error reading call info from redis: 333837
+10/8/2018, 10:37:15 AM		Error reading call info from redis: 333837
+10/8/2018, 10:37:15 AM		Error reading call info from redis: 333837
+10/8/2018, 10:37:16 AM		Error reading call info from redis: 333837
+10/8/2018, 10:48:33 AM		Error reading call info from redis: 229867
+10/8/2018, 10:48:33 AM		Error reading call info from redis: 229867
+10/8/2018, 10:48:33 AM		Error reading call info from redis: 229867
+10/8/2018, 10:48:33 AM		Error reading call info from redis: 229867
+10/8/2018, 10:48:33 AM		Error reading call info from redis: 229867
+10/8/2018, 10:48:33 AM		Error reading call info from redis: 229867
+10/8/2018, 10:49:24 AM		Error reading call info from redis: false
+10/8/2018, 10:49:24 AM		User with socket V4Yu8jb6TSkXELmUAABv not connected
+10/8/2018, 10:49:24 AM		Error reading call info from redis: 229867
+10/8/2018, 10:52:06 AM		Error reading call info from redis: 229867
+10/8/2018, 10:52:06 AM		Error reading call info from redis: 229867
+10/8/2018, 10:52:06 AM		Error reading call info from redis: 229867
+10/8/2018, 10:52:06 AM		Error reading call info from redis: 229867
+10/8/2018, 10:52:06 AM		Error reading call info from redis: 229867
+10/8/2018, 10:52:06 AM		Error reading call info from redis: 229867
+10/8/2018, 10:52:06 AM		Error reading call info from redis: 229867
+10/8/2018, 10:52:06 AM		Error reading call info from redis: 229867
+10/8/2018, 10:52:07 AM		Error reading call info from redis: 229867
+10/8/2018, 10:52:07 AM		Error reading call info from redis: 229867
+10/8/2018, 10:55:33 AM		Connected to Redis
+10/8/2018, 10:55:34 AM		Connected to Redis
+10/8/2018, 11:02:34 AM		Error reading call info from redis: 232947
+10/8/2018, 11:02:34 AM		Error reading call info from redis: 232947
+10/8/2018, 11:02:48 AM		Error reading call info from redis: false
+10/8/2018, 11:02:48 AM		User with socket fzYkdVO2tXoQm0mzAAAD not connected
+10/8/2018, 11:02:48 AM		Error reading call info from redis: 232947
+10/8/2018, 11:18:41 AM		User with socket OQcXyu7NO8a6SyaSAAAN not connected
+10/8/2018, 11:18:42 AM		User with socket OQcXyu7NO8a6SyaSAAAN not connected
+10/8/2018, 11:18:42 AM		User with socket OQcXyu7NO8a6SyaSAAAN not connected
+10/8/2018, 11:18:42 AM		User with socket OQcXyu7NO8a6SyaSAAAN not connected
+10/8/2018, 11:18:42 AM		User with socket OQcXyu7NO8a6SyaSAAAN not connected
+10/8/2018, 11:18:42 AM		User with socket OQcXyu7NO8a6SyaSAAAN not connected
+10/8/2018, 11:18:42 AM		User with socket OQcXyu7NO8a6SyaSAAAN not connected
+10/8/2018, 11:18:42 AM		User with socket OQcXyu7NO8a6SyaSAAAN not connected
+10/8/2018, 11:18:42 AM		User with socket OQcXyu7NO8a6SyaSAAAN not connected
+10/8/2018, 11:18:43 AM		User with socket OQcXyu7NO8a6SyaSAAAN not connected
+10/8/2018, 11:23:08 AM		Error reading call info from redis: false
+10/8/2018, 11:23:08 AM		Error reading call info from redis: 530128
+10/8/2018, 11:25:38 AM		Error reading call info from redis: 541458
+10/8/2018, 11:25:38 AM		Error reading call info from redis: 541458
+10/8/2018, 11:25:38 AM		Error reading call info from redis: 541458
+10/8/2018, 11:32:41 AM		Error reading call info from redis: false
+10/8/2018, 11:32:41 AM		User with socket -IuAPg399PqtsJsnAAAY not connected
+10/8/2018, 11:32:41 AM		Error reading call info from redis: 229397
+10/8/2018, 11:36:17 AM		Error reading call info from redis: 229397
+10/8/2018, 11:36:18 AM		Error reading call info from redis: 229397
+10/8/2018, 11:36:18 AM		Error reading call info from redis: 229397
+10/8/2018, 11:36:18 AM		Error reading call info from redis: 229397
+10/8/2018, 11:39:01 AM		Connected to Redis
+10/8/2018, 11:39:02 AM		Connected to Redis
+10/9/2018, 3:04:26 AM		Error reading call info from redis: 881115
+10/9/2018, 3:04:26 AM		Error reading call info from redis: 881115
+10/9/2018, 3:04:26 AM		Error reading call info from redis: 881115
+10/9/2018, 3:04:26 AM		Error reading call info from redis: 881115
+10/9/2018, 3:04:27 AM		Error reading call info from redis: 881115
+10/9/2018, 3:04:27 AM		Error reading call info from redis: 881115
+10/9/2018, 3:05:06 AM		Error reading call info from redis: 881115
+10/9/2018, 3:05:40 AM		User with socket pWZC_wpIboO5gM_6AAAB not connected
+10/9/2018, 3:07:28 AM		Error reading call info from redis: 503783
+10/9/2018, 3:07:32 AM		Error reading call info from redis: 503783
+10/9/2018, 3:35:15 AM		Connected to Redis
+10/9/2018, 3:35:16 AM		Connected to Redis
+10/9/2018, 3:40:18 AM		User with socket TJe0FFQY8uDltjErAAAF not connected
+10/9/2018, 3:41:07 AM		User with socket TJe0FFQY8uDltjErAAAF not connected
+10/9/2018, 3:41:18 AM		Error reading call info from redis: 861241
+10/9/2018, 4:08:18 AM		User with socket Xad9kUpQ7z_wLdY8AAAK not connected
+10/9/2018, 4:08:19 AM		User with socket Xad9kUpQ7z_wLdY8AAAK not connected
+10/9/2018, 4:08:19 AM		User with socket Xad9kUpQ7z_wLdY8AAAK not connected
+10/9/2018, 4:08:19 AM		User with socket Xad9kUpQ7z_wLdY8AAAK not connected
+10/9/2018, 4:08:19 AM		User with socket Xad9kUpQ7z_wLdY8AAAK not connected
+10/9/2018, 4:08:19 AM		User with socket Xad9kUpQ7z_wLdY8AAAK not connected
+10/9/2018, 4:08:19 AM		User with socket Xad9kUpQ7z_wLdY8AAAK not connected
+10/9/2018, 4:08:19 AM		User with socket Xad9kUpQ7z_wLdY8AAAK not connected
+10/9/2018, 4:08:19 AM		User with socket Xad9kUpQ7z_wLdY8AAAK not connected
+10/9/2018, 4:08:19 AM		User with socket Xad9kUpQ7z_wLdY8AAAK not connected
+10/9/2018, 4:12:08 AM		Connected to Redis
+10/9/2018, 4:12:09 AM		Connected to Redis
+10/9/2018, 4:20:20 AM		User with socket pKqxCIHDqEOI57clAAAC not connected
+10/9/2018, 4:20:20 AM		User with socket pKqxCIHDqEOI57clAAAC not connected
+10/9/2018, 4:20:20 AM		User with socket pKqxCIHDqEOI57clAAAC not connected
+10/9/2018, 4:20:20 AM		User with socket pKqxCIHDqEOI57clAAAC not connected
+10/9/2018, 4:20:20 AM		User with socket pKqxCIHDqEOI57clAAAC not connected
+10/9/2018, 4:20:21 AM		User with socket pKqxCIHDqEOI57clAAAC not connected
+10/9/2018, 4:33:50 AM		User with socket 3jQ9ApuTJSVCa8KaAAAJ not connected
+10/9/2018, 4:33:50 AM		User with socket 3jQ9ApuTJSVCa8KaAAAJ not connected
+10/9/2018, 4:33:50 AM		User with socket 3jQ9ApuTJSVCa8KaAAAJ not connected
+10/9/2018, 4:33:50 AM		User with socket 3jQ9ApuTJSVCa8KaAAAJ not connected
+10/9/2018, 4:33:50 AM		User with socket 3jQ9ApuTJSVCa8KaAAAJ not connected
+10/9/2018, 4:33:50 AM		User with socket 3jQ9ApuTJSVCa8KaAAAJ not connected
+10/9/2018, 4:43:12 AM		User with socket lvjj7essj12OON0RAAAO not connected
+10/9/2018, 4:43:13 AM		User with socket lvjj7essj12OON0RAAAO not connected
+10/9/2018, 4:48:12 AM		User with socket lvjj7essj12OON0RAAAO not connected
+10/9/2018, 4:48:13 AM		User with socket lvjj7essj12OON0RAAAO not connected
+10/9/2018, 4:55:12 AM		User with socket gOppSESA-vxuIDkDAAAS not connected
+10/9/2018, 4:55:12 AM		User with socket gOppSESA-vxuIDkDAAAS not connected
+10/9/2018, 4:55:12 AM		User with socket gOppSESA-vxuIDkDAAAS not connected
+10/9/2018, 4:55:12 AM		User with socket gOppSESA-vxuIDkDAAAS not connected
+10/9/2018, 4:55:12 AM		User with socket gOppSESA-vxuIDkDAAAS not connected
+10/9/2018, 4:55:13 AM		User with socket gOppSESA-vxuIDkDAAAS not connected
+10/9/2018, 5:06:18 AM		Error reading call info from redis: 476472
+10/9/2018, 5:06:57 AM		Error reading call info from redis: 984507
+10/9/2018, 5:11:21 AM		Error reading call info from redis: 686202
+10/9/2018, 5:12:13 AM		Error reading call info from redis: 686202
+10/9/2018, 5:12:13 AM		Error reading call info from redis: 686202
+10/9/2018, 5:12:13 AM		Error reading call info from redis: 686202
+10/9/2018, 5:12:13 AM		Error reading call info from redis: 686202
+10/9/2018, 5:12:13 AM		Error reading call info from redis: 686202
+10/9/2018, 5:12:13 AM		Error reading call info from redis: 686202
+10/9/2018, 5:12:13 AM		Error reading call info from redis: 686202
+10/9/2018, 5:12:13 AM		Error reading call info from redis: 686202
+10/9/2018, 5:12:13 AM		Error reading call info from redis: 686202
+10/9/2018, 5:12:14 AM		Error reading call info from redis: 686202
+10/9/2018, 5:22:58 AM		Error reading call info from redis: 636480
+10/9/2018, 5:23:36 AM		Error reading call info from redis: 636480
+10/9/2018, 5:23:52 AM		Connected to Redis
+10/9/2018, 5:23:52 AM		Connected to Redis
+10/9/2018, 5:25:50 AM		Error reading call info from redis: 988478
+10/9/2018, 5:25:50 AM		Error reading call info from redis: 988478
+10/9/2018, 5:25:50 AM		Error reading call info from redis: 988478
+10/9/2018, 5:25:50 AM		Error reading call info from redis: 988478
+10/9/2018, 5:25:50 AM		Error reading call info from redis: 988478
+10/9/2018, 5:25:50 AM		Error reading call info from redis: 988478
+10/9/2018, 5:25:50 AM		Error reading call info from redis: 988478
+10/9/2018, 5:25:51 AM		Error reading call info from redis: 988478
+10/9/2018, 5:25:51 AM		Error reading call info from redis: 988478
+10/9/2018, 5:26:14 AM		Error reading call info from redis: 988478
+10/9/2018, 6:39:02 AM		Error reading call info from redis: 194100
+10/9/2018, 6:41:40 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:17 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:26 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:26 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:26 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:26 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:26 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:26 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:26 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:26 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:26 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:27 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:47 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:47 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:47 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:47 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:47 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:48 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:48 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:48 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:48 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:48 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:48 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:48 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:48 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:48 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:49 AM		Error reading call info from redis: 597590
+10/9/2018, 6:42:49 AM		Error reading call info from redis: 597590
+10/9/2018, 6:50:21 AM		Error reading call info from redis: 112391
+10/9/2018, 6:51:21 AM		Error reading call info from redis: 112391
+10/9/2018, 6:51:21 AM		Error reading call info from redis: 112391
+10/9/2018, 6:51:21 AM		Error reading call info from redis: 112391
+10/9/2018, 6:51:21 AM		Error reading call info from redis: 112391
+10/9/2018, 6:51:21 AM		Error reading call info from redis: 112391
+10/9/2018, 6:51:21 AM		Error reading call info from redis: 112391
+10/9/2018, 6:51:26 AM		Error reading call info from redis: 112391
+10/9/2018, 6:51:26 AM		Error reading call info from redis: 112391
+10/9/2018, 6:51:26 AM		Error reading call info from redis: 112391
+10/9/2018, 6:51:26 AM		Error reading call info from redis: 112391
+10/9/2018, 6:51:26 AM		Error reading call info from redis: 112391
+10/9/2018, 6:51:26 AM		Error reading call info from redis: 112391
+10/9/2018, 6:51:26 AM		Error reading call info from redis: 112391
+10/9/2018, 6:51:28 AM		User with socket zSIMAkeQIl7G00pPAAAL not connected
+10/9/2018, 6:52:40 AM		User with socket 5-0EJeKq_QhwEemGAAAP not connected
+10/9/2018, 6:52:41 AM		Error reading call info from redis: 434948
+10/9/2018, 6:52:41 AM		Error reading call info from redis: 434948
+10/9/2018, 6:52:41 AM		Error reading call info from redis: 434948
+10/9/2018, 6:52:41 AM		Error reading call info from redis: 434948
+10/9/2018, 6:52:41 AM		Error reading call info from redis: 434948
+10/9/2018, 6:52:41 AM		Error reading call info from redis: 434948
+10/9/2018, 6:53:15 AM		Error reading call info from redis: 434948
+10/9/2018, 6:54:26 AM		Error reading call info from redis: 470529
+10/9/2018, 6:54:30 AM		Error reading call info from redis: 470529
+10/9/2018, 6:54:30 AM		Error reading call info from redis: 470529
+10/9/2018, 6:54:30 AM		Error reading call info from redis: 470529
+10/9/2018, 6:54:30 AM		Error reading call info from redis: 470529
+10/9/2018, 6:54:31 AM		Error reading call info from redis: 470529
+10/9/2018, 6:54:31 AM		Error reading call info from redis: 470529
+10/9/2018, 6:55:01 AM		Error reading call info from redis: 470529
+10/9/2018, 6:58:31 AM		Error reading call info from redis: 470529
+10/9/2018, 6:58:31 AM		Error reading call info from redis: 470529
+10/9/2018, 6:58:31 AM		Error reading call info from redis: 470529
+10/9/2018, 6:58:31 AM		Error reading call info from redis: 470529
+10/9/2018, 6:58:31 AM		Error reading call info from redis: 470529
+10/9/2018, 6:58:31 AM		Error reading call info from redis: 470529
+10/9/2018, 6:58:31 AM		Error reading call info from redis: 470529
+10/9/2018, 6:58:32 AM		Error reading call info from redis: 470529
+10/9/2018, 6:58:32 AM		Error reading call info from redis: 470529
+10/9/2018, 6:58:32 AM		Error reading call info from redis: 470529
+10/9/2018, 6:59:36 AM		User with socket tTUJ48xaWskLB0ONAAAS not connected
+10/9/2018, 6:59:52 AM		Error reading call info from redis: 807860
+10/9/2018, 6:59:52 AM		Error reading call info from redis: 807860
+10/9/2018, 6:59:52 AM		Error reading call info from redis: 807860
+10/9/2018, 6:59:52 AM		Error reading call info from redis: 807860
+10/9/2018, 6:59:52 AM		Error reading call info from redis: 807860
+10/9/2018, 6:59:52 AM		Error reading call info from redis: 807860
+10/9/2018, 7:00:48 AM		Error reading call info from redis: 334340
+10/9/2018, 7:00:48 AM		Error reading call info from redis: 334340
+10/9/2018, 7:00:48 AM		Error reading call info from redis: 334340
+10/9/2018, 7:00:48 AM		Error reading call info from redis: 334340
+10/9/2018, 7:00:48 AM		Error reading call info from redis: 334340
+10/9/2018, 7:01:17 AM		Error reading call info from redis: 334340
+10/9/2018, 7:01:20 AM		Error reading call info from redis: 334340
+10/9/2018, 7:01:20 AM		Error reading call info from redis: 334340
+10/9/2018, 7:01:20 AM		Error reading call info from redis: 334340
+10/9/2018, 7:01:20 AM		Error reading call info from redis: 334340
+10/9/2018, 7:01:20 AM		Error reading call info from redis: 334340
+10/9/2018, 7:01:20 AM		Error reading call info from redis: 334340
+10/9/2018, 7:01:20 AM		Error reading call info from redis: 334340
+10/9/2018, 7:01:55 AM		Error reading call info from redis: 839592
+10/9/2018, 7:02:19 AM		Error reading call info from redis: 839592
+10/9/2018, 7:02:30 AM		Error reading call info from redis: 839592
+10/9/2018, 7:02:30 AM		Error reading call info from redis: 839592
+10/9/2018, 7:02:30 AM		Error reading call info from redis: 839592
+10/9/2018, 7:02:30 AM		Error reading call info from redis: 839592
+10/9/2018, 7:02:30 AM		Error reading call info from redis: 839592
+10/9/2018, 7:02:30 AM		Error reading call info from redis: 839592
+10/9/2018, 7:02:30 AM		Error reading call info from redis: 839592
+10/9/2018, 7:02:30 AM		Error reading call info from redis: 839592
+10/9/2018, 7:02:31 AM		Error reading call info from redis: 839592
+10/9/2018, 7:02:31 AM		Error reading call info from redis: 839592
+10/9/2018, 7:02:39 AM		Error reading call info from redis: 839592
+10/9/2018, 7:02:39 AM		Error reading call info from redis: 839592
+10/9/2018, 7:02:39 AM		Error reading call info from redis: 839592
+10/9/2018, 7:02:39 AM		Error reading call info from redis: 839592
+10/9/2018, 7:02:39 AM		Error reading call info from redis: 839592
+10/9/2018, 7:02:39 AM		Error reading call info from redis: 839592
+10/9/2018, 7:03:39 AM		User with socket FnP3es4ZzTG1YBayAAAW not connected
+10/9/2018, 7:10:18 AM		Error reading call info from redis: 657963
+10/9/2018, 7:12:21 AM		Error reading call info from redis: 746175
+10/9/2018, 7:12:21 AM		Error reading call info from redis: 746175
+10/9/2018, 7:12:21 AM		Error reading call info from redis: 746175
+10/9/2018, 7:12:21 AM		Error reading call info from redis: 746175
+10/9/2018, 7:12:21 AM		Error reading call info from redis: 746175
+10/9/2018, 7:12:22 AM		Error reading call info from redis: 746175
+10/9/2018, 7:12:22 AM		Error reading call info from redis: 746175
+10/9/2018, 7:12:47 AM		Error reading call info from redis: 746175
+10/9/2018, 7:18:46 AM		Error reading call info from redis: 118539
+10/9/2018, 7:18:51 AM		Error reading call info from redis: 118539
+10/9/2018, 7:18:51 AM		Error reading call info from redis: 118539
+10/9/2018, 7:18:51 AM		Error reading call info from redis: 118539
+10/9/2018, 7:18:51 AM		Error reading call info from redis: 118539
+10/9/2018, 7:18:52 AM		Error reading call info from redis: 118539
+10/9/2018, 7:18:52 AM		Error reading call info from redis: 118539
+10/9/2018, 7:19:17 AM		User with socket U7QUxvOG2Ci4QyAuAAAg not connected
+10/9/2018, 7:19:17 AM		User with socket U7QUxvOG2Ci4QyAuAAAg not connected
+10/9/2018, 7:20:15 AM		User with socket U7QUxvOG2Ci4QyAuAAAg not connected
+10/9/2018, 7:21:52 AM		Error reading call info from redis: 770144
+10/9/2018, 7:22:01 AM		Error reading call info from redis: 770144
+10/9/2018, 7:22:01 AM		Error reading call info from redis: 770144
+10/9/2018, 7:22:01 AM		Error reading call info from redis: 770144
+10/9/2018, 7:22:01 AM		Error reading call info from redis: 770144
+10/9/2018, 7:22:01 AM		Error reading call info from redis: 770144
+10/9/2018, 7:22:01 AM		Error reading call info from redis: 770144
+10/9/2018, 7:22:28 AM		Error reading call info from redis: 770144
+10/9/2018, 7:24:25 AM		Error reading call info from redis: 674427
+10/9/2018, 7:25:07 AM		Error reading call info from redis: 674427
+10/9/2018, 7:25:29 AM		Error reading call info from redis: 702788
+10/9/2018, 7:31:21 AM		Error reading call info from redis: 802178
+10/9/2018, 7:39:50 AM		Error reading call info from redis: 292660
+10/9/2018, 7:42:26 AM		Error reading call info from redis: 975479
+10/9/2018, 7:43:26 AM		Error reading call info from redis: 525639
+10/9/2018, 7:44:10 AM		Error reading call info from redis: 525639
+10/9/2018, 7:48:09 AM		User with socket UI-EqEsjkn5FmnVyAAAy not connected
+10/9/2018, 8:08:40 AM		User with socket t-FcgIwi8rF2tVydAAA4 not connected
+10/9/2018, 8:34:01 AM		User with socket sr91Ef2vk-KUqW03AAA6 not connected
+10/9/2018, 8:34:01 AM		User with socket sr91Ef2vk-KUqW03AAA6 not connected
+10/9/2018, 8:34:01 AM		User with socket sr91Ef2vk-KUqW03AAA6 not connected
+10/9/2018, 8:34:01 AM		User with socket sr91Ef2vk-KUqW03AAA6 not connected
+10/9/2018, 8:34:01 AM		User with socket sr91Ef2vk-KUqW03AAA6 not connected
+10/9/2018, 8:34:01 AM		User with socket sr91Ef2vk-KUqW03AAA6 not connected
+10/9/2018, 8:34:01 AM		User with socket sr91Ef2vk-KUqW03AAA6 not connected
+10/9/2018, 8:34:02 AM		User with socket sr91Ef2vk-KUqW03AAA6 not connected
+10/9/2018, 8:34:02 AM		User with socket sr91Ef2vk-KUqW03AAA6 not connected
+10/9/2018, 8:34:02 AM		User with socket sr91Ef2vk-KUqW03AAA6 not connected
+10/9/2018, 8:38:26 AM		Error reading call info from redis: 143724
+10/9/2018, 8:40:03 AM		Error reading call info from redis: 229885
+10/9/2018, 8:40:40 AM		Error reading call info from redis: 229885
+10/9/2018, 8:42:06 AM		User with socket iAAg-SAStehRF-B3AABC not connected
+10/9/2018, 8:42:19 AM		Error reading call info from redis: 712784
+10/9/2018, 8:48:08 AM		User with socket NhKvMWONEhwW9OQBAABF not connected
+10/9/2018, 8:48:08 AM		User with socket NhKvMWONEhwW9OQBAABF not connected
+10/9/2018, 8:48:08 AM		User with socket NhKvMWONEhwW9OQBAABF not connected
+10/9/2018, 8:48:08 AM		User with socket NhKvMWONEhwW9OQBAABF not connected
+10/9/2018, 8:48:08 AM		User with socket NhKvMWONEhwW9OQBAABF not connected
+10/9/2018, 8:48:09 AM		User with socket NhKvMWONEhwW9OQBAABF not connected
+10/9/2018, 8:53:08 AM		User with socket NhKvMWONEhwW9OQBAABF not connected
+10/9/2018, 8:53:08 AM		User with socket NhKvMWONEhwW9OQBAABF not connected
+10/9/2018, 8:53:08 AM		User with socket NhKvMWONEhwW9OQBAABF not connected
+10/9/2018, 8:53:08 AM		User with socket NhKvMWONEhwW9OQBAABF not connected
+10/9/2018, 8:53:08 AM		User with socket NhKvMWONEhwW9OQBAABF not connected
+10/9/2018, 8:53:09 AM		User with socket NhKvMWONEhwW9OQBAABF not connected
+10/9/2018, 9:04:29 AM		Connected to Redis
+10/9/2018, 9:04:30 AM		Connected to Redis
+10/9/2018, 9:05:12 AM		Connected to Redis
+10/9/2018, 9:05:13 AM		Connected to Redis
+10/9/2018, 9:19:13 AM		User with socket 3GBaQwsvzcejB1GHAAAG not connected
+10/9/2018, 9:19:13 AM		User with socket 3GBaQwsvzcejB1GHAAAG not connected
+10/9/2018, 9:19:13 AM		User with socket 3GBaQwsvzcejB1GHAAAG not connected
+10/9/2018, 9:19:13 AM		User with socket 3GBaQwsvzcejB1GHAAAG not connected
+10/9/2018, 9:19:13 AM		User with socket 3GBaQwsvzcejB1GHAAAG not connected
+10/9/2018, 9:19:14 AM		User with socket 3GBaQwsvzcejB1GHAAAG not connected
+10/9/2018, 9:22:46 AM		Connected to Redis
+10/9/2018, 9:22:47 AM		Connected to Redis
+10/9/2018, 9:35:53 AM		User with socket rpcj8iCFjUZ_urYHAAAB not connected
+10/9/2018, 9:35:54 AM		User with socket rpcj8iCFjUZ_urYHAAAB not connected
+10/9/2018, 9:35:54 AM		User with socket rpcj8iCFjUZ_urYHAAAB not connected
+10/9/2018, 9:35:54 AM		User with socket rpcj8iCFjUZ_urYHAAAB not connected
+10/9/2018, 9:35:54 AM		User with socket rpcj8iCFjUZ_urYHAAAB not connected
+10/9/2018, 9:35:54 AM		User with socket rpcj8iCFjUZ_urYHAAAB not connected
+10/9/2018, 10:06:31 AM		Connected to Redis
+10/9/2018, 10:06:32 AM		Connected to Redis
+10/9/2018, 10:23:35 AM		Connected to Redis
+10/9/2018, 10:23:36 AM		Connected to Redis
+10/9/2018, 10:26:57 AM		Connected to Redis
+10/9/2018, 10:26:58 AM		Connected to Redis
+10/9/2018, 10:27:51 AM		Connected to Redis
+10/9/2018, 10:27:57 AM		Connected to Redis
+10/9/2018, 10:28:04 AM		Connected to Redis
+10/9/2018, 10:28:11 AM		Connected to Redis
+10/9/2018, 10:28:17 AM		Connected to Redis
+10/9/2018, 10:28:19 AM		Connected to Redis
+10/9/2018, 10:28:21 AM		Connected to Redis
+10/9/2018, 10:28:28 AM		Connected to Redis
+10/9/2018, 10:28:34 AM		Connected to Redis
+10/9/2018, 10:28:40 AM		Connected to Redis
+10/9/2018, 10:28:41 AM		Connected to Redis
+10/9/2018, 10:28:48 AM		Connected to Redis
+10/9/2018, 10:28:54 AM		Connected to Redis
+10/9/2018, 10:28:55 AM		Connected to Redis
+10/9/2018, 10:28:57 AM		Connected to Redis
+10/9/2018, 10:29:04 AM		Connected to Redis
+10/9/2018, 10:29:11 AM		Connected to Redis
+10/9/2018, 10:29:18 AM		Connected to Redis
+10/9/2018, 10:29:25 AM		Connected to Redis
+10/9/2018, 10:29:31 AM		Connected to Redis
+10/9/2018, 10:29:37 AM		Connected to Redis
+10/9/2018, 10:29:39 AM		Connected to Redis
+10/9/2018, 10:29:46 AM		Connected to Redis
+10/9/2018, 10:29:54 AM		Connected to Redis
+10/9/2018, 10:29:58 AM		Connected to Redis
+10/9/2018, 10:30:00 AM		Connected to Redis
+10/9/2018, 10:30:06 AM		Connected to Redis
+10/9/2018, 10:30:13 AM		Connected to Redis
+10/9/2018, 10:30:19 AM		Connected to Redis
+10/9/2018, 10:30:26 AM		Connected to Redis
+10/9/2018, 10:30:32 AM		Connected to Redis
+10/9/2018, 10:30:33 AM		Connected to Redis
+10/9/2018, 10:30:40 AM		Connected to Redis
+10/9/2018, 10:30:46 AM		Connected to Redis
+10/9/2018, 10:30:52 AM		Connected to Redis
+10/9/2018, 10:30:59 AM		Connected to Redis
+10/9/2018, 10:31:05 AM		Connected to Redis
+10/9/2018, 10:31:12 AM		Connected to Redis
+10/9/2018, 10:31:19 AM		Connected to Redis
+10/9/2018, 10:31:25 AM		Connected to Redis
+10/9/2018, 10:31:31 AM		Connected to Redis
+10/9/2018, 10:31:35 AM		Connected to Redis
+10/9/2018, 10:31:36 AM		Connected to Redis
+10/9/2018, 10:31:38 AM		Connected to Redis
+10/9/2018, 10:31:41 AM		Connected to Redis
+10/9/2018, 10:31:49 AM		Connected to Redis
+10/9/2018, 10:31:50 AM		Connected to Redis
+10/9/2018, 10:31:52 AM		Connected to Redis
+10/9/2018, 10:31:59 AM		Connected to Redis
+10/9/2018, 10:32:06 AM		Connected to Redis
+10/9/2018, 10:32:12 AM		Connected to Redis
+10/9/2018, 10:32:13 AM		User is not a constructor
+10/9/2018, 10:32:14 AM		Connected to Redis
+10/9/2018, 10:32:15 AM		Connected to Redis
+10/9/2018, 10:34:35 AM		User with socket EuL6ZNEQUZ4QfzIAAAAB not connected
+10/9/2018, 10:35:03 AM		Error reading call info from redis: 739125
+10/9/2018, 10:35:36 AM		User with socket 5QRg6eNmOLjNJnujAAAD not connected
+10/9/2018, 12:25:22 PM		Error reading call info from redis: 537556
+10/9/2018, 12:25:43 PM		Error reading call info from redis: 537556
+10/9/2018, 12:28:32 PM		Connected to Redis
+10/9/2018, 12:28:33 PM		Connected to Redis
+10/10/2018, 6:06:58 AM		Connected to Redis
+10/10/2018, 6:06:58 AM		Connected to Redis
+10/10/2018, 6:18:06 AM		Error reading call info from redis: 175280
+10/10/2018, 6:18:26 AM		Error reading call info from redis: 175280
+10/10/2018, 6:42:03 AM		Error reading user info from redis: 1
+10/10/2018, 6:42:03 AM		Error reading user info from redis: 1
+10/10/2018, 7:03:34 AM		Error reading user info from redis: 1
+10/10/2018, 7:05:10 AM		User with socket x5QmTJKydAHdXwOfAAAo not connected
+10/10/2018, 7:05:38 AM		User with socket x5QmTJKydAHdXwOfAAAo not connected
+10/10/2018, 7:05:56 AM		User with socket x5QmTJKydAHdXwOfAAAo not connected
+10/10/2018, 7:06:10 AM		Error reading call info from redis: 836929
+10/10/2018, 7:06:56 AM		User with socket x5QmTJKydAHdXwOfAAAo not connected
+10/10/2018, 7:07:33 AM		Error reading call info from redis: 499919
+10/10/2018, 7:09:30 AM		Connected to Redis
+10/10/2018, 7:09:30 AM		Connected to Redis
+10/10/2018, 7:10:34 AM		User with socket _Ry9FeiALzfeuCYGAAAr not connected
+10/10/2018, 7:11:34 AM		User with socket _Ry9FeiALzfeuCYGAAAr not connected
+10/10/2018, 7:12:17 AM		Connected to Redis
+10/10/2018, 7:12:17 AM		Connected to Redis
+10/10/2018, 7:15:15 AM		Error reading call info from redis: 285892
+10/10/2018, 7:17:39 AM		Error reading call info from redis: 377551
+10/10/2018, 7:19:26 AM		Error reading call info from redis: 822603
+10/10/2018, 7:21:08 AM		Error reading call info from redis: 654029
+10/10/2018, 8:09:55 AM		Error reading call info from redis: 984508
+10/10/2018, 8:11:16 AM		Error reading call info from redis: 125806
+10/10/2018, 8:12:18 AM		Error reading call info from redis: 566922
+10/10/2018, 8:18:21 AM		Error reading call info from redis: 457079
+10/10/2018, 8:43:09 AM		Error reading call info from redis: 677658
+10/10/2018, 8:43:55 AM		Error reading call info from redis: 677658
+10/10/2018, 9:21:22 AM		Error reading call info from redis: 422507
+10/10/2018, 9:21:24 AM		Error reading call info from redis: 422507
+10/10/2018, 9:21:24 AM		Error reading call info from redis: 422507
+10/10/2018, 9:22:53 AM		Error reading call info from redis: 935144
+10/10/2018, 9:34:15 AM		Error reading call info from redis: 483317
+10/10/2018, 9:34:58 AM		Error reading call info from redis: 997888
+10/10/2018, 9:59:17 AM		Error reading call info from redis: 476115
+10/10/2018, 9:59:17 AM		Error reading call info from redis: 476115
+10/10/2018, 9:59:18 AM		Error reading call info from redis: 476115
+10/10/2018, 9:59:18 AM		Error reading call info from redis: 476115
+10/10/2018, 9:59:18 AM		Error reading call info from redis: 476115
+10/10/2018, 10:00:02 AM		Error reading call info from redis: 476115
+10/10/2018, 10:00:17 AM		Error reading call info from redis: 820966
+10/10/2018, 10:02:18 AM		Error reading call info from redis: 832444
+10/10/2018, 10:11:38 AM		Error reading call info from redis: 837084
+10/10/2018, 10:20:53 AM		Error reading call info from redis: 718447
+10/10/2018, 10:32:08 AM		Error reading call info from redis: 749823
+10/10/2018, 10:32:09 AM		Error reading call info from redis: 749823
+10/10/2018, 10:32:09 AM		Error reading call info from redis: 749823
+10/10/2018, 10:32:09 AM		Error reading call info from redis: 749823
+10/10/2018, 10:32:09 AM		Error reading call info from redis: 749823
+10/10/2018, 10:32:09 AM		Error reading call info from redis: 749823
+10/10/2018, 10:32:09 AM		Error reading call info from redis: 749823
+10/10/2018, 10:32:09 AM		Error reading call info from redis: 749823
+10/10/2018, 10:32:09 AM		Error reading call info from redis: 749823
+10/10/2018, 10:32:11 AM		Error reading call info from redis: 749823
+10/10/2018, 10:32:11 AM		Error reading call info from redis: 749823
+10/10/2018, 10:38:21 AM		Error reading call info from redis: 749823
+10/10/2018, 11:02:22 AM		Error reading call info from redis: 158999
+10/10/2018, 11:04:34 AM		Error reading call info from redis: 110844
+10/10/2018, 11:08:04 AM		Error reading call info from redis: 284973
+10/10/2018, 11:10:01 AM		Error reading call info from redis: 515622
+10/10/2018, 11:12:28 AM		Error reading call info from redis: 360599
+10/10/2018, 11:22:11 AM		Error reading call info from redis: 974097
+10/10/2018, 11:22:55 AM		Error reading call info from redis: 974097
+10/10/2018, 1:05:55 PM		Connected to Redis
+10/10/2018, 1:05:56 PM		Connected to Redis
+10/11/2018, 3:17:36 AM		Error reading call info from redis: 612248
+10/11/2018, 3:19:26 AM		Error reading call info from redis: 911823
+10/11/2018, 3:30:59 AM		Error reading call info from redis: 199452
+10/11/2018, 3:37:19 AM		Error reading call info from redis: 540590
+10/11/2018, 3:38:23 AM		Error reading call info from redis: 391674
+10/11/2018, 3:38:59 AM		Error reading call info from redis: 862942
+10/11/2018, 3:39:22 AM		Error reading call info from redis: 901325
+10/11/2018, 3:39:54 AM		Error reading call info from redis: 862942
+10/11/2018, 3:40:13 AM		Error reading call info from redis: 901325
+10/11/2018, 3:40:35 AM		Error reading call info from redis: 743337
+10/11/2018, 5:20:52 AM		Error reading call info from redis: 310733
+10/11/2018, 5:21:36 AM		Error reading call info from redis: 310733
+10/11/2018, 6:58:35 AM		Error reading call info from redis: 418128
+10/11/2018, 7:02:25 AM		Error reading call info from redis: 302039
+10/11/2018, 8:03:09 AM		Error reading call info from redis: 535807
+10/11/2018, 8:03:23 AM		Error reading call info from redis: 866747
+10/11/2018, 8:03:38 AM		Error reading call info from redis: 535807
+10/11/2018, 8:04:10 AM		Error reading call info from redis: 866747
+10/11/2018, 8:31:13 AM		Error reading call info from redis: 933284
+10/11/2018, 8:31:13 AM		Error reading call info from redis: 933284
+10/11/2018, 8:31:14 AM		Error reading call info from redis: 933284
+10/11/2018, 8:31:14 AM		Error reading call info from redis: 933284
+10/11/2018, 8:31:34 AM		Error reading call info from redis: 518516
+10/11/2018, 8:32:03 AM		Error reading call info from redis: 933284
+10/11/2018, 8:34:06 AM		Error reading call info from redis: 487166
+10/11/2018, 8:34:08 AM		Error reading call info from redis: 487166
+10/11/2018, 10:10:02 AM		Error reading call info from redis: 401916
+10/11/2018, 10:24:29 AM		Error reading call info from redis: 565118
+10/11/2018, 10:27:29 AM		Error reading call info from redis: 228494
+10/11/2018, 10:30:53 AM		Error reading call info from redis: 724503
+10/11/2018, 10:42:27 AM		Error reading call info from redis: 328695
+10/11/2018, 12:22:03 PM		Error reading call info from redis: 675401
+10/11/2018, 12:24:01 PM		Error reading call info from redis: 306924
+10/11/2018, 12:24:28 PM		Error reading call info from redis: 306924
+10/11/2018, 12:28:48 PM		Error reading call info from redis: 868024
+10/11/2018, 12:28:51 PM		Error reading call info from redis: 868024
+10/11/2018, 12:31:57 PM		Error reading call info from redis: 830251
+10/11/2018, 12:32:37 PM		Error reading call info from redis: 830251
+10/11/2018, 12:33:20 PM		Error reading call info from redis: 192122
+10/11/2018, 12:33:56 PM		Error reading call info from redis: 192122
+10/11/2018, 12:36:45 PM		Error reading call info from redis: 418602
+10/11/2018, 12:37:28 PM		Error reading call info from redis: 418602
+10/11/2018, 12:37:50 PM		Error reading call info from redis: 602982
+10/11/2018, 12:40:20 PM		Error reading call info from redis: 797504
+10/11/2018, 12:40:30 PM		Error reading call info from redis: 791584
+10/11/2018, 12:41:10 PM		Error reading call info from redis: 797504
+10/11/2018, 12:41:22 PM		Error reading call info from redis: 791584
+10/11/2018, 12:43:05 PM		Error reading call info from redis: 875566
+10/11/2018, 12:43:51 PM		Error reading call info from redis: 875566
+10/12/2018, 3:17:49 AM		Error reading call info from redis: 911441
+10/12/2018, 3:18:01 AM		Error reading call info from redis: 399780
+10/12/2018, 3:18:30 AM		Error reading call info from redis: 911441
+10/12/2018, 3:18:50 AM		Error reading call info from redis: 399780
+10/12/2018, 3:20:49 AM		Error reading call info from redis: 756649
+10/12/2018, 3:25:33 AM		Error reading call info from redis: 948103
+10/12/2018, 3:25:42 AM		Error reading call info from redis: 948103
+10/12/2018, 3:35:35 AM		Error reading call info from redis: 382081
+10/12/2018, 3:36:07 AM		Error reading call info from redis: 382081
+10/12/2018, 3:59:05 AM		Connected to Redis
+10/12/2018, 3:59:06 AM		Connected to Redis
+10/12/2018, 4:03:57 AM		Error reading call info from redis: 665536
+10/12/2018, 4:05:24 AM		Error reading call info from redis: 959833
+10/12/2018, 4:08:44 AM		Error reading call info from redis: 330470
+10/12/2018, 4:10:34 AM		Error reading call info from redis: 268587
+10/12/2018, 4:12:07 AM		Error reading call info from redis: 186452
+10/12/2018, 4:17:55 AM		Error reading call info from redis: 177946
+10/12/2018, 4:20:09 AM		Error reading call info from redis: 502039
+10/12/2018, 4:22:31 AM		Error reading call info from redis: 102564
+10/12/2018, 4:42:27 AM		Error reading call info from redis: 578796
+10/12/2018, 4:53:05 AM		Error reading call info from redis: 628069
+10/12/2018, 4:53:37 AM		Error reading call info from redis: 628069
+10/12/2018, 4:56:06 AM		Error reading call info from redis: 356732
+10/12/2018, 4:56:25 AM		Error reading call info from redis: 356732
+10/12/2018, 5:03:54 AM		Error reading call info from redis: 978283
+10/12/2018, 5:06:00 AM		Error reading call info from redis: 212954
+10/12/2018, 5:10:40 AM		Error reading call info from redis: 600973
+10/12/2018, 5:20:55 AM		Error reading call info from redis: 835152
+10/12/2018, 5:23:41 AM		Error reading call info from redis: 431235
+10/12/2018, 5:38:50 AM		Error reading call info from redis: 304204
+10/12/2018, 5:50:00 AM		Error reading call info from redis: 412087
+10/12/2018, 5:50:00 AM		Error reading call info from redis: 412087
+10/12/2018, 5:50:00 AM		Error reading call info from redis: 412087
+10/12/2018, 5:50:00 AM		Error reading call info from redis: 412087
+10/12/2018, 5:50:00 AM		Error reading call info from redis: 412087
+10/12/2018, 5:50:01 AM		Error reading call info from redis: 412087
+10/12/2018, 5:50:39 AM		Error reading call info from redis: 412087
+10/12/2018, 5:51:00 AM		Error reading call info from redis: 490044
+10/12/2018, 5:53:07 AM		Error reading call info from redis: 490044
+10/12/2018, 5:56:31 AM		Connected to Redis
+10/12/2018, 5:56:32 AM		Connected to Redis
+10/12/2018, 5:58:27 AM		Error reading call info from redis: 591229
+10/12/2018, 5:59:15 AM		Error reading call info from redis: 591229
+10/12/2018, 6:06:22 AM		Error reading call info from redis: 635167
+10/12/2018, 6:07:01 AM		Error reading call info from redis: 635167
+10/12/2018, 6:09:24 AM		Error reading call info from redis: 927076
+10/12/2018, 6:44:24 AM		Error reading call info from redis: 922205
+10/12/2018, 6:44:25 AM		Error reading call info from redis: 922205
+10/12/2018, 6:44:25 AM		Error reading call info from redis: 922205
+10/12/2018, 6:44:25 AM		Error reading call info from redis: 922205
+10/12/2018, 6:44:35 AM		Error reading call info from redis: 922205
+10/12/2018, 6:44:35 AM		Error reading call info from redis: 922205
+10/12/2018, 6:44:36 AM		Error reading call info from redis: 922205
+10/12/2018, 6:45:05 AM		Error reading call info from redis: 957077
+10/12/2018, 6:45:24 AM		Error reading call info from redis: 922205
+10/12/2018, 6:50:43 AM		Error reading call info from redis: 450296
+10/12/2018, 6:52:14 AM		Error reading call info from redis: 118744
+10/12/2018, 6:52:59 AM		Error reading call info from redis: 118744
+10/12/2018, 7:10:52 AM		Error reading call info from redis: 144648
+10/12/2018, 7:11:07 AM		Error reading call info from redis: 400992
+10/12/2018, 7:18:49 AM		Connected to Redis
+10/12/2018, 7:18:49 AM		Connected to Redis
+10/12/2018, 7:20:27 AM		Error reading call info from redis: 133586
+10/12/2018, 7:21:11 AM		Error reading call info from redis: 133586
+10/12/2018, 7:26:12 AM		Connected to Redis
+10/12/2018, 7:26:13 AM		Connected to Redis
+10/12/2018, 7:38:10 AM		Error reading call info from redis: 884602
+10/12/2018, 7:43:41 AM		Error reading call info from redis: 830281
+10/12/2018, 7:54:17 AM		Error reading call info from redis: 758664
+10/12/2018, 7:56:58 AM		Error reading call info from redis: 662793
+10/12/2018, 7:59:05 AM		Error reading call info from redis: 609840
+10/12/2018, 8:17:07 AM		Error reading call info from redis: 278013
+10/12/2018, 8:17:54 AM		Error reading call info from redis: 278013
+10/12/2018, 8:31:02 AM		Error reading call info from redis: 183085
+10/12/2018, 8:32:11 AM		Error reading call info from redis: 360608
+10/12/2018, 8:33:04 AM		Error reading call info from redis: 426078
+10/12/2018, 8:33:44 AM		Error reading call info from redis: 236562
+10/12/2018, 8:38:58 AM		Error reading call info from redis: 102633
+10/12/2018, 8:39:27 AM		Error reading call info from redis: 530601
+10/12/2018, 8:39:50 AM		Error reading call info from redis: 843185
+10/12/2018, 8:40:59 AM		Error reading call info from redis: 384257
+10/12/2018, 8:41:21 AM		Error reading call info from redis: 172699
+10/12/2018, 9:02:39 AM		Error reading call info from redis: 998173
+10/12/2018, 9:03:25 AM		Error reading call info from redis: 768890
+10/12/2018, 9:05:18 AM		Error reading call info from redis: 841658
+10/12/2018, 9:05:56 AM		Error reading call info from redis: 794593
+10/12/2018, 9:06:31 AM		Error reading call info from redis: 794593
+10/12/2018, 9:12:03 AM		Error reading call info from redis: 483320
+10/12/2018, 9:15:33 AM		Error reading call info from redis: 788079
+10/12/2018, 9:20:01 AM		Error reading call info from redis: 101629
+10/12/2018, 9:21:56 AM		Error reading call info from redis: 623914
+10/12/2018, 9:34:56 AM		Error reading call info from redis: 875743
+10/12/2018, 9:55:07 AM		Error reading call info from redis: 961455
+10/12/2018, 10:01:09 AM		Error reading call info from redis: 357708
+10/12/2018, 10:02:25 AM		Error reading call info from redis: 885447
+10/12/2018, 10:03:26 AM		Error reading call info from redis: 726497
+10/12/2018, 10:15:54 AM		Error reading call info from redis: 815898
+10/12/2018, 10:16:14 AM		Error reading call info from redis: 815898
+10/12/2018, 10:23:14 AM		Error reading call info from redis: 466941
+10/12/2018, 10:34:00 AM		Error reading call info from redis: 963378
+10/12/2018, 10:43:47 AM		Error reading call info from redis: 638482
+10/12/2018, 10:49:20 AM		Error reading call info from redis: 216830
+10/12/2018, 10:49:31 AM		Error reading call info from redis: 300344
+10/12/2018, 10:49:54 AM		Error reading call info from redis: 216830
+10/12/2018, 10:54:42 AM		Connected to Redis
+10/12/2018, 10:54:42 AM		Connected to Redis
+10/12/2018, 10:57:19 AM		Error reading call info from redis: 862695
+10/12/2018, 10:58:29 AM		Error reading call info from redis: 889361
+10/12/2018, 10:59:36 AM		Error reading call info from redis: 108578
+10/12/2018, 11:04:04 AM		Error reading call info from redis: 603973
+10/12/2018, 11:23:34 AM		Error reading call info from redis: 235512
+10/12/2018, 11:33:34 AM		Error reading call info from redis: 473368
+10/12/2018, 11:44:11 AM		Error reading call info from redis: 892335
+10/12/2018, 11:48:50 AM		Error reading call info from redis: 976990
+10/12/2018, 11:51:19 AM		Error reading call info from redis: 940120
+10/12/2018, 11:52:01 AM		Error reading call info from redis: 371682
+10/12/2018, 11:52:14 AM		Error reading call info from redis: 258604
+10/12/2018, 11:53:23 AM		Error reading call info from redis: 122287
+10/12/2018, 12:01:22 PM		Error reading call info from redis: 654185
+10/12/2018, 12:06:17 PM		Error reading call info from redis: 333812
+10/12/2018, 12:08:11 PM		Error reading call info from redis: 829092
+10/12/2018, 12:17:57 PM		Error reading call info from redis: 747007
+10/12/2018, 12:23:07 PM		Error reading call info from redis: 229249
+10/12/2018, 12:23:07 PM		Error reading call info from redis: 229249
+10/12/2018, 12:23:07 PM		Error reading call info from redis: 229249
+10/12/2018, 12:23:07 PM		Error reading call info from redis: 229249
+10/12/2018, 12:23:07 PM		Error reading call info from redis: 229249
+10/12/2018, 12:23:07 PM		Error reading call info from redis: 229249
+10/12/2018, 12:23:07 PM		Error reading call info from redis: 229249
+10/12/2018, 12:23:08 PM		Error reading call info from redis: 229249
+10/12/2018, 12:23:08 PM		Error reading call info from redis: 229249
+10/12/2018, 12:23:08 PM		Error reading call info from redis: 229249
+10/12/2018, 12:26:50 PM		Connected to Redis
+10/12/2018, 12:26:51 PM		Connected to Redis
+10/12/2018, 12:29:22 PM		Connected to Redis
+10/12/2018, 12:35:59 PM		Connected to Redis
+10/12/2018, 12:36:00 PM		Connected to Redis
+10/12/2018, 12:36:22 PM		Connected to Redis
+10/12/2018, 12:36:23 PM		Connected to Redis
+10/12/2018, 12:38:32 PM		Error reading call info from redis: 447640
+10/12/2018, 12:39:16 PM		Connected to Redis
+10/12/2018, 12:45:40 PM		Error reading call info from redis: 153697
+10/12/2018, 12:45:54 PM		Error reading call info from redis: 496290
+10/12/2018, 12:46:12 PM		Error reading call info from redis: 499746
+10/12/2018, 12:46:43 PM		Error reading call info from redis: 496290
+10/12/2018, 2:27:30 PM		Error reading call info from redis: 411813
+10/12/2018, 2:27:39 PM		Error reading user info from redis: 1
+10/12/2018, 2:28:00 PM		Error reading user info from redis: 1
+10/12/2018, 2:28:22 PM		Connected to Redis
+10/12/2018, 2:29:21 PM		Connected to Redis
+10/12/2018, 2:30:54 PM		Connected to Redis
+10/12/2018, 2:32:03 PM		Connected to Redis
+10/12/2018, 2:34:26 PM		Error reading user info from redis: 1
+10/12/2018, 2:41:28 PM		Connected to Redis
+10/12/2018, 2:43:43 PM		Error reading call info from redis: 695645
+10/12/2018, 2:44:17 PM		Connected to Redis
+10/12/2018, 2:48:27 PM		Connected to Redis
+10/12/2018, 2:55:54 PM		Connected to Redis
+10/12/2018, 3:01:08 PM		Error reading user info from redis: 1
+10/12/2018, 3:01:08 PM		User not found for timeout: 1
+10/12/2018, 3:01:08 PM		User not found for timeout: 1
+10/12/2018, 3:03:19 PM		Error reading call info from redis: 267464
+10/12/2018, 3:03:26 PM		Error reading user info from redis: 1
+10/12/2018, 3:03:49 PM		Error reading user info from redis: 1
+10/12/2018, 3:09:51 PM		Error reading user info from redis: 1
+10/12/2018, 3:09:51 PM		User not found for timeout: 1
+10/12/2018, 3:09:51 PM		User not found for timeout: 1
+10/12/2018, 3:11:47 PM		Error reading call info from redis: 573165
+10/12/2018, 3:12:52 PM		Error reading user info from redis: 1
+10/12/2018, 3:12:52 PM		User not found for timeout: 1
+10/12/2018, 3:12:52 PM		User not found for timeout: 1
+10/12/2018, 3:15:11 PM		Error reading call info from redis: 308480
+10/12/2018, 3:15:12 PM		Error reading call info from redis: 308480
+10/12/2018, 3:15:17 PM		Error reading user info from redis: 1
+10/12/2018, 3:15:26 PM		Connected to Redis
+10/12/2018, 3:20:53 PM		Error reading call info from redis: 959258
+10/12/2018, 3:22:37 PM		Error reading call info from redis: 392621
+10/12/2018, 3:23:04 PM		Connected to Redis
+10/12/2018, 3:27:43 PM		Error reading user info from redis: 3
+10/12/2018, 3:27:43 PM		User not found for timeout: 3
+10/12/2018, 3:27:43 PM		User not found for timeout: 3
+10/12/2018, 3:27:44 PM		Error reading call info from redis: 545564
+10/12/2018, 3:42:38 PM		Connected to Redis
+10/12/2018, 3:51:59 PM		Error reading call info from redis: 271898
+10/12/2018, 3:53:20 PM		Error reading call info from redis: 164316
+10/12/2018, 3:53:37 PM		Error reading call info from redis: 262543
+10/12/2018, 3:54:26 PM		Error reading call info from redis: 262543
+10/12/2018, 4:11:09 PM		Connected to Redis
+10/12/2018, 4:22:10 PM		Connected to Redis
+10/12/2018, 4:29:43 PM		Connected to Redis
+10/12/2018, 4:30:41 PM		Connected to Redis
+10/12/2018, 4:32:12 PM		Error reading call info from redis: 280172
+10/12/2018, 4:32:26 PM		Error reading call info from redis: 238713
+10/12/2018, 4:32:56 PM		Error reading call info from redis: 160514
+10/12/2018, 4:34:44 PM		Connected to Redis
+10/12/2018, 4:36:44 PM		Connected to Redis
+10/12/2018, 4:44:29 PM		Connected to Redis
+10/12/2018, 4:47:39 PM		Error reading call info from redis: 772163
+10/12/2018, 4:48:01 PM		Error reading call info from redis: 538428
+10/12/2018, 4:48:20 PM		Error reading call info from redis: 772163
+10/12/2018, 4:48:42 PM		Connected to Redis
+10/12/2018, 4:49:47 PM		Connected to Redis
+10/12/2018, 4:53:23 PM		Error reading call info from redis: 358491
+10/12/2018, 4:58:47 PM		Connected to Redis
+10/12/2018, 5:02:04 PM		Error reading call info from redis: 587583
+10/12/2018, 5:03:48 PM		Error reading call info from redis: 131259
+10/12/2018, 5:04:09 PM		Connected to Redis
+10/12/2018, 5:07:39 PM		Error reading call info from redis: 353202
+10/12/2018, 5:08:27 PM		Error reading call info from redis: 353202
+10/12/2018, 5:12:05 PM		Error reading call info from redis: 506227
+10/12/2018, 5:12:12 PM		Error reading call info from redis: 387349
+10/12/2018, 5:13:46 PM		Connected to Redis
+10/12/2018, 5:15:33 PM		Error reading user info from redis: 3
+10/12/2018, 5:15:39 PM		Connected to Redis
+10/12/2018, 5:16:55 PM		Error reading call info from redis: 438877
+10/12/2018, 5:17:34 PM		Error reading call info from redis: 707064
+10/12/2018, 5:19:26 PM		Error reading call info from redis: 861125
+10/12/2018, 5:22:24 PM		Error reading call info from redis: 247836
+10/12/2018, 5:23:02 PM		Error reading call info from redis: 625803
+10/12/2018, 5:24:53 PM		Connected to Redis
+10/12/2018, 5:27:32 PM		Error reading call info from redis: 652700
+10/12/2018, 5:27:50 PM		Connected to Redis
+10/12/2018, 5:34:01 PM		Error reading call info from redis: 385742
+10/12/2018, 5:34:28 PM		Error reading call info from redis: 438243
+10/12/2018, 5:34:39 PM		Error reading call info from redis: 385742
+10/12/2018, 5:35:06 PM		Error reading call info from redis: 867405
+10/12/2018, 5:37:46 PM		Error reading call info from redis: 897690
+10/12/2018, 5:38:02 PM		Error reading user info from redis: 3
+10/12/2018, 5:38:02 PM		User not found for timeout: 3
+10/12/2018, 5:38:02 PM		User not found for timeout: 3
+10/12/2018, 5:40:06 PM		Error reading call info from redis: 265599
+10/12/2018, 5:42:16 PM		Connected to Redis
+10/12/2018, 5:43:46 PM		Error reading call info from redis: 594708
+10/12/2018, 5:44:09 PM		Error reading call info from redis: 160618
+10/12/2018, 5:44:12 PM		Error reading call info from redis: 481838
+10/12/2018, 5:44:17 PM		Error reading call info from redis: 572965
+10/12/2018, 5:44:25 PM		Error reading call info from redis: 788232
+10/12/2018, 5:44:38 PM		Error reading call info from redis: 865148
+10/12/2018, 5:44:56 PM		Error reading call info from redis: 599097
+10/12/2018, 5:45:14 PM		Error reading call info from redis: 243277
+10/12/2018, 5:45:52 PM		Error reading call info from redis: 569347
+10/12/2018, 5:46:01 PM		Error reading call info from redis: 236312
+10/12/2018, 5:46:32 PM		Error reading call info from redis: 725611
+10/12/2018, 5:46:36 PM		Error reading call info from redis: 584201
+10/12/2018, 5:47:17 PM		Connected to Redis
+10/15/2018, 3:25:03 AM		Error reading call info from redis: 757953
+10/15/2018, 3:25:04 AM		Error reading call info from redis: 757953
+10/15/2018, 3:25:04 AM		Error reading call info from redis: 757953
+10/15/2018, 3:25:04 AM		Error reading call info from redis: 757953
+10/15/2018, 3:25:30 AM		Error reading call info from redis: 440760
+10/15/2018, 3:25:35 AM		Error reading call info from redis: 757953
+10/15/2018, 3:37:01 AM		Error reading call info from redis: 370879
+10/15/2018, 3:44:06 AM		Error reading call info from redis: 344938
+10/15/2018, 3:44:10 AM		Error reading call info from redis: 856219
+10/15/2018, 3:46:29 AM		Error reading call info from redis: 519467
+10/15/2018, 3:47:12 AM		Error reading user info from redis: 2
+10/15/2018, 3:47:12 AM		User not found for timeout: 2
+10/15/2018, 3:47:12 AM		User not found for timeout: 2
+10/15/2018, 3:47:33 AM		Error reading call info from redis: 880731
+10/15/2018, 4:17:11 AM		Connected to Redis
+10/15/2018, 4:29:23 AM		Error parsing json
+10/15/2018, 4:29:23 AM		{}
+10/15/2018, 5:11:23 AM		Connected to Redis
+10/15/2018, 7:44:55 AM		Error reading user info from redis: 1
+10/15/2018, 7:44:59 AM		Error reading user info from redis: 1
+10/15/2018, 7:50:40 AM		Connected to Redis
+10/15/2018, 7:50:41 AM		Connected to Redis
+10/15/2018, 7:56:00 AM		Error reading call info from redis: 327072
+10/15/2018, 7:56:06 AM		Connected to Redis
+10/15/2018, 8:24:01 AM		Connected to Redis
+10/15/2018, 8:30:04 AM		Connected to Redis
+10/15/2018, 8:31:48 AM		Error reading call info from redis: 772762
+10/15/2018, 8:31:57 AM		Connected to Redis
+10/15/2018, 8:32:37 AM		Connected to Redis
+10/15/2018, 8:33:36 AM		Connected to Redis
+10/15/2018, 8:34:53 AM		Connected to Redis
+10/15/2018, 8:38:51 AM		Error reading user info from redis: 2
+10/15/2018, 8:38:51 AM		User not found for timeout: 2
+10/15/2018, 8:38:51 AM		User not found for timeout: 2
+10/15/2018, 8:39:09 AM		Error reading call info from redis: 218817
+10/15/2018, 8:39:12 AM		Error reading user info from redis: 2
+10/15/2018, 8:39:22 AM		Connected to Redis
+10/15/2018, 8:54:21 AM		Connected to Redis
+10/15/2018, 8:54:22 AM		Connected to Redis
+10/15/2018, 8:58:35 AM		Error reading user info from redis: 2
+10/15/2018, 8:58:35 AM		User not found for timeout: 2
+10/15/2018, 8:58:35 AM		User not found for timeout: 2
+10/15/2018, 9:02:11 AM		Error reading call info from redis: 159754
+10/15/2018, 9:02:17 AM		Connected to Redis
+10/15/2018, 9:04:30 AM		Error reading user info from redis: 1
+10/15/2018, 9:04:30 AM		User not found for timeout: 1
+10/15/2018, 9:04:30 AM		User not found for timeout: 1
+10/15/2018, 9:05:44 AM		Error reading call info from redis: 619275
+10/15/2018, 9:07:19 AM		Error reading user info from redis: 1
+10/15/2018, 9:07:19 AM		User not found for timeout: 1
+10/15/2018, 9:07:19 AM		User not found for timeout: 1
+10/15/2018, 9:07:49 AM		Error reading call info from redis: 371629
+10/15/2018, 9:10:18 AM		Connected to Redis
+10/15/2018, 9:10:19 AM		Connected to Redis
+10/15/2018, 9:10:51 AM		Error reading user info from redis: 1
+10/15/2018, 9:10:55 AM		Connected to Redis
+10/15/2018, 9:10:56 AM		Connected to Redis
+10/15/2018, 9:12:00 AM		Error reading user info from redis: 1
+10/15/2018, 9:12:00 AM		Error reading user info from redis: 1
+10/15/2018, 9:12:00 AM		Error reading user info from redis: 1
+10/15/2018, 9:12:00 AM		Error reading user info from redis: 1
+10/15/2018, 9:12:00 AM		Error reading user info from redis: 1
+10/15/2018, 9:12:00 AM		Error reading user info from redis: 1
+10/15/2018, 9:12:00 AM		Error reading user info from redis: 1
+10/15/2018, 9:12:00 AM		Error reading user info from redis: 1
+10/15/2018, 9:12:00 AM		Error reading user info from redis: 1
+10/15/2018, 9:12:32 AM		Error reading user info from redis: 1
+10/15/2018, 9:12:32 AM		User not found for timeout: 1
+10/15/2018, 9:12:32 AM		User not found for timeout: 1
+10/15/2018, 9:21:32 AM		Error reading call info from redis: 952580
+10/15/2018, 9:22:13 AM		Connected to Redis
+10/15/2018, 9:22:14 AM		Connected to Redis
+10/15/2018, 9:29:03 AM		Error reading user info from redis: 1
+10/15/2018, 9:29:03 AM		Error reading user info from redis: 1
+10/15/2018, 9:29:03 AM		Error reading user info from redis: 1
+10/15/2018, 9:29:03 AM		Error reading user info from redis: 1
+10/15/2018, 9:29:03 AM		Error reading user info from redis: 1
+10/15/2018, 9:29:03 AM		Error reading user info from redis: 1
+10/15/2018, 9:29:03 AM		Error reading user info from redis: 1
+10/15/2018, 9:29:03 AM		Error reading user info from redis: 1
+10/15/2018, 9:29:04 AM		Error reading user info from redis: 1
+10/15/2018, 9:29:04 AM		Error reading user info from redis: 1
+10/15/2018, 9:29:04 AM		Error reading user info from redis: 1
+10/15/2018, 9:29:49 AM		Error reading user info from redis: 1
+10/15/2018, 9:29:49 AM		User not found for timeout: 1
+10/15/2018, 9:29:49 AM		User not found for timeout: 1
+10/15/2018, 9:33:00 AM		Connected to Redis
+10/15/2018, 9:33:00 AM		Connected to Redis

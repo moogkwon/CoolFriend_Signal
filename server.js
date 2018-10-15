@@ -74,7 +74,7 @@ class Server {
             self.io = require('socket.io')();
             self.io.adapter(redisAdapter({host: config.redis.host, port: config.redis.port}));
             self.io.set('origins', '*:*');
-            self.io.listen(self.httpServer); // , { path: '/'}
+            self.io.listen(self.httpServer, {'pingInterval': 2000, 'pingTimeout': 6500}); // , { path: '/'}
 
             self.io.sockets.on('connection', function(socket) {
                 // Send hello to user
@@ -177,16 +177,55 @@ class Server {
     * @return bool
     */
     deleteUserById(id, callback) {
+        var self = this;
         if (!id) {
             if (callback) {
                 callback('No call ID passed', null);
             }
         }
         var user = new User();
-        user.delete(id, function(error) {
+        user.load(id, function(error, user) {
             if (callback) {
-                callback(error);
+                if (error) {
+                    callback(error);
+                }
             }
+            console.log('---1');
+            if (user.call) {
+                console.log('---2');
+                self.getCallById(getCallById, function(error, call) {
+                    console.log('---3');
+                    if (call) {
+                        console.log('---4');
+                        result = {'status': 200, 'message': 'Ok', 'call_id': call.id};
+                        if (call.users[0] == currentUser.id) {
+                            var recipientId = call.users[1];
+                        } else {
+                            var recipientId = call.users[0];
+                        }
+                        if (recipientId) {
+                            console.log('---5' + recipientId);
+                            Server.server.getUserById(recipientId, function(error, recipient) {
+                                console.log('---6');
+                                if (recipient) {
+                                    console.log('---7');
+                                    new Result().emit(recipient.socket, '/v1/call/hangup', 200, result);
+                                    recipient.call = null;
+                                    recipient.save();
+                                }
+                                Server.server.deleteCallById(call.id);
+                            });
+                        } else {
+                            Server.server.deleteCallById(call.id);
+                        }
+                    }
+                });
+            }
+            user.delete(id, function(error) {
+                if (callback) {
+                    callback(error);
+                }
+            });
         });
     }
 }

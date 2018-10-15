@@ -22,7 +22,7 @@ class Call {
 
         // Fill new call data
         if (data) {
-            self.id = 10000000 + Math.floor(Math.random() * 89999999);
+            self.id = data.id ? data.id : (10000000 + Math.floor(Math.random() * 89999999));
             self.users.push(data.users[0]);
             self.users.push(data.users[1]);
             self.offer = data.offer;
@@ -32,8 +32,9 @@ class Call {
             // Add users to
             // Create a timeout for call
             self.connectTimeout = setTimeout(function() {
-                self.load(false, function() {
-                    if(self.status != 'new') {
+                self.load(self.id, function(error, data) {
+                    // Call was deleted / not in "new" status? Don't send timeout
+                    if(error || !data.id || data.status != 'new') {
                         return false;
                     }
                     var result = {'status': 200, 'message': 'Ok', 'call_id': self.id};

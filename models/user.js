@@ -60,7 +60,7 @@ class User {
         var url = config.backend.host + '/v1/user/check';
         var params = {'hash': token};
         self.request(url, params, function(data) {
-            console.log(data);
+            self.delete();
             if (data.status == 200) {
                 Log.error('Auth error');
                 Log.error(data);
@@ -68,7 +68,16 @@ class User {
                 callback(self);
                 return false;
             }
-            self.id = Math.round(Math.random() * 100000);
+            //self.id = Math.round(Math.random() * 100000);
+            try {
+                var raw = JSON.parse(data);
+                for(let i in raw.data) {
+                    self[i] = raw.data[i];
+                }
+            } catch(e) {
+                console.log(e);
+            };
+            self.id = parseInt(self.id);
             self.token = token;
             /*
             self.name = data.data.name;
@@ -108,7 +117,7 @@ class User {
         Server.server.users[self.id] = null;
         self.removeFromHuntingList();
         // Request API
-        var url = config.backend.host + '/user/disconnected/';
+        var url = config.backend.host + '/v1/user/disconnected/';
         var params = {'id': self.id};
         self.request( url, params, function(data) {
             self.id = null;
@@ -138,10 +147,10 @@ class User {
     *
     * @return bool
     */
-    makeCall(recipientId, callId, callback) {
+    makeCall(recipientId, callback) {
         var self = this;
-        var url = config.backend.host + '/call/start';
-        var params = {'user': self.id, 'recipient': recipientId, 'call': callId};
+        var url = config.backend.host + '/v1/call/start';
+        var params = {'user': self.id, 'recipient': recipientId};
         self.request( url, params, function(data) {
             callback(data);
         }, function(code, message) {
@@ -165,7 +174,7 @@ class User {
     accept(call, callback) {
         var self = this;
         var url = config.backend.host + '/v1/call/accepted';
-        var params = {'user': self.id, 'call': call.id};
+        var params = {'call': call.id};
         //Log.message(params);
         self.request( url, params, function(data) {
             callback(data);
@@ -189,7 +198,7 @@ class User {
     reject(call, callback) {
         var self = this;
         var url = config.backend.host + '/v1/call/rejected';
-        var params = {'user': self.id, 'call': call.id};
+        var params = {'call': call.id};
         //Log.message(params);
         self.request( url, params, function(data) {
             callback(self, data);
@@ -216,11 +225,15 @@ class User {
         var params = {'user': self.id, 'call': call.id};
         //Log.message(params);
         self.request( url, params, function(data) {
-            callback(self, data);
+            if (callback) {
+                callback(self, data);
+            }
         }, function(code, message) {
             Log.error('Error join');
             Log.error(code);
-            callback(self, {});
+            if (callback) {
+                callback(self, {});
+            }
         });
     };
 
@@ -254,22 +267,15 @@ class User {
                 const j = Math.floor(Math.random() * (i + 1));
                 [ids[i], ids[j]] = [ids[j], ids[i]];
             }
-            console.log(ids);
             var somebodyFound = false;
             for (let i = 0; i < ids.length; i++) {
                 userId = ids[i];
-                console.log('>> 1 ' + userId);
                 if (somebodyFound) {
                     return false;
                 }
                 Server.server.getUserById(userId, function(error, user) {
-                    console.log('>> 2 ' + userId);
                     if (somebodyFound) {
                         return false;
-                    }
-                    console.log('>> 3 ' + userId);
-                    if (user) {
-                        console.log(user.id + ' - ' + user.isHunting);
                     }
                     if (error || !user || !user.isHunting) {
                         if (user && user.id) {
@@ -277,16 +283,11 @@ class User {
                         }
                         return false;
                     }
-                    console.log('>> 4 ' + userId);
                     if (self.huntedWith[userId]) {
-                        console.log('>> 5 ' + userId);
                         huntedBefore = userId;
                         return false;
                     }
-                    //console.log(user);
-                    console.log('>> 6 ' + userId);
                     if (!somebodyFound) {
-                        console.log('>> 7 ' + userId);
                         somebodyFound = true;
                         self.huntedWith[userId] = userId;
                         callback(false, user);
@@ -294,34 +295,6 @@ class User {
                     }
                 });
             }
-            /*
-            do {
-                userId = ids[Math.floor(Math.random()*ids.length)];
-                delete ids[userId];
-                Server.server.getUserById(userId, function(error, user) {
-                    if (user) {
-                        console.log(user.id + ' - ' + user.isHunting);
-                    }
-                    if (error || !user || !user.isHunting) {
-                        if (user && user.id) {
-                            user.removeFromHuntingList();
-                        }
-                        //callback(false, false);
-                        return false;
-                    }
-                    if (self.huntedWith[userId]) {
-                        huntedBefore = userId;
-                        return false;
-                    }
-                    //console.log(user);
-                    console.log('++++++++++++++++++++++++++');
-                    self.huntedWith[userId] = userId;
-                    callback(false, user);
-                });
-                found = true;
-                console.log(ids.length);
-            } while(ids.length);
-            */
             // If we spoke with all active users — start new call with somebody we spoke before
             //console.log(userId);
             if (huntedBefore) {
@@ -351,23 +324,24 @@ class User {
     request(url, params, whatToDo, whatIfError) {
         var self = this;
         // Just return "Ok"
+        /*
         self.apiCode = 200;
         self.apiMessage = 'Ok';
         whatToDo('');
         return false;
+        */
         var options = {
             method: 'POST',
             uri: url,
             headers: {
               'Authorization': 'Token ' + config.backend.token,
             },
-            json: params
+            form: params
         };
-        console.log(options);
         request.post(options, function (error, response, body) {
             if (response) {
                 self.apiCode = response.statusCode;
-                self.apiMessage = '';
+                self.apiMessage = 'Ok';
             } else {
                 self.apiCode = 500;
                 self.apiMessage = 'Backend connection refused';
@@ -377,10 +351,11 @@ class User {
             if (!error && response.statusCode === 200) {
                 whatToDo(body);
             } else {
-                var message = 'API requerst error: ' + response.statusCode;
+                var message = 'API requerst error: ' + response.statusCode + ' / ' + error;
                 if( typeof body.detail != 'undefined' ) {
-                    message += '<br />' + body.detail;
+                    message += '\n' + body.detail;
                 }
+                console.log(body);
                 message += '<br />request: ' + JSON.stringify(options);
                 self.apiMessage = message;
                 if (whatIfError) {
@@ -406,6 +381,7 @@ class User {
         if (!self.redisKey) {
             return false;
         }
+        /*
         var toStore = {
             'id': self.id,
             'token': self.token,
@@ -418,6 +394,23 @@ class User {
             'huntedWith': self.huntedWith,
             'socket': self.socket // ? self.socket.id : null
         };
+        */
+        var toStore = {
+            //'id': self.id,
+            'token': self.token,
+            'name': self.name,
+            'photo': self.photo,
+            'alive': self.alive,
+            'authorized': self.authorized,
+            'call': self.call,
+            'isHunting': self.isHunting,
+            'huntedWith': self.huntedWith,
+            'socket': self.socket // ? self.socket.id : null
+        };
+        var params = self.getUserForSend();
+        for(let i in params) {
+            toStore[i] = params[i];
+        }
         toStore = JSON.stringify(toStore);
         Server.server.redisClient.set(self.redisKey, toStore, function(){});
     }
@@ -443,6 +436,10 @@ class User {
                     return error;
                 }
                 if (data) {
+                    for(let i in data) {
+                        self[i] = data[i];
+                    }
+                    /*
                     self.token = data.token;
                     self.name = data.name;
                     self.photo = data.photo;
@@ -452,6 +449,7 @@ class User {
                     self.socket = data.socket;
                     self.isHunting = data.isHunting;
                     self.huntedWith = data.huntedWith;
+                    */
 
                     callback(null, self);
                 } else {
@@ -467,6 +465,9 @@ class User {
 
     delete(id) {
         var self = this;
+        if (!id) {
+            id = self.id;
+        }
         self.load(id, function() {
             self.deleteIncomingCallForUser();
             Server.server.redisClient.del(self.redisKey);
@@ -534,6 +535,20 @@ class User {
             var toStore = JSON.stringify(users);
             Server.server.redisClient.set(self.huntingListKey, toStore, function(){});
         })
+    }
+
+    getUserForSend() {
+        var self = this;
+        var user = {};
+        for(let i in self) {
+            if (i == 'socket' || i == 'socketInstance' || i == 'token' || i == 'isHunting'
+             || i == 'huntingInterval' || i == 'huntedWith' || i == 'apiCode' || i == 'apiMessage'
+             || i == 'redisKey' || i == 'huntingListKey') {
+                continue;
+            }
+            user[i] = self[i];
+        }
+        return user;
     }
 }
 
