@@ -12,6 +12,7 @@ class Call {
         self.id = null;
         self.status = 'new'; // 'answered', 'rejected', 'active', 'finished'
         self.video = null;
+        self.type = null;
         self.users = [];
         self.offer = null;
         self.answer = null;
@@ -27,6 +28,7 @@ class Call {
             self.users.push(data.users[1]);
             self.offer = data.offer;
             self.video = data.video;
+            self.type = data.type;
             self.getRedisKey();
             self.save();
             // Add users to
@@ -110,6 +112,7 @@ class Call {
             'answer': self.answer,
             'iceCaller': self.iceCaller,
             'video': self.video,
+            'type': self.type,
             'status': self.status
         };
         toStore = JSON.stringify(toStore);
@@ -138,6 +141,8 @@ class Call {
                     self.answer = self.answer;
                     self.iceCaller = self.iceCaller;
                     self.offer = data.offer;
+                    self.video = data.video;
+                    self.type = data.type;
                     self.status = data.status;
                     callback(null, self);
                 } else {
@@ -145,7 +150,7 @@ class Call {
                     callback('Error parsing call from redis: ' + id, null);
                 }
             } else {
-                Log.error('Error reading call info from redis: ' + id);
+                //Log.error('Error reading call info from redis: ' + id);
                 callback('Error reading call info from redis: ' + id, null);
             }
         });

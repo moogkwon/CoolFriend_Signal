@@ -15,42 +15,81 @@ var Firebase = require('../models/firebase.js');
 class Signaling {
     init(socket) {
         var self = this;
-
         // Get current user for socket
-        var currentUser = new User(socket);
-
-        // Catch all requests
-        socket.use((packet, next) => {
-            // Get command
-            var command = self.getCommand(packet);
-            if (!command) {
-                return true;
-            }
-            if (true || currentUser.authorized || command == 'user/login' || command == 'alive') {
-                self.processCommand(currentUser, command, packet);
-            } else {
-                new Result().emit(currentUser.socket, 'errorMessage', 401, {'status': 401, 'message': 'Unauthorized'} );
-            }
-        });
-
-        socket.on('disconnect', function () {
-            Log.message('User disconnected');
-            currentUser.socket = null;
-            if (currentUser.id) {
-                currentUser.removeFromHuntingList();
-            }
-            if (currentUser.call) {
-                currentUser.hangup(function() {
-                    Server.server.deleteUserById(currentUser.id);
+        var fake = new User(socket, function(err, currentUser) {
+            if (socket.request.headers['auth-token']) {
+                Log.message('Auth by header', socket.id);
+                var token = socket.request.headers['auth-token'];
+                // Check if this device is connected
+                Server.server.redisClient.hget(Server.server.redisTokenList, token, (error, data) => {
+                    console.log('If this user is connected');
+                    try {
+                        data = JSON.parse(data);
+                    } catch(e) {
+                        data = false;
+                    }
+                    if (data) {
+                        new User().load(data.id, (error, existsUser) => {
+                            if (!error && existsUser && existsUser.socket && currentUser.device != existsUser.device) {
+                                Server.server.io.of('/').adapter.clients((err, clients) => {
+                                    if(clients.indexOf(existsUser.socket)) {
+                                        new Result().emit(currentUser.socket, '/v1/user/login', 406, {'status': 406, 'message': 'User is connected at another device' , 'user': existsUser.id} );
+                                    } else {
+                                        self.login(currentUser, {token: token});
+                                    }
+                                });
+                                //callback('User is connected at another device');
+                            } else {
+                                self.login(currentUser, {token: token});
+                            }
+                        });
+                    } else {
+                        self.login(currentUser, {token: token});
+                    }
                 });
-            } else {
-                Server.server.deleteUserById(currentUser.id);
             }
-        });
 
-        socket.on('alive', function () {
-            new Result().emit(currentUser.socket, 'alive', '200', {'status': 200, 'message': 'Ok'} );
-            return true;
+
+            // Catch all requests
+            socket.use((packet, next) => {
+                // Get command
+                if (packet[0] == '/v1/alive') {
+                    socket.emit('/v1/alive', {'message': 'Ok'});
+                    return false;
+                }
+                var command = self.getCommand(packet, socket);
+                if (!command) {
+                    return true;
+                }
+                currentUser.load(false, function(error, caller) {
+    				if (!error && ((currentUser.authorized && currentUser.id) || command == 'user/login' || command == 'alive')) {
+    					self.processCommand(currentUser, command, packet);
+    				} else {
+    					new Result().emit(currentUser.socket, 'errorMessage', 401, {'status': 401, 'message': 'Unauthorized'} );
+    				}
+    			});
+            });
+
+            socket.on('disconnect', function () {
+                Log.message('User disconnected: ' + currentUser.id, socket.id);
+                currentUser.socket = null;
+                currentUser.goOffline();
+                if (currentUser.id) {
+                    currentUser.removeFromHuntingList();
+                }
+                if (currentUser.call) {
+                    //currentUser.hangup(currentUser.call, function() {
+                    self.hangup(currentUser);
+                    setTimeout(function() {
+                        Server.server.deleteUserById(currentUser.id);
+                    }, 1000);
+                    //});
+                } else {
+                    Server.server.deleteUserById(currentUser.id);
+                }
+            });
+
+            //new Result().emit(currentUser.socket, '/v1/ready', 200, {'status': 200, 'message': 'Ok'});
         });
     }
 
@@ -150,11 +189,21 @@ class Signaling {
             if (command == 'user/list/online') {
                 return self.userListOnline(currentUser, data);
             }
+
+            if (command == 'friend/add') {
+                return self.addFriend(currentUser, data);
+            }
+            if (command == 'friend/check') {
+                return self.checkFriend(currentUser, data);
+            }
+            if (command == 'friend/remove') {
+                return self.removeFriend(currentUser, data);
+            }
         } catch(e) {
             var message = e.message ? e.message : e;
             Log.error(message);
             console.log(e);
-            new Result().emit(currentUser.socket.id, 500, '/v1/' + command, {'status': 500, 'message': message});
+            new Result().emit(currentUser.socket, 'errorMessage', 500, {'status': 500, 'message': message});
         }
     }
 
@@ -165,7 +214,7 @@ class Signaling {
     * @param currentUser    User   Actual user
     */
     alive(currentUser) {
-        new Result().emit(currentUser.socket, 'alive', '200', {'status': 200, 'message': 'Ok'} );
+        new Result().emit(currentUser.socket, '/v1/alive', '200', {'status': 200, 'message': 'Ok'} );
         return true;
     }
 
@@ -178,25 +227,27 @@ class Signaling {
     * @return bool
     */
     login(currentUser, data) {
-        /*
-        if (!data.type) {
-            new Result().emit(currentUser.socket, '/v1/user/login', 400, {'status': 400, 'message': 'No auth type passed'});
+        if (currentUser.authorized || currentUser.authorizing) {
+            new Result().emit(currentUser.socket, '/v1/user/login', 400, {'status': 400, 'message': 'User is authorized'});
             return false;
         }
-        */
+        currentUser.authorizing = true;
         if (!data.token) {
+            currentUser.authorizing = false;
             new Result().emit(currentUser.socket, '/v1/user/login', 400, {'status': 400, 'message': 'No token passed'});
             return false;
         }
         currentUser.authorize(data.token, function(user) {
             if (!currentUser.authorized) {
+                currentUser.authorizing = false;
                 Log.error('Authorization failed:' + currentUser.apiMessage);
                 new Result().emit(currentUser.socket, '/v1/user/login', 401, {'status': 401, 'message': "Incorrect auth token"});
                 return true;
             }
-            Log.message('Authorized: ' + currentUser.id);
+            Log.message('Authorized: ' + currentUser.id, currentUser.socket);
             var result = {'status': 200, 'message':'Ok', 'user_id': currentUser.id, 'ice_servers': Server.server.iceServers};
             new Result().emit(currentUser.socket, '/v1/user/login', 200, result);
+            currentUser.authorizing = false;
             // Get incoming call
             var call = new Call();
             call.getIncomingCallForUser(currentUser.id, function(error, call) {
@@ -209,31 +260,27 @@ class Signaling {
                         // Caller not found for incoming call
                         return false;
                     }
-                    var result = {
-                        'status': 200,
-                        'message': 'Ok',
-                        'caller': caller.id,
-                        'recipient': currentUser.id,
-                        'call_id': call.id,
-                        'video': call.video,
-                        'offer': call.offer,
-                        'user': caller.getUserForSend()
-                        /*
-                        'user': {
-                            'id': caller.id,
-                            'name': caller.name,
-                            'photo': caller.photo
-                        }
-                        */
-                    };
-                    new Result().emit(currentUser.socket, '/v1/call/incoming', 200, result);
-                    if (call.iceCaller) {
-                        call.iceCaller.forEach(function(ice) {
-                            result = {'status': 200, 'ice': ice, 'call_id': call.id};
-                            new Result().emit(recipient.socket, '/v1/sdp/ice', '200', result);
-                        });
-                    };
-                    call.iceCaller = [];
+                    caller.isFriend(currentUser.id, function(error, areFriends) {
+                        var result = {
+                            'status': 200,
+                            'message': 'Ok',
+                            'caller': caller.id,
+                            'recipient': currentUser.id,
+                            'call_id': call.id,
+                            'video': call.video,
+                            'offer': call.offer,
+                            'user': caller.getUserForSend(),
+                            'is_friend': areFriends
+                        };
+                        new Result().emit(currentUser.socket, '/v1/call/incoming', 200, result);
+                        if (call.iceCaller) {
+                            call.iceCaller.forEach(function(ice) {
+                                result = {'status': 200, 'ice': ice, 'call_id': call.id};
+                                new Result().emit(currentUser.socket, '/v1/sdp/ice', '200', result);
+                            });
+                        };
+                        call.iceCaller = [];
+                    })
                 });
             });
         });
@@ -310,34 +357,19 @@ class Signaling {
         var self = this;
         //var offer = data['offer'];
         var result = null;
-        currentUser.isHunting = true;
-        currentUser.save();
-        currentUser.addToHuntingList();
-        self.goHuntingIteration(currentUser, data);
-        /*
-        currentUser.huntingInterval = setInterval(function() {
-            if (!currentUser.isHunting) {
-                self.stopHunting(currentUser, {'silent': true});
+        currentUser.load(false, function() {
+            if (currentUser.isHunting) {
+                return true;
             }
-            currentUser.goHunting(function(error, prey) {
-                if (error) {
-                    console.log(error);
-                    self.stopHunting(currentUser);
-                    result = {'status': 500, 'message': error};
-                    new Result().emit(currentUser.socket, '/v1/hunting/start', 500, result);
-                    return false;
-                }
-                if (prey && currentUser.isHunting && prey.isHunting) {
-                    self.stopHunting(currentUser);
-                    self.stopHunting(prey);
-                    var data = {'user_id': prey.id, 'offer': offer};
-                    self.call(currentUser, data);
-                }
+            currentUser.isHunting = true;
+            currentUser.save(function() {
+                currentUser.addToHuntingList(function() {
+                    self.goHuntingIteration(currentUser, data, 0);
+                    result = {'status': 200, 'message': 'Ok'};
+                    new Result().emit(currentUser.socket, '/v1/hunting/start', 200, result);
+                });
             });
-        }, 1000); // Every 1 sec
-        */
-        result = {'status': 200, 'message': 'Ok'};
-        new Result().emit(currentUser.socket, '/v1/hunting/start', 200, result);
+        });
         return true;
     }
 
@@ -349,31 +381,43 @@ class Signaling {
     *
     * @return bool
     */
-    goHuntingIteration(currentUser, data) {
+    goHuntingIteration(currentUser, data, iteration) {
         var self = this;
-        if (!currentUser.isHunting) {
-            self.stopHunting(currentUser);
+        if (iteration > 120) {
+            var result = {'status': 408, 'message': 'Timeout'};
+            new Result().emit(currentUser.socket, '/v1/hunting/stop', 408, result);
             return false;
         }
-        var offer = data['offer'];
-        currentUser.goHunting(function(error, prey) {
-            if (error) {
-                console.log(error);
-                self.stopHunting(currentUser);
-                result = {'status': 500, 'message': error};
-                new Result().emit(currentUser.socket, '/v1/hunting/start', 500, result);
+        currentUser.load(false, function(error, user) {
+            if (error || !currentUser.isHunting) {
+                //self.stopHunting(currentUser);
                 return false;
             }
-            if (prey && currentUser.isHunting && prey.isHunting) {
-                self.stopHunting(currentUser);
-                self.stopHunting(prey);
-                var data = {'user_id': prey.id, 'offer': offer, 'user': prey.getUserForSend()};
-                self.call(currentUser, data);
-                return false;
-            }
-            setTimeout(function() {
-                self.goHuntingIteration(currentUser, data);
-            }, 1000);
+            var offer = data['offer'];
+            var callStarted = false;
+            currentUser.goHunting(function(error, prey) {
+                if (error) {
+                    console.log('Error in hunting at signal point');
+                    console.log(error);
+                    self.stopHunting(currentUser);
+                    var result = {'status': 500, 'message': error};
+                    new Result().emit(currentUser.socket, '/v1/hunting/start', 500, result);
+                    return false;
+                }
+                if (prey && currentUser.isHunting && prey.isHunting) {
+                    callStarted = true;
+                    self.stopHunting(currentUser);
+                    self.stopHunting(prey);
+                    var callData = {'user_id': prey.id, 'offer': offer, 'user': prey.getUserForSend(), 'type': 'random'};
+                    self.call(currentUser, callData);
+                    return false;
+                }
+                setTimeout(function() {
+                    if (!callStarted) {
+                        self.goHuntingIteration(currentUser, data, iteration+1);
+                    }
+                }, 500);
+            });
         });
     }
 
@@ -387,18 +431,15 @@ class Signaling {
     */
     stopHunting(currentUser, data) {
         var self = this;
-        /*
-        if (currentUser.huntingInterval) {
-            clearInterval(currentUser.huntingInterval);
-        }
-        */
-        currentUser.isHunting = false;
-        currentUser.save();
-        currentUser.removeFromHuntingList();
-        if (!data || !data.silent) {
-            var result = {'status': 200, 'message': 'Ok'};
-            new Result().emit(currentUser.socket, '/v1/hunting/stop', 200, result);
-        }
+        currentUser.load(false, function() {
+            currentUser.isHunting = false;
+            currentUser.save();
+            currentUser.removeFromHuntingList();
+            if (!data || !data.silent) {
+                var result = {'status': 200, 'message': 'Ok'};
+                new Result().emit(currentUser.socket, '/v1/hunting/stop', 200, result);
+            }
+        });
         return true;
     }
 
@@ -412,68 +453,68 @@ class Signaling {
     */
     call(currentUser, data) {
         var self = this;
-        var recipientId = data['user_id'];
+        var calleeId = data['user_id'];
         var offer = data['offer'];
         var video = data['video'] ? data['video'] : true;
+        var type = data['type'] ? data['type'] : 'selective';
         var result = null;
         // Incorrect or missing ID
-        if (typeof recipientId === 'undefined' || !recipientId) {
+        if (typeof calleeId === 'undefined' || !calleeId) {
             result = {'status': 400, 'message': 'No recipient ID passed'};
             new Result().emit(currentUser.socket, '/v1/call/new', 400, result);
             return false;
         }
-        if (currentUser.id == recipientId) {
-            result = {'status': 500, 'message': 'You can`t talk with yourself', 'recipient': recipientId};
+        if (currentUser.id == calleeId) {
+            result = {'status': 500, 'message': 'You can`t talk with yourself', 'callee': calleeId};
             new Result().emit(currentUser.socket, '/v1/call/new', 500, result);
             return false;
         }
-        Server.server.getUserById(recipientId, function(error, recipient) {
+        Server.server.getUserById(calleeId, function(error, callee) {
             if (error) {
                 result = {'status': 500, 'message': error};
                 new Result().emit(currentUser.socket, '/v1/call/new', 500, result);
                 return false;
             }
-            if (recipient && recipient.call) {
-                result = {'status': 417, 'message': 'Recipient is speaking now, disconnect first', 'recipient': recipientId};
+            /*
+            if (callee && callee.call) {
+                result = {'status': 417, 'message': 'Recipient is speaking now, disconnect first', 'recipient': calleeId};
                 new Result().emit(currentUser.socket, '/v1/call/new', 417, result);
                 return false;
             }
+            */
             //Server.server.calls.push(call);
-            currentUser.makeCall(recipientId, function(data) {
+            currentUser.makeCall(calleeId, type, function(data) {
                 try {
                     data = JSON.parse(data);
                 } catch(e) {}
                 var call = new Call({
                     'id': data.data.call_id,
-                    'users': [currentUser.id, recipientId],
+                    'users': [currentUser.id, calleeId],
                     'offer': offer,
-                    'video': video
-                });
-                console.log('-------------');
-                console.log(call);
-                console.log(recipientId);
-                console.log(currentUser.id);
-                console.log(recipient);
-                console.log(recipient.getUserForSend());
-                var result = {
-                    'status': currentUser.apiCode,
-                    'message': currentUser.apiMessage,
-                    'caller': currentUser.id,
-                    'recipient': recipientId,
-                    'call_id': call.id,
                     'video': video,
-                    'user': recipient ? recipient.getUserForSend() : null
-                };
-                currentUser.call = call.id;
-                currentUser.save();
-                new Result().emit(currentUser.socket, '/v1/call/new', currentUser.apiCode, result);
-                //if (currentUser.apiCode == 200 && recipient && recipient.socket) {
-                if (recipient && recipient.socket) {
-                    result.offer = call.offer,
-                    //result.user = {'id': currentUser.id, 'name': currentUser.name, 'photo': currentUser.photo};
-                    result.user = currentUser.getUserForSend();
-                    new Result().emit(recipient.socket, '/v1/call/incoming', 200, result);
-                }
+                    'type': type
+                });
+                currentUser.isFriend(calleeId, function(error, areFriends) {
+                    var result = {
+                        'status': currentUser.apiCode,
+                        'message': currentUser.apiMessage,
+                        'caller': currentUser.id,
+                        'recipient': calleeId,
+                        'call_id': call.id,
+                        'video': video,
+                        'type': type,
+                        'user': callee ? callee.getUserForSend() : null,
+                        'isFriend': areFriends
+                    };
+                    currentUser.call = call.id;
+                    currentUser.save();
+                    new Result().emit(currentUser.socket, '/v1/call/new', currentUser.apiCode, result);
+                    if (callee && callee.socket) {
+                        result.offer = call.offer,
+                        result.user = currentUser.getUserForSend();
+                        new Result().emit(callee.socket, '/v1/call/incoming', 200, result);
+                    }
+                });
                 /*
                 if(recipient) {
                     Firebase.sendPushCall(recipientId, currentUser, call);
@@ -518,44 +559,35 @@ class Signaling {
                 new Result().emit(currentUser.socket, '/v1/call/accept', 500, result);
                 return false;
             }
-            console.log('+++++++++++++++++');
-            console.log(call.users);
-            console.log(currentUser.id);
-            console.log(data);
-            console.log('+++++++++++++++++');
             if (call.users[0] != currentUser.id && call.users[1] != currentUser.id) {
-                console.log('111');
-                console.log(call);
                 result = {'status': 403, 'message': 'Forbidden for this user'};
                 new Result().emit(currentUser.socket, '/v1/call/accept', 403, result);
                 return false;
             }
             if (call.users[0] == currentUser.id) {
-                var recipientId = call.users[1];
+                var callerId = call.users[1];
             } else {
-                var recipientId = call.users[0];
+                var callerId = call.users[0];
             }
-            Server.server.getUserById(recipientId, function(error, recipient) {
+            Server.server.getUserById(callerId, function(error, caller) {
                 if (error) {
                     result = {'status': 500, 'message': error};
                     new Result().emit(currentUser.socket, '/v1/call/accept', 500, result);
                     return false;
                 }
-                if (!recipient || !recipient.id || recipient.id == currentUser.id) {
-                    console.log('222');
-                    console.log(call);
+                if (!callerId || !caller.id || caller.id == currentUser.id) {
                     result = {'status': 403, 'message': 'Forbidden for this user'};
                     new Result().emit(currentUser.socket, '/v1/call/accept', 403, result);
                     return false;
                 }
-                if (!recipient.authorized) {
+                if (!caller.authorized) {
                     result = {'status': 403, 'message': 'Caller is offline'};
                     new Result().emit(currentUser.socket, '/v1/call/accept', 403, result);
                     return false;
                 }
                 call.answer = answer;
                 currentUser.accept(call, function(data) {
-                    result = {'status': currentUser.apiCode, 'message': currentUser.apiMessage, 'call_id': call.id};
+                    result = {'status': currentUser.apiCode, 'message': currentUser.apiMessage, 'call_id': call.id, 'type': call.type};
                     if (currentUser.apiCode == 200) {
                         currentUser.apiCode = 200;
                         currentUser.apiMessage = 'Ok';
@@ -569,10 +601,9 @@ class Signaling {
                     currentUser.save();
                     call.removeConnectTimeout();
                     call.updateStatus('active');
-                    //call.status = 'active';
                     new Result().emit(currentUser.socket, '/v1/call/accept', currentUser.apiCode, result);
                     result.answer = call.answer;
-                    new Result().emit(recipient.socket, '/v1/call/accepted', currentUser.apiCode, result);
+                    new Result().emit(caller.socket, '/v1/call/accepted', currentUser.apiCode, result);
                     Firebase.sendPushAccepted(currentUser, call);
                 });
             });
@@ -619,11 +650,11 @@ class Signaling {
                 return false;
             }
             if (call.users[0] == currentUser.id) {
-                var recipientId = call.users[1];
+                var callerId = call.users[1];
             } else {
-                var recipientId = call.users[0];
+                var callerId = call.users[0];
             }
-            Server.server.getUserById(recipientId, function(error, recipient) {
+            Server.server.getUserById(callerId, function(error, caller) {
                 if (error) {
                     result = {'status': 500, 'message': error};
                     new Result().emit(currentUser.socket, '/v1/call/reject', 500, result);
@@ -632,7 +663,8 @@ class Signaling {
                 currentUser.reject(call, function(data) {
                     result = {'status': currentUser.apiCode,
                               'message': currentUser.apiMessage,
-                              'call_id': call.id
+                              'call_id': call.id,
+                              'type': call.type
                              };
                     if (currentUser.apiCode == 200) {
                         currentUser.call = null;
@@ -641,16 +673,15 @@ class Signaling {
                     } else {
                         currentUser.call = null;
                     }
-                    if (recipient && recipient.socket) {
-                        new Result().emit(recipient.socket, '/v1/call/rejected', currentUser.apiCode, result);
-                        recipient.call = null;
-                        recipient.save();
+                    if (caller && caller.socket) {
+                        new Result().emit(caller.socket, '/v1/call/rejected', currentUser.apiCode, result);
+                        caller.call = null;
+                        caller.save();
                     }
                     currentUser.call = null;
                     currentUser.save();
                     call.removeConnectTimeout();
                     call.updateStatus('rejected');
-                    //call.status = 'rejected';
                     new Result().emit(currentUser.socket, '/v1/call/reject', currentUser.apiCode, result);
                     Server.server.deleteCallById(call.id, function(error) {
                         if (error) {
@@ -658,7 +689,7 @@ class Signaling {
                             new Result().emit(currentUser.socket, '/v1/call/reject', 500, result);
                         }
                     });
-                    Firebase.sendPushRejected(currentUser, call);
+                    //Firebase.sendPushRejected(currentUser, call);
                 });
             });
         });
@@ -673,7 +704,7 @@ class Signaling {
     *
     * @return bool
     */
-    hangup(currentUser, socket) {
+    hangup(currentUser, data) {
         var result = null;
         if (!currentUser.call) {
             result = {'status': 200, 'message': 'Ok'};
@@ -700,16 +731,16 @@ class Signaling {
                 return false;
             }
             if (call.users[0] == currentUser.id) {
-                var recipientId = call.users[1];
+                var callerId = call.users[1];
             } else {
-                var recipientId = call.users[0];
+                var callerId = call.users[0];
             }
-            if (!recipientId) {
+            if (!callerId) {
                 result = {'status': 500, 'message': error};
                 new Result().emit(currentUser.socket, '/v1/call/hangup', 500, result);
                 return false;
             }
-            Server.server.getUserById(recipientId, function(error, recipient) {
+            Server.server.getUserById(callerId, function(error, caller) {
                 if (error) {
                     result = {'status': 500, 'message': error};
                     new Result().emit(currentUser.socket, '/v1/call/hangup', 500, result);
@@ -718,7 +749,6 @@ class Signaling {
                 currentUser.hangup(call, function(data) {
                     call.removeConnectTimeout();
                     call.updateStatus('finished');
-                    //call.status = 'finished';
                     if (currentUser.apiCode == 200) {
                         currentUser.call = null;
                         currentUser.apiCode = 200;
@@ -727,16 +757,16 @@ class Signaling {
                         currentUser.call = null;
                     }
                     currentUser.save();
-                    result = {'status': currentUser.apiCode, 'message': currentUser.apiMessage, 'call_id': call.id};
+                    result = {'status': currentUser.apiCode, 'message': currentUser.apiMessage, 'call_id': call.id, 'type': call.type};
 
-                    if (recipient) {
-                        recipient.load(false, function() {
-                            recipient.call = null;
-                            recipient.save();
+                    if (caller) {
+                        caller.load(false, function() {
+                            caller.call = null;
+                            caller.save();
                         });
-                    }
-                    if (recipient && recipient.socket) {
-                        new Result().emit(recipient.socket, '/v1/call/hangup', currentUser.apiCode, result);
+                        if (caller.socket) {
+                            new Result().emit(caller.socket, '/v1/call/hangup', currentUser.apiCode, result);
+                        }
                     }
                     new Result().emit(currentUser.socket, '/v1/call/hangup', currentUser.apiCode, result);
                     Server.server.deleteCallById(call.id, function(error) {
@@ -780,21 +810,21 @@ class Signaling {
                 return false;
             }
             if (call.users[0] == currentUser.id) {
-                var recipientId = call.users[1];
+                var callerId = call.users[1];
             } else {
-                var recipientId = call.users[0];
+                var callerId = call.users[0];
             }
-            Server.server.getUserById(recipientId, function(error, recipient) {
+            Server.server.getUserById(callerId, function(error, caller) {
                 if (error) {
                     result = {'status': 500, 'message': error};
                     new Result().emit(currentUser.socket, '/v1/call/hold', 500, result);
                     return false;
                 }
                 call.updateStatus('hold');
-                result = {'status': 200, 'message': 'Ok', 'call_id': call.id};
+                result = {'status': 200, 'message': 'Ok', 'call_id': call.id, 'type': call.type};
                 new Result().emit(currentUser.socket, '/v1/call/hold', currentUser.apiCode, result);
                 result.offer = offer;
-                new Result().emit(recipient.socket, '/v1/call/get_hold', 200, result);
+                new Result().emit(caller.socket, '/v1/call/get_hold', 200, result);
             });
         });
         return true;
@@ -829,22 +859,22 @@ class Signaling {
                 return false;
             }
             if (call.users[0] == currentUser.id) {
-                var recipientId = call.users[1];
+                var callerId = call.users[1];
             } else {
-                var recipientId = call.users[0];
+                var callerId = call.users[0];
             }
-            Server.server.getUserById(recipientId, function(error, recipient) {
+            Server.server.getUserById(callerId, function(error, caller) {
                 if (error) {
                     result = {'status': 500, 'message': error};
                     new Result().emit(currentUser.socket, '/v1/call/continue', 500, result);
                     return false;
                 }
                 call.updateStatus('active');
-                result = {'status': 200, 'message': 'Ok', 'call_id': call.id};
+                result = {'status': 200, 'message': 'Ok', 'call_id': call.id, 'type': call.type};
                 new Result().emit(currentUser.socket, '/v1/call/continue', currentUser.apiCode, result);
                 result.offer = offer;
-                if (recipient) {
-                    new Result().emit(recipient.socket, '/v1/call/get_continue', 200, result);
+                if (caller) {
+                    new Result().emit(caller.socket, '/v1/call/get_continue', 200, result);
                 }
             });
         });
@@ -893,11 +923,11 @@ class Signaling {
                 return false;
             }
             if (call.users[0] == currentUser.id) {
-                var recipientId = call.users[1];
+                var callerId = call.users[1];
             } else {
-                var recipientId = call.users[0];
+                var callerId = call.users[0];
             }
-            Server.server.getUserById(recipientId, function(error, recipient) {
+            Server.server.getUserById(callerId, function(error, caller) {
                 if (error) {
                     result = {'status': 500, 'message': error};
                     new Result().emit(currentUser.socket, '/v1/sdp/' + code, 500, result);
@@ -905,13 +935,13 @@ class Signaling {
                 }
                 result = {'status': 200, 'message': 'Ok', 'call_id': call.id};
                 new Result().emit(currentUser.socket, '/v1/sdp/' + code, 200, result);
-                if (recipient && recipient.socket) {
+                if (caller && caller.socket) {
                     switch (code) {
                         case 'offer': result.offer = message; break;
                         case 'answer': result.answer = message; break;
                         case 'ice': result.ice = message; break;
                     }
-                    new Result().emit(recipient.socket, '/v1/sdp/get_' + code, 200, result);
+                    new Result().emit(caller.socket, '/v1/sdp/get_' + code, 200, result);
                 } else {
                     switch (code) {
                         case 'offer':
@@ -928,6 +958,58 @@ class Signaling {
             });
         });
         return true;
+    }
+
+    /*
+    * Add friend
+    *
+    *
+    * @return bool
+    */
+    addFriend(currentUser, data) {
+        var friendId = data['friend'];
+        currentUser.addFriend(friendId, function(error, areFriends) {
+            var result = {'status': 200, 'message': 'Ok'};
+            new Result().emit(currentUser.socket, '/v1/friend/add', 200, result);
+            if (areFriends) {
+                var result = {'status': 200, 'message': 'Ok', 'friend': friendId};
+                new Result().emit(currentUser.socket, '/v1/friend/become', 200, result);
+                Server.server.getUserById(friendId, function(error, friend) {
+                    if (friend) {
+                        var result = {'status': 200, 'message': 'Ok', 'friend': currentUser.id};
+                        new Result().emit(friend.socket, '/v1/friend/become', 200, result);
+                    }
+                });
+            }
+        });
+    }
+
+    /*
+    * Check friend
+    *
+    *
+    * @return bool
+    */
+    checkFriend(currentUser, data) {
+        var friendId = data['friend'];
+        currentUser.isFriend(friendId, function(error, areFriends) {
+            var result = {'status': 200, 'message': 'Ok', 'friend': areFriends};
+            new Result().emit(currentUser.socket, '/v1/friend/check', 200, result);
+        });
+    }
+
+    /*
+    * Add friend
+    *
+    *
+    * @return bool
+    */
+    removeFriend(currentUser, data) {
+        var friendId = data['friend'];
+        currentUser.removeFriend(friendId, function(error, areFriends) {
+            var result = {'status': 200, 'message': 'Ok'};
+            new Result().emit(currentUser.socket, '/v1/friend/remove', 200, result);
+        });
     }
 
     /*
@@ -963,7 +1045,7 @@ class Signaling {
     *
     * @return string   command  Recognized command to execute
     */
-    getCommand(packet) {
+    getCommand(packet, socket) {
         var self = this;
         var command = packet[0];
         if (!packet) {
@@ -976,8 +1058,8 @@ class Signaling {
         command = command.replace(/^\/v1/, '').trim();
         command = command.replace(/^\//, '').trim();
         command = command.replace(/\/$/, '').trim();
-        if ( command != 'alive' && command != 'load' ) {
-            Log.message('Command: ' + command + ', params: ' + JSON.stringify(packet));
+        if ( command != 'alive') {
+            Log.message('Command: ' + command + ', params: ' + JSON.stringify(packet), socket.id);
         }
         return command;
     }

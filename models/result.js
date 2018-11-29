@@ -43,12 +43,11 @@ class Result {
     * @return bool
     */
     emit(socket, command, code, message, sessionId) {
-        console.log('Emit to ' + socket + ': ' + command);
         if (!socket) {
             return false;
         }
         // get user IP for logging
-        var ip = null; // (socket && socket.handshake & socket.handshake.address) ? socket.handshake.address : null;
+        //var ip = null; // (socket && socket.handshake & socket.handshake.address) ? socket.handshake.address : null;
         // For all commands except alive — log responce
         if (command !== 'alive') {
             var logMessage = message;
@@ -69,7 +68,7 @@ class Result {
             }
             // Reduce logged message length
             logMessage = typeof logMessage == "string" ? logMessage.substr(0, 1000) : '';
-            Log.message(command + ': ' + code + ' ' + logMessage, ip);
+            Log.message(command + ': ' + code + ' ' + logMessage, socket.id);
         }
         // Emit it
         Server.server.io.to(socket).emit(command, {'code': code, 'message': message, 'sessionId': sessionId});

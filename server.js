@@ -8,7 +8,6 @@ var fs = require('fs');
 var express = require('express');
 const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
-//var sticky = require('socketio-sticky-session');
 var sticky = require('sticky-session');
 const redisAdapter = require('socket.io-redis');
 
@@ -32,10 +31,13 @@ class Server {
     constructor() {
         var self = this;
 
-        self.users = {};
+        self.redisTokenList = 'tokenList';
         self.iceServers = config.iceServers;
 
         self.redisClient = redis.createClient({host: config.redis.host, port: config.redis.port});
+        self.redisClient.select(1-(config.server.port == 8890), function() {
+            self.redisLock = require("redis-lock")(self.redisClient);
+        });
         self.app = express();
 
         if (config.useSSL) {
@@ -64,7 +66,7 @@ class Server {
             });
             // HTTP responder for load balancing
             http.createServer(function (req, res) {
-                res.write('Hello World!'); //write a response to the client
+                res.write('I`m here'); //write a response to the client
                 res.end(); //end the response
             }).listen(config.server.portHttp);
             console.log('Monitoring responder started at ' + config.server.portHttp + ' port');
@@ -74,11 +76,11 @@ class Server {
             self.io = require('socket.io')();
             self.io.adapter(redisAdapter({host: config.redis.host, port: config.redis.port}));
             self.io.set('origins', '*:*');
-            self.io.listen(self.httpServer, {'pingInterval': 2000, 'pingTimeout': 6500}); // , { path: '/'}
+            self.io.listen(self.httpServer, {'pingInterval': 2000, 'pingTimeout': 5000}); // , { path: '/'}
 
             self.io.sockets.on('connection', function(socket) {
                 // Send hello to user
-                new Result().emit(socket.id, 'hello', 200, {'message': 'Ok'});
+                //new Result().emit(socket.id, 'hello', 200, {'message': 'Ok'});
 
                 // Socket connection error
                 socket.on('error', (error) => {
@@ -178,25 +180,25 @@ class Server {
     */
     deleteUserById(id, callback) {
         var self = this;
+        if (!callback) {
+            callback = function() {};
+        }
         if (!id) {
-            if (callback) {
-                callback('No call ID passed', null);
-            }
+            callback('No call ID passed', null);
         }
         var user = new User();
         user.load(id, function(error, user) {
-            if (callback) {
-                if (error) {
-                    callback(error);
-                }
+            if (error) {
+                callback(error);
+                return false;
             }
-            console.log('---1');
+            if (!user) {
+                return callback();
+                return false;
+            }
             if (user.call) {
-                console.log('---2');
-                self.getCallById(getCallById, function(error, call) {
-                    console.log('---3');
+                self.getCallById(user.call, function(error, call) {
                     if (call) {
-                        console.log('---4');
                         result = {'status': 200, 'message': 'Ok', 'call_id': call.id};
                         if (call.users[0] == currentUser.id) {
                             var recipientId = call.users[1];
@@ -204,11 +206,8 @@ class Server {
                             var recipientId = call.users[0];
                         }
                         if (recipientId) {
-                            console.log('---5' + recipientId);
                             Server.server.getUserById(recipientId, function(error, recipient) {
-                                console.log('---6');
                                 if (recipient) {
-                                    console.log('---7');
                                     new Result().emit(recipient.socket, '/v1/call/hangup', 200, result);
                                     recipient.call = null;
                                     recipient.save();
@@ -221,10 +220,24 @@ class Server {
                     }
                 });
             }
-            user.delete(id, function(error) {
-                if (callback) {
-                    callback(error);
-                }
+            user.authorized = false;
+            user.save(function() {
+                setTimeout(function() {
+                    user.load(false, function(error, user) {
+                        try {
+                            if (!user) {
+                                callback(error);
+                                return false;
+                            } else if (!user.authorized) {
+                                user.delete(id, function(error) {
+                                    callback(error);
+                                });
+                            }
+                        } catch(e) {
+                            callback(e.message);
+                        }
+                    });
+                }, 5000);
             });
         });
     }

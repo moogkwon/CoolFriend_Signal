@@ -17,15 +17,17 @@ var Firebase = require('../models/firebase.js');
 
 class User {
 
-    constructor(socket) {
+    constructor(socket, callback) {
         var self = this;
         self.id = null;
         self.token = null;
+        self.hash = null;
         self.name = null;
         self.photo = null;
         self.video = null;
         self.alive = false;
         self.authorized = null;
+        self.authorizing = false;
         self.isHunting = false;
         self.huntingInterval = false;
         self.huntedWith = [];
@@ -39,7 +41,23 @@ class User {
         self.huntingListKey = 'huntingUserList';
         if (socket) {
             self.socket = socket.id;
+            self.device = socket.de;
             self.getRedisKey();
+            self.save(function(err) {
+                self.device = socket.request.headers['device-id'];
+                if (!self.device) {
+                    if (socket.request.headers['auth-token']) {
+                        self.device = 'deviceFor' + socket.request.headers['auth-token'];
+                    } else {
+                        require('crypto').randomBytes(32, function(ex, buf) {
+                            self.device = buf.toString('base64').replace(/\//g,'_').replace(/\+/g,'-');
+                        });
+                    }
+                }
+                if(callback) {
+                    callback(null, self);
+                }
+            });
         } else {
             self.socket = null;
         }
@@ -56,11 +74,13 @@ class User {
     */
     authorize(token, callback) {
         var self = this;
+        // Add device to list of connected devices
+
         // Backend-based auth
         var url = config.backend.host + '/v1/user/check';
         var params = {'hash': token};
         self.request(url, params, function(data) {
-            self.delete();
+            //self.delete();
             if (data.status == 200) {
                 Log.error('Auth error');
                 Log.error(data);
@@ -73,11 +93,22 @@ class User {
                 var raw = JSON.parse(data);
                 for(let i in raw.data) {
                     self[i] = raw.data[i];
+                    if (i == 'id') {
+                        self[i] = parseInt(self[i]);
+                    }
                 }
             } catch(e) {
                 console.log(e);
             };
-            self.id = parseInt(self.id);
+            self.token = token;
+            self.id = self.id - 0;
+            if (!self.id) {
+                Log.error('Auth error');
+                Log.error(raw.data);
+                self.delete();
+                callback(self);
+                return false;
+            }
             self.token = token;
             /*
             self.name = data.data.name;
@@ -86,6 +117,11 @@ class User {
             */
             self.authorized = true;
             self.call = null;
+            // Add user to connected list
+            var toStore = {'id': self.id, 'token': token, 'device': self.device};
+            toStore = JSON.stringify(toStore);
+            Server.server.redisClient.hset(Server.server.redisTokenList, token, toStore);
+            // Save user
             self.save();
             callback(self);
         }, function(code, message) {
@@ -116,6 +152,9 @@ class User {
         var self = this;
         Server.server.users[self.id] = null;
         self.removeFromHuntingList();
+        if (self.token) {
+            Server.server.redisClient.hdel(Server.server.redisTokenList, self.token);
+        }
         // Request API
         var url = config.backend.host + '/v1/user/disconnected/';
         var params = {'id': self.id};
@@ -137,6 +176,26 @@ class User {
     };
 
     /*
+    * Notify backend about user disconnect — light version
+    *
+    * @param callback       Function
+    *
+    * @return bool
+    */
+    goOffline() {
+        var self = this;
+        if (self.token) {
+            Server.server.redisClient.hdel(Server.server.redisTokenList, self.token);
+        }
+        // Request API
+        var url = config.backend.host + '/v1/user/disconnected/';
+        var params = {'hash': self.token};
+        self.request( url, params, function(data) {
+        });
+    };
+
+
+    /*
     * Request to backend about new call
     *
     * @param recipientId    String
@@ -147,10 +206,10 @@ class User {
     *
     * @return bool
     */
-    makeCall(recipientId, callback) {
+    makeCall(callee, type, callback) {
         var self = this;
         var url = config.backend.host + '/v1/call/start';
-        var params = {'user': self.id, 'recipient': recipientId};
+        var params = {'hash': self.token, 'type': type, 'callee': callee};
         self.request( url, params, function(data) {
             callback(data);
         }, function(code, message) {
@@ -174,7 +233,7 @@ class User {
     accept(call, callback) {
         var self = this;
         var url = config.backend.host + '/v1/call/accepted';
-        var params = {'call': call.id};
+        var params = {'hash': self.token, 'call': call.id};
         //Log.message(params);
         self.request( url, params, function(data) {
             callback(data);
@@ -198,7 +257,7 @@ class User {
     reject(call, callback) {
         var self = this;
         var url = config.backend.host + '/v1/call/rejected';
-        var params = {'call': call.id};
+        var params = {'hash': self.token, 'call': call.id};
         //Log.message(params);
         self.request( url, params, function(data) {
             callback(self, data);
@@ -222,14 +281,70 @@ class User {
     hangup(call, callback) {
         var self = this;
         var url = config.backend.host + '/v1/call/finished';
-        var params = {'user': self.id, 'call': call.id};
-        //Log.message(params);
+        var params = {'hash': self.token, 'call': call.id};
         self.request( url, params, function(data) {
             if (callback) {
                 callback(self, data);
             }
         }, function(code, message) {
             Log.error('Error join');
+            Log.error(code);
+            if (callback) {
+                callback(self, {});
+            }
+        });
+    };
+
+    addFriend(friend, callback) {
+        var self = this;
+        var url = config.backend.host + '/v1/friend/add';
+        var params = {'hash': self.token, 'friend': friend};
+        self.request(url, params, function(data) {
+            try {
+                data = JSON.parse(data);
+                if (callback) {
+                    callback(null, data.are_friends);
+                }
+            } catch(e){};
+        }, function(code, message) {
+            Log.error('Error in friend add');
+            Log.error(code);
+            if (callback) {
+                callback(self, {});
+            }
+        });
+    };
+
+    isFriend(friend, callback) {
+        var self = this;
+        var url = config.backend.host + '/v1/friend/check';
+        var params = {'hash': self.token, 'friend': friend};
+        self.request(url, params, function(data) {
+            if (callback) {
+                callback(null, data.is_friend);
+            }
+        }, function(code, message) {
+            Log.error('Error in friend check');
+            Log.error(code);
+            if (callback) {
+                callback(self, {});
+            }
+        });
+    };
+
+    removeFriend(friend, callback) {
+        var self = this;
+        var url = config.backend.host + '/v1/friend/remove';
+        var params = {'hash': self.token, 'friend': friend};
+        self.request(url, params, function(data) {
+            try {
+                data = JSON.parse(data);
+                if (callback) {
+                    callback(null, data.are_friends);
+                }
+            } catch(e){};
+        }, function(code, message) {
+            Log.error('Error in friend remove');
             Log.error(code);
             if (callback) {
                 callback(self, {});
@@ -247,19 +362,22 @@ class User {
     goHunting(callback) {
         var self = this;
         if (!self.isHunting) {
-            callback('User not in hunting mode');
+            self.removeFromHuntingList(self.id, function() {
+                console.error('You`re not hunting now');
+                callback('User not in hunting mode');
+            });
             return false;
         }
         self.getHuntingList(function(error, list) {
             if (error) {
-                callback(error);
-                return false;
+                console.error('No hunting users', error);
+                return callback(error);
             }
             var found = false;
             delete list[self.id];
             var ids = Object.keys(list);
             if (!ids.length) {
-                return false;
+                return callback();
             }
             var userId = false;
             var huntedBefore = false;
@@ -271,40 +389,38 @@ class User {
             for (let i = 0; i < ids.length; i++) {
                 userId = ids[i];
                 if (somebodyFound) {
-                    return false;
+                    break;
                 }
+                if (self.huntedWith[userId]) {
+                    huntedBefore = userId;
+                    continue;
+                }
+                somebodyFound = true;
                 Server.server.getUserById(userId, function(error, user) {
-                    if (somebodyFound) {
-                        return false;
-                    }
                     if (error || !user || !user.isHunting) {
-                        if (user && user.id) {
-                            user.removeFromHuntingList();
-                        }
-                        return false;
-                    }
-                    if (self.huntedWith[userId]) {
-                        huntedBefore = userId;
-                        return false;
-                    }
-                    if (!somebodyFound) {
-                        somebodyFound = true;
+                        self.removeFromHuntingList(userId, function() {
+                            return callback();
+                        });
+                    } else {
                         self.huntedWith[userId] = userId;
-                        callback(false, user);
-                        return false;
+                        return callback(false, user);
                     }
                 });
+                return false;
             }
             // If we spoke with all active users — start new call with somebody we spoke before
-            //console.log(userId);
-            if (huntedBefore) {
+            if (!somebodyFound && huntedBefore) {
                 Server.server.getUserById(huntedBefore, function(error, user) {
                     if (error || !user || !user.isHunting) {
-                        callback(false, false);
+                        self.removeFromHuntingList(huntedBefore, function() {
+                            return callback();
+                        });
                     } else {
-                        callback(false, user);
+                        return callback(false, user);
                     }
                 });
+            } else {
+                return callback();
             }
         });
     }
@@ -355,7 +471,6 @@ class User {
                 if( typeof body.detail != 'undefined' ) {
                     message += '\n' + body.detail;
                 }
-                console.log(body);
                 message += '<br />request: ' + JSON.stringify(options);
                 self.apiMessage = message;
                 if (whatIfError) {
@@ -372,29 +487,19 @@ class User {
         self.redisKey = self.id ? 'storedUser' + self.id : false;
     }
 
-    save() {
+    save(callback) {
         var self = this;
         if (!self.id) {
+            if(callback) {
+                callback('No user ID set');
+            }
             return false;
         }
         self.getRedisKey();
         if (!self.redisKey) {
+            callback('No user ID set');
             return false;
         }
-        /*
-        var toStore = {
-            'id': self.id,
-            'token': self.token,
-            'name': self.name,
-            'photo': self.photo,
-            'alive': self.alive,
-            'authorized': self.authorized,
-            'call': self.call,
-            'isHunting': self.isHunting,
-            'huntedWith': self.huntedWith,
-            'socket': self.socket // ? self.socket.id : null
-        };
-        */
         var toStore = {
             //'id': self.id,
             'token': self.token,
@@ -412,7 +517,14 @@ class User {
             toStore[i] = params[i];
         }
         toStore = JSON.stringify(toStore);
-        Server.server.redisClient.set(self.redisKey, toStore, function(){});
+        Server.server.redisLock('userDetail', (unlock) => {
+            Server.server.redisClient.set(self.redisKey, toStore, function(){
+                unlock();
+                if (callback) {
+                    callback();
+                }
+            });
+        });
     }
 
     load(id, callback) {
@@ -421,45 +533,35 @@ class User {
             self.id = id;
             self.getRedisKey();
         }
-        if (!self.redisKey) {
+        if (!self.id || !self.redisKey) {
             callback(null, self);
             return false;
         }
-        Server.server.redisClient.get(self.redisKey, function(error, data) {
-            if (data) {
-                try {
-                    data = JSON.parse(data);
-                } catch(e) {
-                    var message = e.message ? e.message : e;
-                    Log.error(message);
-                    callback(message, null);
-                    return error;
-                }
+        Server.server.redisLock('userDetail', (unlock) => {
+            Server.server.redisClient.get(self.redisKey, function(error, data) {
+                unlock();
                 if (data) {
-                    for(let i in data) {
-                        self[i] = data[i];
+                    try {
+                        data = JSON.parse(data);
+                    } catch(e) {
+                        var message = e.message ? e.message : e;
+                        callback(message, null);
+                        return error;
                     }
-                    /*
-                    self.token = data.token;
-                    self.name = data.name;
-                    self.photo = data.photo;
-                    self.alive = data.alive;
-                    self.authorized = data.authorized;
-                    self.call = data.call;
-                    self.socket = data.socket;
-                    self.isHunting = data.isHunting;
-                    self.huntedWith = data.huntedWith;
-                    */
-
-                    callback(null, self);
+                    if (data) {
+                        for(let i in data) {
+                            self[i] = data[i];
+                        }
+                        return callback(null, self);
+                    } else {
+                        Log.error('Error parsing user from redis: ' + self.id);
+                        callback('Error parsing user from redis: ' + self.id, null);
+                    }
                 } else {
-                    Log.error('Error parsing user from redis: ' + id);
-                    callback('Error parsing user from redis: ' + id, null);
+                    //Log.error('Error reading user info from redis: ' + self.id);
+                    callback('Error reading user info from redis: ' + self.id, null);
                 }
-            } else {
-                Log.error('Error reading user info from redis: ' + id);
-                callback('Error reading user info from redis: ' + id, null);
-            }
+            });
         });
     }
 
@@ -468,10 +570,18 @@ class User {
         if (!id) {
             id = self.id;
         }
-        self.load(id, function() {
-            self.deleteIncomingCallForUser();
-            Server.server.redisClient.del(self.redisKey);
-        });
+        if (!self.getRedisKey) {
+            self.getRedisKey();
+        }
+        self.id = null;
+        self.authorized = false;
+        //Server.server.redisLock('userDetail', (unlock) => {
+            self.load(id, function() {
+                self.deleteIncomingCallForUser();
+                Server.server.redisClient.del(self.redisKey);
+                //unlock();
+            });
+        //});
     }
 
     deleteIncomingCallForUser() {
@@ -505,7 +615,7 @@ class User {
             if (!users) {
                 users = {};
             }
-            callback(false, users);
+            return callback(false, users);
         });
     }
 
@@ -514,13 +624,18 @@ class User {
     *
     * @return bool
     */
-    addToHuntingList() {
+    addToHuntingList(callback) {
         var self = this;
-        self.getHuntingList(function(error, users) {
-            users[self.id] = self.id;
-            var toStore = JSON.stringify(users);
-            Server.server.redisClient.set(self.huntingListKey, toStore, function(){});
-        })
+        Server.server.redisLock('huntingList', (unlock) => {
+            self.getHuntingList(function(error, users) {
+                users[self.id] = self.id;
+                var toStore = JSON.stringify(users);
+                Server.server.redisClient.set(self.huntingListKey, toStore, function(){
+                    unlock();
+                    return callback();
+                });
+            });
+        });
     }
 
     /*
@@ -528,13 +643,24 @@ class User {
     *
     * @return bool
     */
-    removeFromHuntingList() {
+    removeFromHuntingList(id, callback) {
         var self = this;
-        self.getHuntingList(function(error, users) {
-            users[self.id] = null;
-            var toStore = JSON.stringify(users);
-            Server.server.redisClient.set(self.huntingListKey, toStore, function(){});
-        })
+        id = id ? id : self.id;
+        if (!id) {
+            return false;
+        }
+        Server.server.redisLock('huntingList', (unlock) => {
+            self.getHuntingList(function(error, users) {
+                delete users[id];
+                var toStore = JSON.stringify(users);
+                Server.server.redisClient.set(self.huntingListKey, toStore, function(){
+                    unlock();
+                    if (callback) {
+                        return callback();
+                    }
+                });
+            });
+        });
     }
 
     getUserForSend() {

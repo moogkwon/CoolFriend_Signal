@@ -25,6 +25,7 @@ function Service() {
 * @return bool
 */
 Service.prototype.removeOldSessions = function() {
+    /*
     var k;
     // Remove old disconnected users
     //return false;
@@ -45,6 +46,7 @@ Service.prototype.removeOldSessions = function() {
             }
         }
     }
+    */
 };
 
 /*
