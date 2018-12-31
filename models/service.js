@@ -1,5 +1,5 @@
 var config = require('getconfig');
-//const shell = require('shelljs');
+const request = require('request');
 var fs = require('fs');
 var AWS = require('aws-sdk');
 AWS.config.update({region: config.aws.region});
@@ -9,15 +9,18 @@ var Server = require('../server.js');
 var Log = require('../models/log.js');
 // Result for socket.io requests
 var Result = require('./result.js');
+// Firebase
+var Firebase = require('./firebase.js');
 
 function Service() {
     var self = this;
     self.interval = null;
     self.intervalDaily = null;
-    self.serviceInterval = 60; // in seconds
+    self.serviceInterval = 10; // in seconds
     self.serviceMidInterval = 180;
     self.oldIceHash = null;
 }
+
 
 /*
 * Remove old user sessions
@@ -132,48 +135,98 @@ Service.prototype.updateIceServers = function() {
     });
 }
 
+
 /*
-* Regular tasks, execured by schedule
+* Send scheduled pushes to users
 *
 * @return bool
 */
-Service.prototype.execute = function() {
+Service.prototype.sendPushes = function() {
     var self = this;
-    self.removeOldSessions();
-};
-
-Service.prototype.executeMid = function() {
-    var self = this;
-    self.updateIceServers();
+    var url = config.backend.host + '/v1/pushes/list';
+    //console.log('Going to send pushes');
+    self.request(url, {}, (err, data) => {
+        try {
+            data = JSON.parse(data);
+        } catch(e) {
+            console.log(data);
+            console.log(e);
+        }
+        if (!data) {
+            return false;
+        }
+        var pushes = data.data;
+        for (let i in pushes) {
+            var push = pushes[i];
+            Firebase.sendPush(push, (err, data) => {
+                if(err) {
+                    return false;
+                }
+                var url = config.backend.host + '/v1/pushes/sent';
+                var data = {'user_id': push.user_id, 'id': push.id, 'error': err};
+                //console.log(data);
+                self.request(url, data, (err, data) => {
+                    //console.log(err);
+                    //console.log(data);
+                });
+            });
+        }
+    });
 };
 
 /*
-* daily actions
+* Make request to backend
+*
+* @param url            String
+* @param params         Object
+* @param callback       Function    Callback function for successfull response
+*
+* As we don't use backend now, this method just return "ok" for all requests
 *
 * @return bool
 */
-Service.prototype.daily = function() {
-};
+Service.prototype.request = function(url, params, callback) {
+    var self = this;
+    var options = {
+        method: 'POST',
+        uri: url,
+        headers: {
+          'Authorization': 'Token ' + config.backend.token,
+        },
+        form: params
+    };
+    request.post(options, function (error, response, body) {
+        if (!response) {
+            Log.error('Empty response from backend at service function');
+            callback('Empty response from backend at service function');
+            return false;
+        }
+        if (!error && response.statusCode === 200) {
+            callback(null, body);
+        } else {
+            callback(error);
+        }
+    });
+}
 
-var Service = new Service();
-
-// Execute once
-module.exports.execute = function() {
-    Service.execute();
-};
+module.exports.singleCore = function() {
+    Service = new Service();
+    // Every x seconds
+    Service.interval = setInterval(function() {
+        Service.sendPushes();
+    }, Service.serviceInterval * 1000);
+}
 
 // Schedule tasks
 module.exports.schedule = function() {
+    Service = new Service();
     // Every x seconds
-    Service.updateIceServers();
     Service.interval = setInterval(function() {
-        Service.execute();
+        Service.sendPushes();
     }, Service.serviceInterval * 1000);
     Service.interval = setInterval(function() {
-        Service.executeMid();
     }, Service.serviceMidInterval * 1000);
     // Every day task
     Service.intervalDaily = setInterval(function() {
-        Service.daily();
     }, 86400 * 1000);
 };

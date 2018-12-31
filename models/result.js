@@ -68,7 +68,7 @@ class Result {
             }
             // Reduce logged message length
             logMessage = typeof logMessage == "string" ? logMessage.substr(0, 1000) : '';
-            Log.message(command + ': ' + code + ' ' + logMessage, socket.id);
+            Log.message(command + ': ' + code + ' ' + logMessage, socket);
         }
         // Emit it
         Server.server.io.to(socket).emit(command, {'code': code, 'message': message, 'sessionId': sessionId});

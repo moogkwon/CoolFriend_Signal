@@ -1,61 +1,39 @@
 var config = require('getconfig');
 var firebase = require('firebase');
 var admin = require('firebase-admin');
-//var serviceAccount = require('../config/serviceAccountKey.json');
+var request = require('request');
+var serviceAccount = require('../config/serviceAccountKey.json');
 // Log
 var Log = require('./log.js');
 
 class Firebase {
     constructor() {
-	return false;
         var self = this;
-        self.enablePushes = false;
+        self.enablePushes = true;
 
         admin.initializeApp({
             credential: admin.credential.cert(serviceAccount),
-            databaseURL: config.firebaseDatabaseUrl
+            databaseURL: config.firebase.url
         });
     }
 
     /*
-    * Verify Firebase token
+    * Store Firebase token
     *
     * @param token          String
     * @param callback       Function
     *
     * @return bool
     */
-    verifyToken(token, callback) {
+    storeToken(userHash, token, callback) {
         var self = this;
-        try {
-            admin.auth().verifyIdToken(token)
-                .then(function(decodedToken) {
-                    var uid = decodedToken.uid;
-                    var name = decodedToken.displayName != 'undefined' ? decodedToken.displayName : '';
-                    var photo = decodedToken.photoURL != 'undefined' ? decodedToken.photoURL : '';
-
-                    // Subscribe user to topic — required for pushes
-                    var topic = 'tokenListForUser' + decodedToken.uid;
-                    admin.messaging().subscribeToTopic(token, topic)
-                        .then(function(response) {
-                            Log.message('User was Successfully subscribed to topic ' + topic);
-                            callback(false, uid, uid, name, photo);
-                        })
-                        .catch(function(error) {
-                            Log.error('Error subscribing to topic:');
-                            Log.error(error);
-                            callback(false, uid, uid, name, photo);
-                        });
-                }).catch(function(error) {
-                    Log.error('Invalid user token');
-                    Log.error(error);
-                    callback('Invalid user token', false);
-                });
-        } catch(error) {
-            Log.error('Error in token verification');
-            Log.error(error);
-            callback('Error in token verification', false);
-        }
+        var url = config.backend.host + '/v1/pushes/store';
+        var params = {'hash': userHash, 'token': token};
+        console.log(params);
+        self.request(url, params, (err, data) => {
+            console.log(data);
+            callback(err);
+        });
     }
 
     /*
@@ -67,97 +45,70 @@ class Firebase {
     *
     * @return bool
     */
-    sendPushCall(recipientId, caller, call) {
+    sendPush(push, callback) {
         var self = this;
-        if (!self.enablePushes) {
+        //console.log('//////////////////////////////////');
+        if (!self.enablePushes || !push.token) {
             return false;
         }
         var message = {
-              data: {
-                type: 'incomingCall',
-                call_id: call.id.toString(),
-                caller_id: caller.id,
-                caller_name: caller.name,
-                caller_photo: caller.photo ? caller.photo : '',
-                call_type: (call.video ? "video" : "audio")
-              },
-              topic: 'tokenListForUser' + recipientId
+            notification: {
+                title: String(push.title),
+                body: String(push.content),
+            },
+            data: {
+                type: String(push.type)
+            },
+            token: push.token
         };
-        Log.message(message);
+        //console.log(message);
         admin.messaging().send(message)
           .then((response) => {
-              // Response is a message ID string.
-              Log.message('Successfully sent message');
-              Log.message(response);
+              console.log(response);
+              callback(null, {responce: response, push: push});
           })
           .catch((error) => {
-              Log.error('Error sending message');
-              Log.error(error);
+              console.log(error);
+              callback(error);
           });
     }
 
     /*
-    * Sent push — call accepted
+    * Make request to backend
     *
-    * @param user           User object
-    * @param call           Call object
+    * @param url            String
+    * @param params         Object
+    * @param callback       Function    Callback function for successfull response
     *
-    * @return bool
-    */
-    sendPushAccepted(user, call) {
-        var self = this;
-        if (!self.enablePushes) {
-            return false;
-        }
-        var message = {
-              data: {
-                type: 'callAccepted',
-                call_id: call.id.toString(),
-              },
-              topic: 'tokenListForUser' + user.id
-        };
-        admin.messaging().send(message)
-          .then((response) => {
-              // Response is a message ID string.
-              Log.message('Successfully sent message accept');
-              Log.message(response);
-          })
-          .catch((error) => {
-              Log.error('Error sending message accept');
-              Log.error(error);
-          });
-    }
-
-    /*
-    * Sent push — call rejected
-    *
-    * @param user           User object
-    * @param call           Call object
+    * As we don't use backend now, this method just return "ok" for all requests
     *
     * @return bool
     */
-    sendPushRejected(user, call) {
+    request (url, params, callback) {
         var self = this;
-        if (!self.enablePushes) {
-            return false;
-        }
-        var message = {
-              data: {
-                type: 'callRejected',
-                call_id: call.id.toString(),
-              },
-              topic: 'tokenListForUser' + user.id
+        var options = {
+            method: 'POST',
+            uri: url,
+            headers: {
+              'Authorization': 'Token ' + config.backend.token,
+            },
+            form: params
         };
-        admin.messaging().send(message)
-          .then((response) => {
-              // Response is a message ID string.
-              Log.message('Successfully sent message reject');
-              Log.message(response);
-          })
-          .catch((error) => {
-              Log.error('Error sending message reject');
-              Log.error(error);
-          });
+        console.log(options);
+        request.post(options, function (error, response, body) {
+            if (!response) {
+                Log.error('Empty response from backend at service function');
+                callback('Empty response from backend at service function');
+                return false;
+            }
+            console.log(error);
+            console.log(response.statusCode);
+            if (!error && response.statusCode === 200) {
+                callback(null, body);
+            } else {
+                callback(error);
+            }
+        });
     }
 }
 

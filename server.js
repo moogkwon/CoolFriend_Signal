@@ -60,6 +60,7 @@ class Server {
         });
 
         if (!sticky.listen(self.httpServer, config.server.port)) {
+            Service.singleCore();
             // Master code
             self.httpServer.once('listening', function() {
                 console.log('Server started on ' + config.server.port + ' port');
@@ -76,7 +77,7 @@ class Server {
             self.io = require('socket.io')();
             self.io.adapter(redisAdapter({host: config.redis.host, port: config.redis.port}));
             self.io.set('origins', '*:*');
-            self.io.listen(self.httpServer, {'pingInterval': 2000, 'pingTimeout': 5000}); // , { path: '/'}
+            self.io.listen(self.httpServer, {'pingInterval': 2000, 'pingTimeout': 7000}); // , { path: '/'}
 
             self.io.sockets.on('connection', function(socket) {
                 // Send hello to user
@@ -199,7 +200,7 @@ class Server {
             if (user.call) {
                 self.getCallById(user.call, function(error, call) {
                     if (call) {
-                        result = {'status': 200, 'message': 'Ok', 'call_id': call.id};
+                        var result = {'status': 200, 'message': 'Ok', 'call_id': call.id};
                         if (call.users[0] == currentUser.id) {
                             var recipientId = call.users[1];
                         } else {

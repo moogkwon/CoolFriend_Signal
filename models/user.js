@@ -74,8 +74,6 @@ class User {
     */
     authorize(token, callback) {
         var self = this;
-        // Add device to list of connected devices
-
         // Backend-based auth
         var url = config.backend.host + '/v1/user/check';
         var params = {'hash': token};
@@ -104,12 +102,16 @@ class User {
             self.id = self.id - 0;
             if (!self.id) {
                 Log.error('Auth error');
-                Log.error(raw.data);
+                Log.error(data);
                 self.delete();
                 callback(self);
                 return false;
             }
-            self.token = token;
+            // Add device to list of connected devices
+            var toStore = {'id': self.id, 'token': token, 'device': self.device};
+            toStore = JSON.stringify(toStore);
+            Server.server.redisClient.hset(Server.server.redisTokenList, token, toStore);
+
             /*
             self.name = data.data.name;
             self.photo = data.data.avatar;
@@ -117,10 +119,6 @@ class User {
             */
             self.authorized = true;
             self.call = null;
-            // Add user to connected list
-            var toStore = {'id': self.id, 'token': token, 'device': self.device};
-            toStore = JSON.stringify(toStore);
-            Server.server.redisClient.hset(Server.server.redisTokenList, token, toStore);
             // Save user
             self.save();
             callback(self);
@@ -575,6 +573,9 @@ class User {
         }
         self.id = null;
         self.authorized = false;
+        if (self.token) {
+            Server.server.redisClient.hdel(Server.server.redisTokenList, self.token);
+        }
         //Server.server.redisLock('userDetail', (unlock) => {
             self.load(id, function() {
                 self.deleteIncomingCallForUser();
@@ -673,6 +674,9 @@ class User {
                 continue;
             }
             user[i] = self[i];
+        }
+        if (user.id) {
+            user.id = Number(user.id);
         }
         return user;
     }

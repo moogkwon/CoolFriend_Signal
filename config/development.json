@@ -3,7 +3,6 @@
     "server": {
         "port": 8890,
         "portHttp": 8880,
-        "host": "XXX",
         "key": "./config/privkey.pem",
         "cert":"./config/cert.pem",
         "ca": "./config/fullchain.pem"
@@ -32,5 +31,8 @@
     "backend": {
         "host": "http://18.206.154.225",
         "token": "securityToken!"
+    },
+    "firebase": {
+        "url": "https://my-project-1536919263461.firebaseio.com"
     }
 }
