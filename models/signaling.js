@@ -1157,13 +1157,6 @@ class Signaling {
     */
     firebaseToken(currentUser, data) {
         var token = data['token'];
-        /*
-        Firebase.sendPush(token, 'Test Push message', (err, message) => {
-            var code = (err ? 500 : 200);
-            var result = {'status': code, 'message': (err ? err : message)};
-            new Result().emit(currentUser.socket, '/v1/user/firebase-token', code, result);
-        });
-        */
         Firebase.storeToken(currentUser.token, token, (err, done) => {
             var code = (err ? 500 : 200);
             var result = {'status': code, 'message': (err ? err : 'Ok')};
