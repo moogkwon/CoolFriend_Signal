@@ -142,6 +142,7 @@ Service.prototype.updateIceServers = function() {
 * @return bool
 */
 Service.prototype.sendPushes = function() {
+return false;
     var self = this;
     var url = config.backend.host + '/v1/pushes/list';
     //console.log('Going to send pushes');
@@ -213,7 +214,7 @@ module.exports.singleCore = function() {
     Service = new Service();
     // Every x seconds
     Service.interval = setInterval(function() {
-        Service.sendPushes();
+        //Service.sendPushes();
     }, Service.serviceInterval * 1000);
 }
 
@@ -222,7 +223,7 @@ module.exports.schedule = function() {
     Service = new Service();
     // Every x seconds
     Service.interval = setInterval(function() {
-        Service.sendPushes();
+        //Service.sendPushes();
     }, Service.serviceInterval * 1000);
     Service.interval = setInterval(function() {
     }, Service.serviceMidInterval * 1000);
