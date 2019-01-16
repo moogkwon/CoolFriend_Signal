@@ -172,7 +172,9 @@ class Call {
                 callback(error);
             }
             self.deleteIncomingCallForUser();
-            Server.server.redisClient.del(self.redisKey);
+            setTimeout(() => {
+                Server.server.redisClient.del(self.redisKey);
+            }, 60*1000);
             callback(null);
         });
     }
