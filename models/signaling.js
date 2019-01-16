@@ -236,6 +236,9 @@ class Signaling {
             if (command == 'payment/done') {
                 return self.paymentMessage('done', currentUser, data);
             }
+            if (command == 'profile/react') {
+                return self.reactProfile(currentUser, data)
+            }
         } catch(e) {
             var message = e.message ? e.message : e;
             Log.error(message);
@@ -1259,6 +1262,22 @@ class Signaling {
             Log.message('Command: ' + command + ', params: ' + JSON.stringify(packet), socket.id);
         }
         return command;
+    }
+
+    /**
+     * React profile
+     * @param {*} currentUser 
+     * @param {*} data 
+     */
+    reactProfile (currentUser, data) {
+        // console.log('reaction', data)
+        Server.server.getUserById(Number(data.id), function (error, target) {
+            if (!error && target) {
+                console.log('reaction user found', target.id)
+                // new Result().emit(target.socket, '/v1/profile/react', '200', { 'status': 200, data })
+                new Result().emit(currentUser.socket, '/v1/profile/reactSent', 200, { 'status': 200, 'message': 'Ok', data })
+            }
+        })
     }
 }
 
