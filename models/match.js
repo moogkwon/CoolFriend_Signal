@@ -12,16 +12,16 @@ class Match {
         self.approved = false;
         self.alive = new Date();
         self.redisKey = null;
-        self.getRedisKey();
+        self.getRedisKey(caller, callee);
         self.save();
     }
 
     getRedisKey(userA, userB) {
         var self = this;
         if (userA > userB) {
-            self.redisKey = 'storedMatch-' + userB + '-' + userB;
+            self.redisKey = 'storedMatch-' + userA + '-' + userB;
         } else {
-            self.redisKey = 'storedMatch-' + userB + '-' + userB;
+            self.redisKey = 'storedMatch-' + userB + '-' + userA;
         }
 
     }
@@ -32,7 +32,7 @@ class Match {
             'caller': self.caller,
             'callee': self.callee,
             'offer': self.offer,
-            'approved': self.approvedA,
+            'approved': self.approved,
             'alive': self.alive
         };
         toStore = JSON.stringify(toStore);
@@ -56,7 +56,7 @@ class Match {
                     self.caller = data.caller;
                     self.callee = data.callee;
                     self.offer = data.offer;
-                    self.approved = self.approved;
+                    self.approved = data.approved;
                     self.alive = data.alive;
                     callback(null, self);
                 } else {

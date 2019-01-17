@@ -243,10 +243,6 @@ class Signaling {
       if (command == 'payment/done') {
         return self.paymentMessage('done', currentUser, data)
       }
-
-      if (command == 'profile/react') {
-        return self.reactProfile(currentUser, data)
-      }
     } catch (e) {
       var message = e.message ? e.message : e
       Log.error(message)
@@ -535,17 +531,18 @@ class Signaling {
    }
 
     matchedAccept (currentUser, data) {
+        var self = this;
         var user = data.user;
         var offer = data.offer;
         if (typeof user === 'undefined' || !user) {
           result = { 'status': 400, 'message': 'No user ID passed', 'type': 'random' };
-          new Result().emit(currentUser.socket, '/v1/matched/next', 400, result);
+          new Result().emit(currentUser.socket, '/v1/matched/accept', 400, result);
           return false;
         }
         new Match().load(currentUser.id, data.user, (err, matchedObject) => {
             if (!matchedObject) {
                 result = { 'status': 404, 'message': 'User had gone', 'type': 'random' };
-                new Result().emit(currentUser.socket, '/v1/matched/next', 404, result);
+                new Result().emit(currentUser.socket, '/v1/matched/accept', 404, result);
                 return false;
             }
             if (!matchedObject.approved) {
@@ -555,15 +552,19 @@ class Signaling {
                 new Result().emit(currentUser.socket, '/v1/matched/accept', 200, result);
             } else {
                 var callee = currentUser.id == matchedObject.caller ? matchedObject.callee : matchedObject.caller;
-                new User(callee, (err, calleeObject) => {
+                new User().load(callee, (err, calleeObject) => {
                     if (err) {
                         result = { 'status': 404, 'message': 'Callee is offline', 'type': 'random' }
                         return new Result().emit(currentUser.socket, '/v1/matched/accept', 200, result);
                     }
                     var result = { 'status': 200, 'message': 'Ok', 'type': 'random' }
                     new Result().emit(currentUser.socket, '/v1/matched/accept', 200, result);
-                    var offer = offer ? offer : matchedObject.offer;
+                    offer = offer ? offer : matchedObject.offer;
                     var callData = {'user_id': calleeObject.id, 'offer': offer, 'user': calleeObject.getUserForSend(), 'type': 'random'};
+                    console.log('---------------');
+                    console.log(data);
+                    console.log(callData);
+                    console.log('+++++++++++++++');
                     self.call(currentUser, callData);
                     new Match().delete(currentUser.id, calleeObject.id);
                 });
@@ -1251,22 +1252,6 @@ class Signaling {
     currentUser.removeFriend(friendId, function (error, areFriends) {
       var result = { 'status': 200, 'message': 'Ok' }
       new Result().emit(currentUser.socket, '/v1/friend/remove', 200, result)
-    })
-  }
-
-  /**
-     * React profile
-     * @param {*} currentUser 
-     * @param {*} data 
-     */
-  reactProfile (currentUser, data) {
-    // console.log('reaction', data)
-    Server.server.getUserById(Number(data.id), function (error, target) {
-      if (!error && target) {
-        console.log('reaction user found', target.id)
-        // new Result().emit(target.socket, '/v1/profile/react', '200', { 'status': 200, data })
-        new Result().emit(currentUser.socket, '/v1/profile/reactSent', 200, { 'status': 200, 'message': 'Ok', data })
-      }
     })
   }
 

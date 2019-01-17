@@ -39,7 +39,7 @@ class User {
         //this.socketId = null;
         self.redisKey = '';
         self.huntingListKey = 'huntingUserList';
-        if (socket) {
+        if (socket && socket.request) {
             self.socket = socket.id;
             self.device = socket.de;
             self.getRedisKey();

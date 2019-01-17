@@ -201,7 +201,7 @@ class Server {
                 self.getCallById(user.call, function(error, call) {
                     if (call) {
                         var result = {'status': 200, 'message': 'Ok', 'call_id': call.id};
-                        if (call.users[0] == currentUser.id) {
+                        if (call.users[0] == id) {
                             var recipientId = call.users[1];
                         } else {
                             var recipientId = call.users[0];
