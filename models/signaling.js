@@ -266,9 +266,9 @@ class Signaling {
    *
    */
   reactProfile (currentUser, data) {
-    console.log('reaction', data)
+    // console.log('reaction', data)
     Server.server.getUserById(Number(data.id), function (error, target) {
-      console.log(error, target)
+      // console.log(error, target)
       if (!error && target) {
         console.log('reaction user found', target.id)
         new Result().emit(target.socket, '/v1/profile/react', '200', { 'status': 200, data })
