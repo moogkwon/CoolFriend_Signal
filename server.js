@@ -207,16 +207,16 @@ class Server {
                             var recipientId = call.users[0];
                         }
                         if (recipientId) {
-                            Server.server.getUserById(recipientId, function(error, recipient) {
+                            self.getUserById(recipientId, function(error, recipient) {
                                 if (recipient) {
                                     new Result().emit(recipient.socket, '/v1/call/hangup', 200, result);
                                     recipient.call = null;
                                     recipient.save();
                                 }
-                                Server.server.deleteCallById(call.id);
+                                self.deleteCallById(call.id);
                             });
                         } else {
-                            Server.server.deleteCallById(call.id);
+                            self.deleteCallById(call.id);
                         }
                     }
                 });
