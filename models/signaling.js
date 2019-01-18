@@ -23,36 +23,7 @@ class Signaling {
         Log.message('Auth by header: ' + socket.request.headers['device-id'], socket.id)
         var token = socket.request.headers['auth-token']
         // Check if this device is connected
-        Server.server.redisClient.hget(Server.server.redisTokenList, token, (error, data) => {
-          console.log('If this user is connected')
-          try {
-            data = JSON.parse(data)
-          } catch (e) {
-            data = false
-          }
-          //console.log(data)
-          if (data) {
-            new User().load(data.id, (error, existsUser) => {
-              //console.log('exists', existsUser)
-              //console.log('current', currentUser)
-              if (!error && existsUser && existsUser.socket && currentUser.socket != existsUser.socket && currentUser.device != existsUser.device) {
-                new Result().emit(existsUser.socket, '/v1/user/disconnect', 410, { 'status': 410, 'message': 'User logged on with another device', 'old': existsUser.socket, 'new': currentUser.socket, 'old-device': existsUser.device, 'new': currentUser.device })
-                Server.server.io.of('/').adapter.remoteDisconnect(existsUser.socket, true, (err) => {
-                  if (err && err != null && err != 'null') {
-                    console.log('Erorr removing old user: ' + error)
-                  }
-                  setTimeout(() => {
-                    self.login(currentUser, { token: token })
-                  }, 1000)
-                })
-              } else {
-                self.login(currentUser, { token: token })
-              }
-            })
-          } else {
-            self.login(currentUser, { token: token })
-          }
-        })
+        self.login(currentUser, { token: token })
       }
 
       // Catch all requests
@@ -70,9 +41,9 @@ class Signaling {
           if (!error && ((currentUser.authorized && currentUser.id) || command == 'user/login' || command == 'alive')) {
             self.processCommand(currentUser, command, packet)
           } else {
-            console.log(error)
-            console.log(currentUser)
-            console.log(command)
+            //console.log(error)
+            //console.log(currentUser)
+            //console.log(command)
             new Result().emit(currentUser.socket, 'errorMessage', 401, { 'status': 401, 'message': 'Unauthorized' })
           }
         })
@@ -266,9 +237,8 @@ class Signaling {
    *
    */
   reactProfile (currentUser, data) {
-    // console.log('reaction', data)
+    console.log('reaction', data)
     Server.server.getUserById(Number(data.id), function (error, target) {
-      // console.log(error, target)
       if (!error && target) {
         console.log('reaction user found', target.id)
         new Result().emit(target.socket, '/v1/profile/react', '200', { 'status': 200, data })
@@ -296,13 +266,15 @@ class Signaling {
       new Result().emit(currentUser.socket, '/v1/user/login', 400, { 'status': 400, 'message': 'No token passed' })
       return false
     }
-    currentUser.authorize(data.token, function (user) {
+    currentUser.authorize(data.token, function (err, user) {
       if (!currentUser.authorized) {
         currentUser.authorizing = false
-        Log.error('Authorization failed:' + currentUser.apiMessage)
-        new Result().emit(currentUser.socket, '/v1/user/login', 401, { 'status': 401, 'message': 'Incorrect auth token' })
-        return true
+        //Log.error('Authorization failed:' + currentUser.apiMessage)
+        new Result().emit(currentUser.socket, '/v1/user/login', 401, { 'status': 401, 'message': err });
+        //'Incorrect auth token'
+        return true;
       }
+      //console.log(user);
       Log.message('Authorized: ' + currentUser.id, currentUser.socket)
       var result = { 'status': 200, 'message': 'Ok', 'user_id': currentUser.id, 'ice_servers': Server.server.iceServers }
       new Result().emit(currentUser.socket, '/v1/user/login', 200, result)
@@ -418,19 +390,18 @@ class Signaling {
     var self = this
     var result = null
     currentUser.load(false, function () {
-      if (currentUser.isHunting) {
-        result = { 'status': 500, 'message': 'User is in hunting mode now' }
-        new Result().emit(currentUser.socket, '/v1/hunting/start', 500, result)
-        return true
-      }
-      currentUser.isHunting = true
-      currentUser.save(function () {
-        currentUser.addToHuntingList(function () {
-          self.goHuntingIteration(currentUser, data, 0)
-          result = { 'status': 200, 'message': 'Ok' }
-          new Result().emit(currentUser.socket, '/v1/hunting/start', 200, result)
+        currentUser.checkHunting(currentUser.id, (err, exists) => {
+            if (exists) {
+                result = { 'status': 500, 'message': 'User is in hunting mode now' }
+                new Result().emit(currentUser.socket, '/v1/hunting/start', 500, result)
+                return true
+            }
+            currentUser.addToHuntingList(function () {
+                self.goHuntingIteration(currentUser, data, 0)
+                result = { 'status': 200, 'message': 'Ok' }
+                new Result().emit(currentUser.socket, '/v1/hunting/start', 200, result)
+            });
         })
-      })
     })
   }
 
@@ -449,44 +420,40 @@ class Signaling {
       new Result().emit(currentUser.socket, '/v1/hunting/stop', 408, result)
       return false
     }
-    currentUser.load(false, function (error, user) {
-      if (error || !currentUser.isHunting) {
-        // self.stopHunting(currentUser);
+
+    var offer = data ? data['offer'] : '';
+    currentUser.checkHunting(currentUser.id, function (error, isHunting) {
+      if (!isHunting) {
         return false
       }
-      var offer = data ? data['offer'] : '';
-      var callStarted = false
       currentUser.goHunting(function (error, prey) {
         if (error) {
-          console.log('Error in hunting at signal point')
-          console.log(error)
-          self.stopHunting(currentUser)
+          console.log('Error in hunting at signal point: ' + error);
+          currentUser.removeFromHuntingList();
           var result = { 'status': 500, 'message': error }
           new Result().emit(currentUser.socket, '/v1/hunting/start', 500, result)
           return false
         }
-        if (prey && currentUser.isHunting && prey.isHunting) {
-          callStarted = true;
-          self.stopHunting(currentUser);
-          self.stopHunting(prey);
-          new Match(currentUser.id, prey.id, offer);
-          new User().load(prey.id, (err, userObject) => {
-              var result = {'status': 200, 'user': currentUser.getUserForSend()};
-              new Result().emit(prey.socket, '/v1/matched/new', 200, result);
-              var result = {'status': 200, 'user': userObject.getUserForSend()};
-              new Result().emit(currentUser.socket, '/v1/matched/new', 200, result);
-          });
-          /*
-          var callData = {'user_id': Number(prey.id), 'offer': offer, 'user': prey.getUserForSend(), 'type': 'random'};
-          self.call(currentUser, callData);
-          */
-          return false
+        if (prey) {
+            currentUser.removeFromHuntingList();
+            new User().load(prey, (err, preyObject) => {
+                if (preyObject) {
+                    new Match(currentUser.id, preyObject.id, offer);
+                    //new User().load(prey, (err, userObject) => {
+                        var result = {'status': 200, 'user': currentUser.getUserForSend()};
+                        new Result().emit(preyObject.socket, '/v1/matched/new', 200, result);
+                        var result = {'status': 200, 'user': preyObject.getUserForSend()};
+                        new Result().emit(currentUser.socket, '/v1/matched/new', 200, result);
+                    //});
+                } else {
+                    self.goHuntingIteration(currentUser, data, iteration + 1)
+                }
+            });
+            return false
         }
         setTimeout(function () {
-          if (!callStarted) {
             self.goHuntingIteration(currentUser, data, iteration + 1)
-          }
-        }, 500)
+        }, 500);
       })
     })
   }
@@ -501,15 +468,9 @@ class Signaling {
         */
   stopHunting (currentUser, data) {
     var self = this
-    currentUser.load(false, function () {
-      currentUser.isHunting = false
-      currentUser.save()
-      currentUser.removeFromHuntingList()
-      if (!data || !data.silent) {
-        var result = { 'status': 200, 'message': 'Ok' }
-        new Result().emit(currentUser.socket, '/v1/hunting/stop', 200, result)
-      }
-    })
+    currentUser.removeFromHuntingList();
+    var result = { 'status': 200, 'message': 'Ok' }
+    new Result().emit(currentUser.socket, '/v1/hunting/stop', 200, result)
   }
 
     matchedNext (currentUser, data) {
@@ -519,14 +480,15 @@ class Signaling {
        new Result().emit(currentUser.socket, '/v1/matched/next', 400, result);
        return false;
      }
-     new Match().delete(currentUser.id, data.user);
-     new User().load(user, (err, userObject) => {
-         var result = { 'status': 200, 'message': 'Ok', 'type': 'random' }
-         new Result().emit(currentUser.socket, '/v1/matched/next', 200, result);
-         if (userObject && userObject.socket) {
+     new Match().delete(currentUser.id, data.user, err => {
+         new User().load(user, (err, userObject) => {
              var result = { 'status': 200, 'message': 'Ok', 'type': 'random' }
-             new Result().emit(userObject.socket, '/v1/matched/next', 200, result);
-         }
+             new Result().emit(currentUser.socket, '/v1/matched/next', 200, result);
+             if (userObject && userObject.socket) {
+                 var result = { 'status': 200, 'message': 'Ok', 'type': 'random' }
+                 new Result().emit(userObject.socket, '/v1/matched/next', 200, result);
+             }
+         });
      });
    }
 
@@ -553,6 +515,7 @@ class Signaling {
             } else {
                 var callee = currentUser.id == matchedObject.caller ? matchedObject.callee : matchedObject.caller;
                 new User().load(callee, (err, calleeObject) => {
+                    new Match().delete(currentUser.id, calleeObject.id);
                     if (err) {
                         result = { 'status': 404, 'message': 'Callee is offline', 'type': 'random' }
                         return new Result().emit(currentUser.socket, '/v1/matched/accept', 200, result);
@@ -561,30 +524,8 @@ class Signaling {
                     new Result().emit(currentUser.socket, '/v1/matched/accept', 200, result);
                     offer = offer ? offer : matchedObject.offer;
                     var callData = {'user_id': calleeObject.id, 'offer': offer, 'user': calleeObject.getUserForSend(), 'type': 'random'};
-                    console.log('---------------');
-                    console.log(data);
-                    console.log(callData);
-                    console.log('+++++++++++++++');
                     self.call(currentUser, callData);
-                    new Match().delete(currentUser.id, calleeObject.id);
                 });
-                /*
-                new User(matchedObject.callee, (err, callee) => {
-                    if (err) {
-                        result = { 'status': 404, 'message': 'Callee is offline', 'type': 'random' }
-                        return new Result().emit(currentUser.socket, '/v1/matched/accept', 200, result);
-                    }
-                    var result = { 'status': 200, 'message': 'Ok', 'type': 'random' }
-                    new Result().emit(currentUser.socket, '/v1/matched/accept', 200, result);
-                    if (currentUser.id == matchedObject.caller) {
-                        var callData = {'user_id': matchedObject.caller, 'offer': matchedObject.offer, 'user': callee.getUserForSend(), 'type': 'random'};
-                    } else {
-                        var callData = {'user_id': matchedObject.caller, 'offer': matchedObject.offer, 'user': callee.getUserForSend(), 'type': 'random'};
-                    }
-                    self.call(currentUser, callData);
-                    new Match().delete(currentUser.id, callee.id);
-                });
-                */
             }
         });
     }

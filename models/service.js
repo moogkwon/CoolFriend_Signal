@@ -58,7 +58,7 @@ Service.prototype.removeOldSessions = function() {
 * @return bool
 */
 Service.prototype.updateIceServers = function() {
-    return false;
+    //return false;
 
     // Create EC2 service object
     var ec2 = new AWS.EC2();
@@ -83,18 +83,18 @@ Service.prototype.updateIceServers = function() {
       }
     });
     */
-
+    var self = this;
     var activeServers = [];
     ec2.describeInstances(function(err, data) {
         if (err) {
-            Log.error("AWS sync error")
-            Log.error(err.stack);
+            return false;
+            //Log.error("AWS sync error")
+            //Log.error(err.stack);
         } else {
             for(let i in data.Reservations) {
                 var reservgation = data.Reservations[i];
                 for(let j in reservgation.Instances) {
                     var instance = reservgation.Instances[j];
-                    //console.log(instance);
                     // Skip instances with status differing from 16:running
                     if (!instance.State && instance.State.Code == 16) {
                         continue;
@@ -103,7 +103,7 @@ Service.prototype.updateIceServers = function() {
                     var hasTurnTag = false;
                     for (let k in instance.Tags) {
                         var key = instance.Tags[k].Key;
-                        if (key == 'isTurnServer') {
+                        if (instance.Tags[k].Key == 'type' && instance.Tags[k].Value == 'turnServer') {
                             hasTurnTag = true;
                             break;
                         }
@@ -225,9 +225,17 @@ module.exports.schedule = function() {
     Service.interval = setInterval(function() {
         //Service.sendPushes();
     }, Service.serviceInterval * 1000);
-    Service.interval = setInterval(function() {
+
+    // Middle interval
+    Service.intervalMiddle = setInterval(function() {
+        Service.updateIceServers();
     }, Service.serviceMidInterval * 1000);
+
     // Every day task
     Service.intervalDaily = setInterval(function() {
     }, 86400 * 1000);
+
+    setTimeout(() => {
+        Service.updateIceServers();
+    }, 1000);
 };

@@ -29,9 +29,7 @@ class Firebase {
         var self = this;
         var url = config.backend.host + '/v1/pushes/store';
         var params = {'hash': userHash, 'token': token};
-        console.log(params);
         self.request(url, params, (err, data) => {
-            console.log(data);
             callback(err);
         });
     }
@@ -47,7 +45,6 @@ class Firebase {
     */
     sendPush(push, callback) {
         var self = this;
-        //console.log('//////////////////////////////////');
         if (!self.enablePushes || !push.token) {
             return false;
         }
@@ -61,14 +58,13 @@ class Firebase {
             },
             token: push.token
         };
-        //console.log(message);
         admin.messaging().send(message)
           .then((response) => {
-              console.log(response);
+              //console.log(response);
               callback(null, {responce: response, push: push});
           })
           .catch((error) => {
-              console.log(error);
+              //console.log(error);
               callback(error);
           });
     }
@@ -94,15 +90,14 @@ class Firebase {
             },
             form: params
         };
-        console.log(options);
         request.post(options, function (error, response, body) {
             if (!response) {
                 Log.error('Empty response from backend at service function');
                 callback('Empty response from backend at service function');
                 return false;
             }
-            console.log(error);
-            console.log(response.statusCode);
+            //console.log(error);
+            //console.log(response.statusCode);
             if (!error && response.statusCode === 200) {
                 callback(null, body);
             } else {

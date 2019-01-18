@@ -22,7 +22,7 @@
     "turnPort": 443,
     "connectTimeout": 60,
     "aws": {
-        "region": "us-east-2"
+        "region": "us-east-1"
     },
     "redis": {
         "host": "localhost",

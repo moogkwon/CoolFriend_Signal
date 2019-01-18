@@ -38,7 +38,7 @@ class User {
         self.socketInstance = null;
         //this.socketId = null;
         self.redisKey = '';
-        self.huntingListKey = 'huntingUserList';
+        self.huntingListKey = 'huntingUserSet';
         if (socket && socket.request) {
             self.socket = socket.id;
             self.device = socket.de;
@@ -78,15 +78,6 @@ class User {
         var url = config.backend.host + '/v1/user/check';
         var params = {'hash': token};
         self.request(url, params, function(data) {
-            //self.delete();
-            if (data.status == 200) {
-                Log.error('Auth error');
-                Log.error(data);
-                self.delete();
-                callback(self);
-                return false;
-            }
-            //self.id = Math.round(Math.random() * 100000);
             try {
                 var raw = JSON.parse(data);
                 for(let i in raw.data) {
@@ -96,35 +87,41 @@ class User {
                     }
                 }
             } catch(e) {
-                console.log(e);
+                return callback('Can`t get user details');
             };
-            self.token = token;
-            self.id = self.id - 0;
-            if (!self.id) {
-                Log.error('Auth error');
-                Log.error(data);
-                self.delete();
-                callback(self);
-                return false;
+            if (!raw || !raw.data || !raw.data.id) {
+                return callback('Login failed');
             }
-            // Add device to list of connected devices
-            var toStore = {'id': self.id, 'token': token, 'device': self.device};
-            toStore = JSON.stringify(toStore);
-            Server.server.redisClient.hset(Server.server.redisTokenList, token, toStore);
-
-            /*
-            self.name = data.data.name;
-            self.photo = data.data.avatar;
-            self.video = data.data.video;
-            */
-            self.authorized = true;
-            self.call = null;
-            // Save user
-            self.save();
-            callback(self);
+            self.removeFromHuntingList();
+            // Kick old devices with the same user
+            Server.server.redisClient.hget(Server.server.redisTokenList, raw.data.id, (error, data) => {
+                try {
+                  data = JSON.parse(data)
+                } catch (e) {}
+                console.log(data);
+                if (data) {
+                  new User().load(data.id, (error, existsUser) => {
+                      //console.log(existsUser);
+                      //console.log(self);
+                    //if (!error && existsUser && existsUser.socket && self.socket != self.socket && self.device != self.device) {
+                    console.log('Kick him?' + error );
+                    if (!error && existsUser && existsUser.socket && existsUser.socket != self.socket) {
+                        Log.message('Old device was kicked off');
+                        new Result().emit(existsUser.socket, '/v1/user/disconnect', 410, { 'status': 410, 'message': 'User logged on with another device', 'old': existsUser.socket, 'new': self.socket, 'old-device': existsUser.device, 'new': self.device })
+                        Server.server.io.of('/').adapter.remoteDisconnect(existsUser.socket, true, (err) => {
+                          setTimeout(() => {
+                              self.loggedIn(raw.data.id, token, callback);
+                          }, 300);
+                      });
+                    } else {
+                      self.loggedIn(raw.data.id, token, callback);
+                    }
+                  });
+                } else {
+                  self.loggedIn(raw.data.id, token, callback);
+                }
+            });
         }, function(code, message) {
-            self.authorized = false;
-            self.call = null;
             if (self.socketInstance) {
                 self.socketInstance.disconnect(true);
                 self.socketInstance = null;
@@ -133,9 +130,25 @@ class User {
             self.delete();
             Log.error('Auth error');
             Log.error(code);
-            callback(self);
+            callback(currentUser.apiMessage);
         });
     };
+
+    loggedIn(id, token, callback) {
+        var self = this;
+        self.id = id - 0;
+        self.token = token;
+        self.authorized = true;
+        self.call = null;
+        // Save user
+        self.save();
+        callback(null, self);
+
+        // Add device to list of connected devices
+        var toStore = {'id': self.id, 'token': self.token, 'device': self.device};
+        toStore = JSON.stringify(toStore);
+        Server.server.redisClient.hset(Server.server.redisTokenList, self.id, toStore);
+    }
 
     /*
     * Notify backend about user disconnect
@@ -150,8 +163,9 @@ class User {
         var self = this;
         Server.server.users[self.id] = null;
         self.removeFromHuntingList();
-        if (self.token) {
-            Server.server.redisClient.hdel(Server.server.redisTokenList, self.token);
+        if (self.id) {
+            Server.server.redisClient.hdel(Server.server.redisTokenList, self.id);
+            Server.server.redisClient.hdel(config.redis.huntingListKey, self.id);
         }
         // Request API
         var url = config.backend.host + '/v1/user/disconnected/';
@@ -182,8 +196,8 @@ class User {
     */
     goOffline() {
         var self = this;
-        if (self.token) {
-            Server.server.redisClient.hdel(Server.server.redisTokenList, self.token);
+        if (self.id) {
+            Server.server.redisClient.hdel(Server.server.redisTokenList, self.id);
         }
         // Request API
         var url = config.backend.host + '/v1/user/disconnected/';
@@ -359,15 +373,8 @@ class User {
     */
     goHunting(callback) {
         var self = this;
-        if (!self.isHunting) {
-            self.removeFromHuntingList(self.id, function() {
-                console.error('You`re not hunting now');
-                callback('User not in hunting mode');
-            });
-            return false;
-        }
         self.getHuntingList(function(error, list) {
-            if (error) {
+            if (error || !list) {
                 console.error('No hunting users', error);
                 return callback(error);
             }
@@ -383,30 +390,27 @@ class User {
                 const j = Math.floor(Math.random() * (i + 1));
                 [ids[i], ids[j]] = [ids[j], ids[i]];
             }
-            var somebodyFound = false;
+            //var somebodyFound = false;
             for (let i = 0; i < ids.length; i++) {
                 userId = ids[i];
-                if (somebodyFound) {
-                    break;
-                }
                 if (self.huntedWith[userId]) {
-                    huntedBefore = userId;
+                    //huntedBefore = userId;
                     continue;
                 }
-                somebodyFound = true;
-                Server.server.getUserById(userId, function(error, user) {
-                    if (error || !user || !user.isHunting) {
+                self.checkHunting(userId, (err, exists) => {
+                    if (exists) {
                         self.removeFromHuntingList(userId, function() {
-                            return callback();
+                            self.huntedWith[userId] = userId;
+                            return callback(false, userId);
                         });
                     } else {
-                        self.huntedWith[userId] = userId;
-                        return callback(false, user);
+                        return callback();
                     }
-                });
+                })
                 return false;
             }
             // If we spoke with all active users — start new call with somebody we spoke before
+            /*
             if (!somebodyFound && huntedBefore) {
                 Server.server.getUserById(huntedBefore, function(error, user) {
                     if (error || !user || !user.isHunting) {
@@ -420,6 +424,7 @@ class User {
             } else {
                 return callback();
             }
+            */
         });
     }
 
@@ -573,8 +578,9 @@ class User {
         }
         self.id = null;
         self.authorized = false;
-        if (self.token) {
-            Server.server.redisClient.hdel(Server.server.redisTokenList, self.token);
+        if (self.id) {
+            Server.server.redisClient.hdel(Server.server.redisTokenList, self.id);
+            Server.server.redisClient.hdel(config.redis.huntingListKey, self.id);
         }
         //Server.server.redisLock('userDetail', (unlock) => {
             self.load(id, function() {
@@ -598,25 +604,20 @@ class User {
     */
     getHuntingList(callback) {
         var self = this;
-        Server.server.redisClient.get(self.huntingListKey, function(error, data) {
-            if (data) {
-                try {
-                    data = JSON.parse(data);
-                } catch(e) {}
-                if (data) {
-                    var i;
-                    var users = {};
-                    for (var i in data) {
-                        if (data[i]) {
-                            users[i] = data[i];
-                        }
-                    }
-                }
-            }
-            if (!users) {
-                users = {};
-            }
-            return callback(false, users);
+        Server.server.redisClient.hgetall(self.huntingListKey, (error, data) => {
+            return callback(false, data);
+        });
+    }
+
+    /*
+    * Check if user is hunting now
+    *
+    * @return bool
+    */
+    checkHunting(id, callback) {
+        var self = this;
+        Server.server.redisClient.hget(self.huntingListKey, id, function(error, data) {
+            return callback(false, data);
         });
     }
 
@@ -627,15 +628,8 @@ class User {
     */
     addToHuntingList(callback) {
         var self = this;
-        Server.server.redisLock('huntingList', (unlock) => {
-            self.getHuntingList(function(error, users) {
-                users[self.id] = self.id;
-                var toStore = JSON.stringify(users);
-                Server.server.redisClient.set(self.huntingListKey, toStore, function(){
-                    unlock();
-                    return callback();
-                });
-            });
+        Server.server.redisClient.hset(self.huntingListKey, self.id, self.id, () => {
+            callback();
         });
     }
 
@@ -648,19 +642,11 @@ class User {
         var self = this;
         id = id ? id : self.id;
         if (!id) {
-            return false;
+            return callback(false);
         }
-        Server.server.redisLock('huntingList', (unlock) => {
-            self.getHuntingList(function(error, users) {
-                delete users[id];
-                var toStore = JSON.stringify(users);
-                Server.server.redisClient.set(self.huntingListKey, toStore, function(){
-                    unlock();
-                    if (callback) {
-                        return callback();
-                    }
-                });
-            });
+        callback = callback ? callback : () => {};
+        Server.server.redisClient.hdel(self.huntingListKey, id, function(error, data) {
+            return callback(false, data);
         });
     }
 
