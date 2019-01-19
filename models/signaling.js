@@ -474,6 +474,7 @@ class Signaling {
   }
 
     matchedNext (currentUser, data) {
+        var self = this;
      var user = data.user;
      if (typeof user === 'undefined' || !user) {
        result = { 'status': 400, 'message': 'No user ID passed', 'type': 'random' };
@@ -481,9 +482,9 @@ class Signaling {
        return false;
      }
      new Match().delete(currentUser.id, data.user, err => {
+         var result = { 'status': 200, 'message': 'Ok', 'type': 'random' }
+         new Result().emit(currentUser.socket, '/v1/matched/next', 200, result);
          new User().load(user, (err, userObject) => {
-             var result = { 'status': 200, 'message': 'Ok', 'type': 'random' }
-             new Result().emit(currentUser.socket, '/v1/matched/next', 200, result);
              if (userObject && userObject.socket) {
                  var result = { 'status': 200, 'message': 'Ok', 'type': 'random' }
                  new Result().emit(userObject.socket, '/v1/matched/next', 200, result);

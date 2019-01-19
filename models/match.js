@@ -76,7 +76,7 @@ class Match {
         self.getRedisKey(userA, userB);
         self.load(userA, userB, function(error, call) {
             if (error) {
-                callback(error);
+                return callback(error);
             }
             Server.server.redisClient.del(self.redisKey);
             callback(null);
