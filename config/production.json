@@ -26,7 +26,7 @@
   "turnPort": 443,
   "connectTimeout": 60,
   "aws": {
-    "region": "us-east-2"
+    "region": "us-east-1"
   },
   "redis": {
     "host": "signal4.v6xf3d.0001.use1.cache.amazonaws.com",
