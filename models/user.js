@@ -164,6 +164,7 @@ class User {
   * @return bool
   */
   disconnect (callback) {
+    Log.message('Removing user socket: ' + self.id)
     var self = this;
     Server.server.users[self.id] = null;
     self.removeFromHuntingList();
