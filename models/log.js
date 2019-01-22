@@ -27,13 +27,13 @@ class Log {
             //message = JSON.stringify(message);
         }
         message = typeof message == "string" ? message.substr(0, 1000) : '';
-        var row = new Date().toLocaleString('ru-RU') + '\t' + (ip ? ip : '') + '\t' + message;
-        fs.appendFile(__dirname + "/../logs/server.log", row + "\r\n", function(err) {
-            if(err) {
-                return console.log(err);
-            }
-            console.log(row);
-        });
+        var row = new Date().toISOString() + '\t' + (ip ? ip : '') + '\t' + message;
+        console.log(row);
+        // fs.appendFile(__dirname + "/../logs/server.log", row + "\r\n", function(err) {
+        //     if(err) {
+        //         return console.log(err);
+        //     }
+        // });
     }
 
     /*
@@ -64,9 +64,10 @@ class Log {
             //message = JSON.stringify(message);
         }
         message = typeof message == "string" ? message.substr(0, 1000) : '';
-        var row = new Date().toLocaleString('ru-RU') + '\t' + (ip ? ip : '') + '\t' + message;
-        fs.appendFile(__dirname + "/../logs/error.log", row + "\r\n", function(err) {
-        });
+        var row = new Date().toISOString() + '\t' + (ip ? ip : '') + '\t' + message;
+        console.log(row);
+        // fs.appendFile(__dirname + "/../logs/error.log", row + "\r\n", function(err) {
+        // });
     }
 }
 

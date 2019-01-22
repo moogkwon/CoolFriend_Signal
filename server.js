@@ -63,14 +63,14 @@ class Server {
             Service.singleCore();
             // Master code
             self.httpServer.once('listening', function() {
-                console.log('Server started on ' + config.server.port + ' port');
+                Log.message('Server started on ' + config.server.port + ' port');
             });
             // HTTP responder for load balancing
             http.createServer(function (req, res) {
                 res.write('I`m here'); //write a response to the client
                 res.end(); //end the response
             }).listen(config.server.portHttp);
-            console.log('Monitoring responder started at ' + config.server.portHttp + ' port');
+            Log.message('Monitoring responder started at ' + config.server.portHttp + ' port');
         } else {
             // Worker code
             Service.schedule();
@@ -94,7 +94,6 @@ class Server {
                 } catch(e) {
                     var message = e.message ? e.message : e;
                     Log.error(message);
-                    console.log(e);
                     new Result().emit(socket.id, 500, '/v1/error', {'status': 500, 'message': message});
                 }
             });

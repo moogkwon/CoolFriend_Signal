@@ -98,16 +98,16 @@ class User {
         try {
           data = JSON.parse(data)
         } catch (e) { }
-        console.log(data);
+        Log.message(data);
         if (data) {
           new User().load(data.id, (error, existsUser) => {
-            //console.log(existsUser);
-            //console.log(self);
+            //Log.message(existsUser);
+            //Log.message(self);
             //if (!error && existsUser && existsUser.socket && self.socket != self.socket && self.device != self.device) {
-            console.log('Kick him?' + error);
+            Log.message('Kick him?' + error);
             if (!error && existsUser && existsUser.socket && existsUser.socket != self.socket) {
-              // console.log('----------------------------------------------------------------')
-              console.log(self.device, existsUser.device)
+              // Log.message('----------------------------------------------------------------')
+              Log.message(self.device, existsUser.device)
               if (existsUser.device != self.device) {
                 Log.message('Old device was kicked off');
                 new Result().emit(existsUser.socket, '/v1/user/disconnect', 410, { 'status': 410, 'message': 'User logged on with another device', 'old': existsUser.socket, 'new': self.socket, 'old-device': existsUser.device, 'new': self.device })
@@ -379,7 +379,7 @@ class User {
     var self = this;
     self.getHuntingList(function (error, list) {
       if (error || !list) {
-        console.error('No hunting users', error);
+        Log.error(error);
         return callback(error);
       }
       var found = false;

@@ -20,8 +20,9 @@ class Signaling {
     // Get current user for socket
     var fake = new User(socket, function (err, currentUser) {
       if (socket.request.headers['auth-token']) {
-        Log.message('Auth by header: ' + JSON.stringify(socket.request.headers))
+        Log.message('Auth by header')
         var token = socket.request.headers['auth-token']
+        Log.message(token)
         // Check if this device is connected
         self.login(currentUser, { token: token })
       }
@@ -41,9 +42,9 @@ class Signaling {
           if (!error && ((currentUser.authorized && currentUser.id) || command == 'user/login' || command == 'alive')) {
             self.processCommand(currentUser, command, packet)
           } else {
-            //console.log(error)
-            //console.log(currentUser)
-            //console.log(command)
+            //Log.message(error)
+            //Log.message(currentUser)
+            //Log.message(command)
             new Result().emit(currentUser.socket, 'errorMessage', 401, { 'status': 401, 'message': 'Unauthorized' })
           }
         })
@@ -217,7 +218,6 @@ class Signaling {
     } catch (e) {
       var message = e.message ? e.message : e
       Log.error(message)
-      console.log(e)
       new Result().emit(currentUser.socket, 'errorMessage', 500, { 'status': 500, 'message': message })
     }
   }
@@ -237,10 +237,10 @@ class Signaling {
    *
    */
   reactProfile (currentUser, data) {
-    console.log('reaction', data)
+    Log.message('reaction', data)
     Server.server.getUserById(Number(data.id), function (error, target) {
       if (!error && target) {
-        console.log('reaction user found', target.id)
+        Log.message('reaction user found', target.id)
         new Result().emit(target.socket, '/v1/profile/react', '200', { 'status': 200, data })
         new Result().emit(currentUser.socket, '/v1/profile/reactSent', 200, { 'status': 200, 'message': 'Ok' })
       }
@@ -274,7 +274,7 @@ class Signaling {
         //'Incorrect auth token'
         return true;
       }
-      //console.log(user);
+      //Log.message(user);
       Log.message('Authorized: ' + currentUser.id, currentUser.socket)
       var result = { 'status': 200, 'message': 'Ok', 'user_id': currentUser.id, 'ice_servers': Server.server.iceServers }
       new Result().emit(currentUser.socket, '/v1/user/login', 200, result)
@@ -428,7 +428,7 @@ class Signaling {
       }
       currentUser.goHunting(function (error, prey) {
         if (error) {
-          console.log('Error in hunting at signal point: ' + error);
+          Log.message('Error in hunting at signal point: ' + error);
           currentUser.removeFromHuntingList();
           var result = { 'status': 500, 'message': error }
           new Result().emit(currentUser.socket, '/v1/hunting/start', 500, result)
