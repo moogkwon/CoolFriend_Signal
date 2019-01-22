@@ -19,13 +19,13 @@ class Signaling {
     var self = this
     // Get current user for socket
     var fake = new User(socket, function (err, currentUser) {
-      if (socket.request.headers['auth-token']) {
-        Log.message('Auth by header')
-        var token = socket.request.headers['auth-token']
-        Log.message(token)
-        // Check if this device is connected
-        self.login(currentUser, { token: token })
-      }
+      Log.message('Auth by header')
+      var token = socket.request.headers['auth-token']
+      Log.message(token)
+      // Check if this device is connected
+      self.login(currentUser, { token: token })
+      // if (socket.request.headers['auth-token']) {
+      // }
 
       // Catch all requests
       socket.use((packet, next) => {
