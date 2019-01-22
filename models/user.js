@@ -93,7 +93,6 @@ class User {
         return callback('Login failed');
       }
       self.removeFromHuntingList();
-      console.log('checking to kick');
       // Kick old devices with the same user
       Server.server.redisClient.hget(Server.server.redisTokenList, raw.data.id, (error, data) => {
         try {
@@ -108,7 +107,7 @@ class User {
             console.log('Kick him?' + error);
             if (!error && existsUser && existsUser.socket && existsUser.socket != self.socket) {
               // console.log('----------------------------------------------------------------')
-              // console.log(self.device, existsUser.device)
+              console.log(self.device, existsUser.device)
               if (existsUser.device != self.device) {
                 Log.message('Old device was kicked off');
                 new Result().emit(existsUser.socket, '/v1/user/disconnect', 410, { 'status': 410, 'message': 'User logged on with another device', 'old': existsUser.socket, 'new': self.socket, 'old-device': existsUser.device, 'new': self.device })
