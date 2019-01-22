@@ -51,7 +51,7 @@ class Signaling {
       })
 
       socket.on('disconnect', function () {
-        Log.message('User disconnected: ' + currentUser.id, socket.id)
+        Log.message('User disconnected: ' + currentUser.id + ' ' + socket.id + ' ' + currentUser.token)
         currentUser.socket = null
         currentUser.goOffline()
         if (currentUser.id) {
@@ -275,7 +275,7 @@ class Signaling {
         return true;
       }
       //Log.message(user);
-      Log.message('Authorized: ' + currentUser.id, currentUser.socket)
+      Log.message('Authorized: ' + currentUser.id + ' ' + currentUser.socket + ' ' + currentUser.device)
       var result = { 'status': 200, 'message': 'Ok', 'user_id': currentUser.id, 'ice_servers': Server.server.iceServers }
       new Result().emit(currentUser.socket, '/v1/user/login', 200, result)
       currentUser.authorizing = false
@@ -325,7 +325,7 @@ class Signaling {
         * @return bool
         */
   disconnect (currentUser) {
-    Log.message('User disconnected: ' + currentUser.id)
+    Log.message('kick user: ' + currentUser.id)
     currentUser.disconnect(function (user) {
       if (currentUser.socket) {
         // new Result().emit(currentUser.socket, '/v1/user/disconnect', 200, {'status': 200, 'message': 'Ok'});
