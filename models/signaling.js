@@ -257,6 +257,7 @@ class Signaling {
    */
   login (currentUser, data) {
     if (currentUser.authorized || currentUser.authorizing) {
+      Log.error('User is authorized ' + currentUser.socket + ' ' + currentUser.token)
       new Result().emit(currentUser.socket, '/v1/user/login', 400, { 'status': 400, 'message': 'User is authorized' })
       return false
     }
@@ -270,6 +271,7 @@ class Signaling {
       if (!currentUser.authorized) {
         currentUser.authorizing = false
         //Log.error('Authorization failed:' + currentUser.apiMessage)
+        Log.error('User is authorized ' + currentUser.apiMessage + ' ' + currentUser.socket + ' ' + currentUser.token)
         new Result().emit(currentUser.socket, '/v1/user/login', 401, { 'status': 401, 'message': err });
         //'Incorrect auth token'
         return true;
