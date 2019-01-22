@@ -256,11 +256,11 @@ class Signaling {
    * @return bool
    */
   login (currentUser, data) {
-    if (currentUser.authorized || currentUser.authorizing) {
-      Log.error('User is authorized ' + currentUser.socket + ' ' + currentUser.token)
-      new Result().emit(currentUser.socket, '/v1/user/login', 400, { 'status': 400, 'message': 'User is authorized' })
-      return false
-    }
+    // if (currentUser.authorized || currentUser.authorizing) {
+    //   Log.error('User is authorized ' + currentUser.socket + ' ' + currentUser.token)
+    //   new Result().emit(currentUser.socket, '/v1/user/login', 400, { 'status': 400, 'message': 'User is authorized' })
+    //   return false
+    // }
     currentUser.authorizing = true
     if (!data.token) {
       currentUser.authorizing = false
