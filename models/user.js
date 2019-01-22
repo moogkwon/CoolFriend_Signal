@@ -112,12 +112,12 @@ class User {
               if (existsUser.device != self.device) {
                 Log.message('Old device was kicked off');
                 new Result().emit(existsUser.socket, '/v1/user/disconnect', 410, { 'status': 410, 'message': 'User logged on with another device', 'old': existsUser.socket, 'new': self.socket, 'old-device': existsUser.device, 'new': self.device })
+                // Server.server.io.of('/').adapter.remoteDisconnect(existsUser.socket, true, (err) => {
+                //   setTimeout(() => {
+                //     self.loggedIn(raw.data.id, token, callback);
+                //   }, 300);
+                // });
               }
-              Server.server.io.of('/').adapter.remoteDisconnect(existsUser.socket, true, (err) => {
-                setTimeout(() => {
-                  self.loggedIn(raw.data.id, token, callback);
-                }, 300);
-              });
             } else {
               self.loggedIn(raw.data.id, token, callback);
             }
