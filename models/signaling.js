@@ -272,7 +272,7 @@ class Signaling {
         currentUser.authorizing = false
         //Log.error('Authorization failed:' + currentUser.apiMessage)
         Log.error('User is authorized ' + currentUser.apiMessage + ' ' + currentUser.socket + ' ' + currentUser.token)
-        new Result().emit(currentUser.socket, '/v1/user/login', 401, { 'status': 401, 'message': err });
+        new Result().emit(currentUser.socket, '/v1/user/login', 401, { 'status': 401, 'message': err, data });
         //'Incorrect auth token'
         return true;
       }
