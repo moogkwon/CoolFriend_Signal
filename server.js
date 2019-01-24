@@ -77,7 +77,7 @@ class Server {
             self.io = require('socket.io')();
             self.io.adapter(redisAdapter({host: config.redis.host, port: config.redis.port}));
             self.io.set('origins', '*:*');
-            self.io.listen(self.httpServer, {'pingInterval': 2000, 'pingTimeout': 3000}); // , { path: '/'}
+            self.io.listen(self.httpServer, {'pingInterval': 5000, 'pingTimeout': 7000}); // , { path: '/'}
 
             self.io.sockets.on('connection', function(socket) {
                 // Send hello to user
