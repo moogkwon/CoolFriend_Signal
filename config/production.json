@@ -33,7 +33,7 @@
     "port": 6379
   },
   "backend": {
-    "host": "https://backend.dezzert.co",
+    "host": "http://ec2-54-157-23-216.compute-1.amazonaws.com",
     "token": "securityToken!"
   },
   "firebase": {
