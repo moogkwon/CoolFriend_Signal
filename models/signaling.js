@@ -426,11 +426,12 @@ class Signaling {
     var offer = data ? data['offer'] : '';
     currentUser.checkHunting(currentUser.id, function (error, isHunting) {
       if (!isHunting) {
+        Log.message('user already in hunting mode')
         return false
       }
       currentUser.goHunting(function (error, prey) {
         if (error) {
-          Log.message('Error in hunting at signal point: ' + error);
+          Log.error('Error in hunting at signal point: ' + error);
           currentUser.removeFromHuntingList();
           var result = { 'status': 500, 'message': error }
           new Result().emit(currentUser.socket, '/v1/hunting/start', 500, result)
@@ -441,6 +442,7 @@ class Signaling {
             new User().load(prey, (err, preyObject) => {
                 if (preyObject) {
                     new Match(currentUser.id, preyObject.id, offer);
+                    Log.message('user found!!!')
                     //new User().load(prey, (err, userObject) => {
                         var result = {'status': 200, 'user': currentUser.getUserForSend()};
                         new Result().emit(preyObject.socket, '/v1/matched/new', 200, result);
