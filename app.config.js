@@ -8,6 +8,7 @@ module.exports = {
         "NODE_ENV": "development"
       },
       env_production: {
+        watch: false,
         "NODE_ENV": "production",
       }
     }
