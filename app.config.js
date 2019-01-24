@@ -9,7 +9,7 @@ module.exports = {
       },
       env_production: {
         watch: false,
-        instances: 4,
+        instances: 0,
         exec_mode: "cluster",
         NODE_ENV: "production",
       }
