@@ -5,11 +5,13 @@ module.exports = {
       script: "./server.js",
       env: {
         watch: true,
-        "NODE_ENV": "development"
+        NODE_ENV: "development"
       },
       env_production: {
         watch: false,
-        "NODE_ENV": "production",
+        instances: "4",
+        exec_mode: "cluster",
+        NODE_ENV: "production",
       }
     }
   ]
