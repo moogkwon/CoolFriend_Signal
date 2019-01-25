@@ -52,24 +52,22 @@ class Signaling {
 
       socket.on('disconnect', function () {
         Log.message('User disconnected: ' + currentUser.id + ' ' + socket.id + ' ' + currentUser.token)
-        currentUser.socket = null
-        currentUser.goOffline()
-        if (currentUser.id) {
-          currentUser.removeFromHuntingList()
+        if (socket.id == currentUser.socket.id) {
+          currentUser.socket = null
+          currentUser.goOffline()
+          if (currentUser.id) {
+            currentUser.removeFromHuntingList()
+          }
         }
         if (currentUser.call) {
           // currentUser.hangup(currentUser.call, function() {
           self.hangup(currentUser, { 'disconnected': true }, () => {
             Server.server.deleteUserById(currentUser.id)
           })
-          /*
-          setTimeout(function() {
-              Server.server.deleteUserById(currentUser.id);
-          }, 100);
-          */
-          // });
         } else {
-          Server.server.deleteUserById(currentUser.id)
+          if (socket.id == currentUser.socket.id) {
+            Server.server.deleteUserById(currentUser.id)
+          }
         }
       })
 

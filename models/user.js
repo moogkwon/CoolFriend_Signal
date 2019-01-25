@@ -94,32 +94,25 @@ class User {
       }
       self.removeFromHuntingList();
       // Kick old devices with the same user
+      Log.message('checking user already signed ' + raw.data.id)
       Server.server.redisClient.hget(Server.server.redisTokenList, raw.data.id, (error, data) => {
         try {
           data = JSON.parse(data)
         } catch (e) { }
-        Log.message(data);
+        Log.message('User from redis? ' + !!data);
         if (data) {
           new User().load(data.id, (error, existsUser) => {
-            //Log.message(existsUser);
-            //Log.message(self);
             //if (!error && existsUser && existsUser.socket && self.socket != self.socket && self.device != self.device) {
-            Log.message('Kick him?' + error);
             if (!error && existsUser && existsUser.socket && existsUser.socket != self.socket) {
               // Log.message('----------------------------------------------------------------')
-              Log.message(self.device, existsUser.device)
+              Log.message('Device id: ' + self.device + ' ' + existsUser.device)
               if (existsUser.device != self.device) {
-                Log.message('Old device was kicked off');
+                Log.message('Old device going to be kicked off');
                 new Result().emit(existsUser.socket, '/v1/user/disconnect', 410, { 'status': 410, 'message': 'User logged on with another device', 'old': existsUser.socket, 'new': self.socket, 'old-device': existsUser.device, 'new': self.device })
-                // Server.server.io.of('/').adapter.remoteDisconnect(existsUser.socket, true, (err) => {
-                //   setTimeout(() => {
-                //     self.loggedIn(raw.data.id, token, callback);
-                //   }, 300);
-                // });
               }
-            } else {
-              self.loggedIn(raw.data.id, token, callback);
             }
+            Log.message('Going to login')
+            self.loggedIn(raw.data.id, token, callback);
           });
         } else {
           self.loggedIn(raw.data.id, token, callback);
@@ -146,12 +139,13 @@ class User {
     self.call = null;
     // Save user
     self.save();
-    callback(null, self);
 
     // Add device to list of connected devices
     var toStore = { 'id': self.id, 'token': self.token, 'device': self.device };
+    Log.message('Adding device to redis ' + toStore.id + ' ' + toStore.device)
     toStore = JSON.stringify(toStore);
     Server.server.redisClient.hset(Server.server.redisTokenList, self.id, toStore);
+    callback(null, self);
   }
 
   /*
