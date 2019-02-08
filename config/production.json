@@ -10,14 +10,14 @@
   "iceServers": [
     {
       "urls": [
-        "turn:18.206.154.225:3478"
+        "turn:34.204.167.239:443"
       ],
       "username": "welcome",
       "credential": "wNrvq6Cu74vR5ud2"
     },
     {
       "urls": [
-        "stun:18.206.154.225:3478"
+        "stun:34.204.167.239:443"
       ],
       "username": "welcome",
       "credential": "wNrvq6Cu74vR5ud2"
